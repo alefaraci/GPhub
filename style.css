@@ -1381,7 +1381,8 @@ input::-moz-placeholder {
 #GPflux:hover,
 #SMT:hover,
 #DiceKriging:hover,
-#GPstuff:hover {
+#GPstuff:hover 
+{
     background-color: #f7fff1;
 }
 
@@ -1401,6 +1402,7 @@ input::-moz-placeholder {
 #egobox:hover td:first-child,
 #GPflux:hover td:first-child,
 #DiceKriging:hover td:first-child,
-#GPstuff:hover td:first-child {
+#GPstuff:hover td:first-child 
+{
     background-color: #f7fff1;
 }

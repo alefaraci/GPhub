@@ -9,11 +9,24 @@
     <script>
         $(document).ready(function () {
             // Load package.html into the specified element
+            // celerite
+            $("#celerite").load("/packages/celerite.html", function () {
+                $("#celeriteLanguage").load("/languages/R.html");
+                $("#celeriteLicense1").load("/licenses/GPL2.html", function () {
+                    $("#celeriteLicense1 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-2");
+                })
+                $("#celeriteLicense2").load("/licenses/GPL3.html", function () {
+                    $("#celeriteLicense2 a").attr("href", "t");
+                })
+            });
             // DiceKriging
             $("#DiceKriging").load("/packages/DiceKriging.html", function () {
                 $("#DiceKrigingLanguage").load("/languages/R.html");
                 $("#DiceKrigingLicense1").load("/licenses/GPL2.html", function () {
-                    $("#DiceKrigingLicense1 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-2");
+                    $("#DiceKrigingLicense1 a").attr(
+                        "href", 
+                        "https://cran.r-project.org/web/licenses/GPL-2"
+                    );
                 })
                 $("#DiceKrigingLicense2").load("/licenses/GPL3.html", function () {
                     $("#DiceKrigingLicense2 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-3");
@@ -185,6 +198,7 @@
                 </thead>
                 <!-- TABLE BODY ORDINE ALFABETICO -->
                 <tbody>
+                    <tr id="celerite"></tr>
                     <tr id="DiceKriging"></tr>
                     <tr id="egobox"></tr>
                     <tr id="fbm"></tr>

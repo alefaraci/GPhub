@@ -1,0 +1,37 @@
+<script>
+  $(document).ready(function () {
+    // DiceKriging
+    $("#DiceKriging").load("/packages/DiceKriging.html", function () {
+      $("#DiceKrigingLanguage").load("/languages/Matlab.html");
+      $("#DiceKrigingLicense1").load("/licenses/GPL2.html", function () {
+        $("#DiceKrigingLicense1 a").attr(
+          "href",
+          "https://cran.r-project.org/web/licenses/GPL-2",
+        );
+      });
+      $("#DiceKrigingLicense2").load("/licenses/GPL3.html", function () {
+        $("#DiceKrigingLicense2 a").attr(
+          "href",
+          "https://cran.r-project.org/web/licenses/GPL-3",
+        );
+      });
+    });
+
+    // GPvecchia
+    $("#GPvecchia").load("/packages/GPvecchia.html", function () {
+      $("#GPvecchiaLanguage").load("/languages/R.html");
+      $("#GPvecchiaLicense1").load("/licenses/GPL2.html", function () {
+        $("#GPvecchiaLicense1 a").attr(
+          "href",
+          "https://cran.r-project.org/web/licenses/GPL-2",
+        );
+      });
+      $("#GPvecchiaLicense2").load("/licenses/GPL3.html", function () {
+        $("#GPvecchiaLicense2 a").attr(
+          "href",
+          "https://cran.r-project.org/web/licenses/GPL-3",
+        );
+      });
+    });
+  });
+</script>

@@ -1,0 +1,9 @@
+#DiceKriging:hover,
+#GPvecchia:hover {
+  background-color: #f7fff1;
+}
+
+#DiceKriging:hover td:first-child,
+#GPvecchia:hover td:first-child {
+  background-color: #f7fff1;
+}
