@@ -91,13 +91,48 @@
                     $("#OpenTURNSLicense a").attr("href", "https://github.com/openturns/openturns/blob/master/LICENSE");
                 })
             });
-
-            $("#UQLab").load("/packages/UQLab.html");
-            $("#UQpyLab").load("/packages/UQpyLab.html");
-            $("#Stheno").load("/packages/Stheno.html");
-            $("#PyMC").load("/packages/PyMC.html");
-            $("#scikitlearn").load("/packages/scikitlearn.html");
-            $("#SMT").load("/packages/SMT.html");
+            //PyMC
+            $("#PyMC").load("/packages/PyMC.html", function () {
+                $("#PyMCLanguage").load("/languages/Python.html");
+                $("#PyMCLicense").load("/licenses/Apache2.html", function () {
+                    $("#PyMCLicense a").attr("href", "");
+                })
+            });
+            // scikit-learn
+            $("#scikitlearn").load("/packages/scikitlearn.html", function () {
+                $("#scikitlearnLanguage").load("/languages/Python.html");
+                $("#scikitlearnLicense").load("/licenses/BSD3.html", function () {
+                    $("#scikitlearnLicense a").attr("href", "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING");
+                })
+            });
+            // SMT
+            $("#SMT").load("/packages/SMT.html", function () {
+                $("#SMTLanguage").load("/languages/Python.html");
+                $("#SMTLicense").load("/licenses/BSD3.html", function () {
+                    $("#SMTLicense a").attr("href", "https://github.com/SMTorg/smt/blob/master/LICENSE.txt");
+                })
+            });
+            // Stheno
+            $("#Stheno").load("/packages/Stheno.html", function () {
+                $("#SthenoLanguage").load("/languages/Python.html");
+                $("#SthenoLicense").load("/licenses/BSD.html", function () {
+                    $("#SthenoLicense a").attr("href", "");
+                })
+            });
+            // UQLab
+            $("#UQLab").load("/packages/UQLab.html", function () {
+                $("#UQLabLanguage").load("/languages/Matlab.html");
+                $("#UQLabLicense").load("/licenses/BSD3.html", function () {
+                    $("#UQLabLicense a").attr("href", "https://www.uqlab.com/copy-of-release-notes");
+                })
+            });
+            // UQpyLab
+            $("#UQpyLab").load("/packages/UQpyLab.html", function () {
+                $("#UQpyLabLanguage").load("/languages/Python.html");
+                $("#UQpyLabLicense").load("/licenses/BSD3.html", function () {
+                    $("#UQpyLabLicense a").attr("href", "https://www.uqlab.com/copy-of-release-notes");
+                })
+            });
         });
     </script>
     <title>
