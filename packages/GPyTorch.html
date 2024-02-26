@@ -1,42 +1,36 @@
 <!-- FRAMEWORK -->
-<td class="cell-framework" style="position: sticky;">
-    <a href="https://gpytorch.ai" style="text-decoration:none">
+<td class="cell-framework">
+    <a href="https://gpytorch.ai" style="text-decoration: none">
         <b> GPyTorch </b>
-        <br style="margin-bottom: 8px;">
+        <br style="margin-bottom: 8px" />
+
         <!-- REFERENCE -->
-        <a href="https://arxiv.org/abs/1809.11165" style="text-decoration:none;">
-            <i style="font-weight: 300;"> Gardner et al. (2018) </i>
+        <a
+            href="https://arxiv.org/abs/1809.11165"
+            style="text-decoration: none"
+        >
+            <i> Gardner et al. (2018) </i>
         </a>
     </a>
 </td>
 
 <!-- LANGUAGE -->
 <td class="cell-language">
-    <!-- <span style="display: inline">
-        <img
-            src="img/python-logo.png"
-            style="width: 16px; height: 16px; margin-bottom: -3px !important" />
-    </span> -->
-    <span
-        class="selected-value select-value-color-python">
-        <a href="https://www.python.org" style="text-decoration: none">
-            Python
-        </a>
-    </span>
+    <div id="GPyTorchLanguage"></div>
 </td>
 
 <!-- LICENSE -->
 <td class="cell-license">
-    <span class="selected-value select-value-color-blue">
-        <a href="https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE" style="text-decoration: none">
-            MIT
-        </a>
-    </span>
+    <div id="GPyTorchLicense"></div>
 </td>
 
 <!-- RELEASE -->
 <td class="cell-release">
-    <a href="https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11" style="text-decoration: none">
+    <a
+        href="https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11"
+        class="version"
+        style="text-decoration: none"
+    >
         v1.11
     </a>
 </td>
@@ -44,27 +38,31 @@
 <!-- DEVELOPERS -->
 <td class="cell-dev">
     <span class="selected-value select-value-color-purple">
-        <a href="https://www.columbia.edu" style="text-decoration: none">
+        <a href="https://www.columbia.edu/" style="text-decoration: none">
             Columbia University
         </a>
     </span>
+
     <span class="selected-value select-value-color-default">
-        <a href="https://www.cornell.edu" style="text-decoration: none">
+        <a href="https://www.cornell.edu/" style="text-decoration: none">
             Cornell University
         </a>
     </span>
-    <span class="selected-value select-value-color-purple">
+
+    <span class="selected-value select-value-color-blue">
         <a href="https://research.facebook.com" style="text-decoration: none">
             Meta
         </a>
     </span>
-    <span class="selected-value select-value-color-default">
-        <a href="https://www.nyu.edu" style="text-decoration: none">
+
+    <span class="selected-value select-value-color-orange">
+        <a href="https://www.nyu.edu/" style="text-decoration: none">
             New York University
         </a>
     </span>
-    <span class="selected-value select-value-color-orange">
-        <a href="https://www.upenn.edu" style="text-decoration: none">
+
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://www.upenn.edu/" style="text-decoration: none">
             University of Pennsylvania
         </a>
     </span>
@@ -72,16 +70,31 @@
 
 <!-- DOCS -->
 <td class="cell-documentation">
-    <a href="https://docs.gpytorch.ai/en/stable/" class="url-value">
-        docs.gpytorch.ai/en/stable/
-    </a>
+    <span class="selected-value select-value-color-default">
+        <a
+            href="https://docs.gpytorch.ai/en/stable/"
+            style="text-decoration: none"
+            >docs</a
+        ></span
+    >
+    <span class="selected-value select-value-color-green">
+        <a
+            href="https://github.com/cornellius-gp/gpytorch/tree/master/examples/"
+            style="text-decoration: none"
+            >examples</a
+        ></span
+    >
 </td>
 
 <!-- SUPPORT -->
 <td class="cell-support">
-    <a href="https://" class="url-value">
-        support-link
-    </a>
+    <span class="selected-value select-value-color-default">
+        <a
+            href="https://github.com/cornellius-gp/gpytorch/discussions"
+            style="text-decoration: none"
+            >GitHub discussions</a
+        ></span
+    >
 </td>
 
 <!-- BASIS -->
@@ -89,93 +102,45 @@
 
 <!-- KERNEL -->
 <td class="cell-kernel">
-    <span class="selected-value select-value-color-purple">
-        Isotropyic
-    </span>
-    <span class="selected-value select-value-color-yellow">
-        Anisotrpic
-    </span>
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-    <span class="selected-value select-value-color-blue">
-        Constant
-    </span>
-    <span class="selected-value select-value-color-green">
-        Linear
-    </span>
-    <span class="selected-value select-value-color-brown">
-        Exponential
-    </span>
-    <span class="selected-value select-value-color-yellow">
-        Gaussian (RBF)
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Matérn
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Cosine
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Cylindrical
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Piecewise Polynomial
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Polynomial
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Rational Quadratic
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Spectral Delta
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Spectral Mixture
-    </span>
-    <span class="selected-value select-value-color-blue">
-        White
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Periodic
-    </span>
-    <span class="selected-value select-value-color-blue">
-        Custom
-    </span>
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
 </td>
 
 <!-- KERNEL MIXTURE -->
-<td class="cell-mixture" style="text-align: center;"><div class="checkbox checkbox-on"></div></td>
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
 
 <!-- OPTIMIZATION PROBLEM SOLVER -->
 <td class="cell-opt-problem">
-    <span class="selected-value select-value-color-brown">
-        Exact
-    </span>
-    <span class="selected-value select-value-color-brown">
-        Approximate
-    </span>
+    <span class="selected-value select-value-color-brown"> Exact </span>
 </td>
 
 <!-- OPTIMIZATION ALGORITHM -->
 <td class="cell-opt-algo"></td>
-
-<!-- HPC -->
-<!-- <td class="cell-HPC"><div class="checkbox checkbox-off"></div></td> -->
-
-<!-- CLOUD -->
-<!-- <td class="cell-cloud"><div class="checkbox checkbox-off"></div></td> -->
-
-<!-- RATING -->
-<!-- <td class="cell-rating"></td> -->
-
-<!-- PRO -->
-<!-- <td class="cell-pro"></td> -->
-
-<!-- CONS -->
-<!-- <td class="cell-cons"></td> -->
-
-<!-- SUPPORT -->
-<!-- <td class="cell-check-support"><div class="checkbox checkbox-off"></div></td> -->
