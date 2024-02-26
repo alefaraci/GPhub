@@ -160,7 +160,7 @@ def genrete_HTML(packages, framework) -> str:
     package_HTML = f"""
         <!-- FRAMEWORK -->
         <td class="cell-framework">
-            <a href="https://www.gpflow.org" style="text-decoration: none">
+            <a href="{packages[framework]["URL"]}" style="text-decoration: none">
                 <b> {framework} </b>
                 <br style="margin-bottom: 8px" />
                 

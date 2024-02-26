@@ -55,6 +55,62 @@ EXAMPLE:
 
 packages = {
     #
+    "GPyTorch": {
+        "URL": "https://gpytorch.ai",
+        "Language": ["Python"],
+        "License": {
+            "type": ["MIT"],
+            "URL": ["https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE"],
+        },
+        "Reference": {
+            "Authors": "Gardner et al. (2018)",
+            "URL": "https://arxiv.org/abs/1809.11165",
+        },
+        "Release": {
+            "version": "v1.11",
+            "URL": "https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11",
+        },
+        "Developers": [
+            {
+                "color": "purple",
+                "name": "Columbia University",
+                "URL": "https://www.columbia.edu/",
+            },
+            {
+                "color": "default",
+                "name": "Cornell University",
+                "URL": "https://www.cornell.edu/",
+            },
+            {
+                "color": "blue",
+                "name": "Meta",
+                "URL": "https://research.facebook.com",
+            },
+            {
+                "color": "orange",
+                "name": "New York University",
+                "URL": "https://www.nyu.edu/",
+            },
+            {
+                "color": "yellow",
+                "name": "University of Pennsylvania",
+                "URL": "https://www.upenn.edu/",
+            },
+        ],
+        "Docs": [
+            {
+                "URL": "https://docs.gpytorch.ai/en/stable/",
+                "link": "docs.gpytorch.ai/en/stable/",
+            },
+        ],
+        "Support": [
+            {
+                "URL": "https://",
+                "link": "support-link",
+            },
+        ],
+    },
+    #
     "GPvecchia": {
         "URL": "https://cran.r-project.org/web/packages/DiceKriging/index.html",
         "Language": ["R"],

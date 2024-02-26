@@ -33,5 +33,16 @@
         );
       });
     });
+
+    // GPyTorch
+    $("#GPyTorch").load("/packages/GPyTorch.html", function () {
+      $("#GPyTorchLanguage").load("/languages/Python.html");
+      $("#GPyTorchLicense").load("/licenses/MIT.html", function () {
+        $("#GPyTorchLicense a").attr(
+          "href",
+          "https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE",
+        );
+      });
+    });
   });
 </script>
