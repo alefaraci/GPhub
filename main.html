@@ -1,214 +1,292 @@
 <html style="width: 2600px !important;">
-	<!-- HEAD --> 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				// Load package.html into the specified element
-				$("#GPyTorch").load("/packages/GPyTorch.html");
-				$("#UQLab").load("/packages/UQLab.html");
-				$("#UQpyLab").load("/packages/UQpyLab.html");
-				$("#GPflow").load("/packages/GPflow.html");
-                $("#GPR").load("/packages/GPR.html");
-                $("#Stheno").load("/packages/Stheno.html");
-                $("#PyMC").load("/packages/PyMC.html");
-                $("#scikitlearn").load("/packages/scikitlearn.html");
-                $("#GPML").load("/packages/GPML.html");
-                $("#GPy").load("/packages/GPy.html");
-                $("#fbm").load("/packages/fbm.html");
-                $("#GPstuff").load("/packages/GPstuff.html");
-                $("#OpenTurns").load("/packages/openturns.html");
-                $("#egobox").load("/packages/egobox.html");
-                $("#SMT").load("/packages/SMT.html");
-                $("#GPflux").load("/packages/GPflux.html");
+<!-- HEAD -->
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Load package.html into the specified element
+            // DiceKriging
+            $("#DiceKriging").load("/packages/DiceKriging.html", function () {
+                $("#DiceKrigingLanguage").load("/languages/R.html");
+                $("#DiceKrigingLicense1").load("/licenses/GPL2.html", function () {
+                    $("#DiceKrigingLicense1 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-2");
+                })
+                $("#DiceKrigingLicense2").load("/licenses/GPL3.html", function () {
+                    $("#DiceKrigingLicense2 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-3");
+                })
             });
-		</script>
-		<title>
-			A comprehensive guide to Kriging metamodeling toolboxes
-		</title>
-		<link rel="stylesheet" type="text/css" href="style.css">	
-	</head>
-	<!-- BODY --> 
-	<body>
-		<article id="Article" class="page sans">
-			<header style="width: 400px !important; height: 100px !important;">
-				<!-- TABLE TITLE --> 
-				<h1 class="page-title" style="width: 1100px !important;">
-					A comprehensive guide to Kriging metamodeling toolboxes</h1>
-			</header>
-			<div class="page-body">	
-                <!-- SEARCHER -->
-                <label>
-                    <input type="text" id="searchInput" placeholder="Press ⌘ / ⌃ + K to search">
-                </label> 
-                <!-- BUTTON --> 
-                <button id="filterC" class="select-filter-c">C</button>
-                <button id="filterCpp" class="select-filter-cpp">C++</button>
-                <button id="filterGo" class="select-filter-go">GO</button>
-                <button id="filterJulia" class="select-filter-julia">julia</button>
-                <button id="filterMatlab" class="select-filter-matlab">MATLAB</button>
-                <button id="filterPython" class="select-filter-python">Python</button>
-			    <button id="filterR" class="select-filter-r">R</button>
-                <button id="filterRust" class="select-filter-rust">Rust</button>
-				<!-- TABLE --> 
-				<table id="myTable" class="collection-content">
-					<!-- TABLE HEADER --> 
-					<thead>
-						<tr>
-							<th style="min-width: 9em; position: sticky;">FRAMEWORK</th>
-							<th style="min-width: 4.5em;">LANGUAGE</th>
-							<th>LICENSE</th>
-							<th>RELEASE</th>
-							<th style="min-width: 14.5em;">DEVELOPERS & FUNDING</th>
-							<th style="min-width: 6.5em;">DOCUMENTATION</th>
-                            <th style="min-width: 21em;">COMMUNITY SUPPORT & DISCUSSIONS</th>
-							<th>TREND TYPES</th>
-							<th>KERNEL</th>
-							<th style="min-width: 19.5em;">KERNEL FAMILIES &nbsp \( R(x,x';\theta) \)</th>
-							<th style="min-width: 9.5em;">KERNEL MIXTURE</th>
-							<th>SOLVER</th>
-							<th style="min-width: 14.5em;">OPTIMIZATION ALGORITHM</th>
-						</tr>
-					</thead>
-					<!-- TABLE BODY ORDINE ALFABETICO --> 
-					<tbody>
-                        <tr id="egobox"></tr>
-                        <tr id="fbm"></tr>
-						<tr id="GPflow"></tr>
-                        <tr id="GPflux"></tr>
-                        <tr id="GPML"></tr>
-                        <tr id="GPR"></tr>
-                        <tr id="GPstuff"></tr>
-                        <tr id="GPy"></tr>
-                        <tr id="GPyTorch"></tr>
-                        <tr id="OpenTurns"></tr>
-                        <tr id="PyMC"></tr>
-                        <tr id="scikitlearn"></tr>
-                        <tr id="SMT"></tr>
-						<tr id="Stheno"></tr>
-						<tr id="UQLab"></tr>
-						<tr id="UQpyLab"></tr>
-                    </tbody>
-				</table>
-                <br>
-                <!-- FOOTER -->
-                <p style="font-size: 9pt !important; color:#9ca2a8; margin-top: -15px !important; width:2000px !important;"> 
-                    <i>Source: © A. Faraci, P. Beaurepaire, N. Gayton; A comprehensive guide to Kriging metamodeling toolboxes: bridging theory with practice through features, limitations, and performance.
-                    </i></p>
-				<br /><br />
-			</div>
-			</div>
-		</article>
-		<span class="sans" style="font-size: 14px; padding-top: 2em"></span>
-        <!-- SCRIPTS -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // Event listener for search input to filter table rows
-                document.getElementById('searchInput').addEventListener('keyup', function() {
-                    var searchQuery = this.value.toLowerCase();
-                    var table = document.getElementById('myTable');
-                    var tableRows = table.getElementsByTagName('tr');
-            
-                    for (var i = 1; i < tableRows.length; i++) { // Starting from 1 to skip the header row
-                        var cells = tableRows[i].getElementsByTagName('td');
-                        var rowText = Array.from(cells).map(cell => cell.textContent.toLowerCase()).join(' ');
-                        var displayStyle = rowText.indexOf(searchQuery) > -1 ? '' : 'none';
-            
-                        tableRows[i].style.display = displayStyle;
-                    }
-                });
-            
-                // Event listener for document to capture "Cmd+K" or "Ctrl+K"
-                document.addEventListener('keydown', function(e) {
-                    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-                        e.preventDefault(); // Prevent the default action to ensure the shortcut works as intended
-                        document.getElementById('searchInput').focus(); // Focus the search input
-                    }
-                });
+            // egobox
+            $("#egobox").load("/packages/egobox.html", function () {
+                $("#egoboxLanguage").load("/languages/Rust.html");
+                $("#egoboxLicense").load("/licenses/Apache2.html", function () {
+                    $("#egoboxLicense a").attr("href", "https://github.com/relf/egobox/blob/master/LICENSE");
+                })
             });
-        </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var input = document.getElementById('searchInput');
-                if (navigator.platform.startsWith('Win')) {
-                  input.placeholder = "Press ⌃ CTRL + K to search";
-                } else if (navigator.platform.startsWith('Linux')) {
-                  input.placeholder = "Press ⌃ CTRL + K to search";
-                } else if (navigator.platform.startsWith('Mac')) {
-                  input.placeholder = "Press ⌘ + K to search";
-                } else {
-                  // Default or unknown OS
-                  input.placeholder = "Press ⌘ / ⌃ + K to search";
-                }
-              });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            // fbm
+            $("#fbm").load("/packages/fbm.html", function () {
+                $("#fbmLanguage").load("/languages/C.html");
+                $("#fbmLicense").load("/licenses/BSL1.html", function () {
+                    $("#fbmLicense a").attr("href", "https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads");
+                })
+            });
+            // GPflow
+            $("#GPflow").load("/packages/GPflow.html", function () {
+                $("#GPflowLanguage").load("/languages/Python.html");
+                $("#GPflowLicense").load("/licenses/Apache2.html", function () {
+                    $("#GPflowLicense a").attr("href", "https://github.com/GPflow/GPflow/blob/develop/LICENSE");
+                })
+            });
+            // GPflux
+            $("#GPflux").load("/packages/GPflux.html", function () {
+                $("#GPfluxLanguage").load("/languages/Python.html");
+                $("#GPfluxLicense").load("/licenses/Apache2.html", function () {
+                    $("#GPfluxLicense a").attr("href", "https://github.com/secondmind-labs/GPflux/blob/develop/LICENSE");
+                })
+            });
+            //GPML
+            $("#GPML").load("/packages/GPML.html", function () {
+                $("#GPMLLanguage").load("/languages/Matlab.html");
+                $("#GPMLLicense").load("/licenses/FreeBSD.html", function () {
+                    $("#GPMLLicense a").attr("href", "https://github.com/alshedivat/gpml/blob/master/Copyright");
+                })
+            });
+            // GPR
+            $("#GPR").load("/packages/GPR.html", function () {
+                $("#GPRLanguage").load("/languages/Cpp.html");
+                $("#GPRLicense").load("/licenses/Apache2.html", function () {
+                    $("#GPRLicense a").attr("href", "https://github.com/ChristophJud/GPR/blob/master/LICENSE");
+                })
+            });
+            // GPstuff
+            $("#GPstuff").load("/packages/GPstuff.html", function () {
+                $("#GPstuffLanguage1").load("/languages/Matlab.html");
+                $("#GPstuffLanguage2").load("/languages/R.html");
+                $("#GPstuffLicense").load("/licenses/GPL3.html", function () {
+                    $("#GPstuffLicense a").attr("href", "https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt");
+                })
+            });
+            // GPy
+            $("#GPy").load("/packages/GPy.html", function () {
+                $("#GPyLanguage").load("/languages/Python.html");
+                $("#GPyLicense").load("/licenses/BSD3.html", function () {
+                    $("#GPyLicense a").attr("href", "https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt");
+                })
+            });
+            // GPyTorch
+            $("#GPyTorch").load("/packages/GPyTorch.html", function () {
+                $("#GPyTorchLanguage").load("/languages/Python.html");
+                $("#GPyTorchLicense").load("/licenses/MIT.html", function () {
+                    $("#GPyTorchLicense a").attr("href", "https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE");
+                })
+            });
+            // OpenTURNS
+            $("#OpenTurns").load("/packages/openturns.html", function () {
+                $("#OpenTURNSLanguage1").load("/languages/Cpp.html");
+                $("#OpenTURNSLanguage2").load("/languages/Python.html");
+                $("#OpenTURNSLicense").load("/licenses/LGPL.html", function () {
+                    $("#OpenTURNSLicense a").attr("href", "https://github.com/openturns/openturns/blob/master/LICENSE");
+                })
+            });
+
+            $("#UQLab").load("/packages/UQLab.html");
+            $("#UQpyLab").load("/packages/UQpyLab.html");
+            $("#Stheno").load("/packages/Stheno.html");
+            $("#PyMC").load("/packages/PyMC.html");
+            $("#scikitlearn").load("/packages/scikitlearn.html");
+            $("#SMT").load("/packages/SMT.html");
+        });
+    </script>
+    <title>
+        A comprehensive guide to Kriging metamodeling toolboxes
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- BODY -->
+
+<body>
+    <article id="Article" class="page sans">
+        <header style="width: 400px !important; height: 100px !important;">
+            <!-- TABLE TITLE -->
+            <h1 class="page-title" style="width: 1100px !important;">
+                A comprehensive guide to Kriging metamodeling toolboxes</h1>
+        </header>
+        <div class="page-body">
+            <!-- SEARCHER -->
+            <label>
+                <input type="text" id="searchInput" placeholder="Press ⌘ / ⌃ + K to search">
+            </label>
+            <!-- BUTTON -->
+            <button id="filterC" class="select-filter-c">C</button>
+            <button id="filterCpp" class="select-filter-cpp">C++</button>
+            <button id="filterGo" class="select-filter-go">GO</button>
+            <button id="filterJulia" class="select-filter-julia">julia</button>
+            <button id="filterMatlab" class="select-filter-matlab">MATLAB</button>
+            <button id="filterPython" class="select-filter-python">Python</button>
+            <button id="filterR" class="select-filter-r">R</button>
+            <button id="filterRust" class="select-filter-rust">Rust</button>
+            <!-- TABLE -->
+            <table id="myTable" class="collection-content">
+                <!-- TABLE HEADER -->
+                <thead>
+                    <tr>
+                        <th style="min-width: 9em; position: sticky;">FRAMEWORK</th>
+                        <th style="min-width: 4.5em;">LANGUAGE</th>
+                        <th>LICENSE</th>
+                        <th>RELEASE</th>
+                        <th style="min-width: 14.5em;">DEVELOPERS & FUNDING</th>
+                        <th style="min-width: 6.5em;">DOCUMENTATION</th>
+                        <th style="min-width: 21em;">COMMUNITY SUPPORT & DISCUSSIONS</th>
+                        <th>TREND TYPES</th>
+                        <th>KERNEL</th>
+                        <th style="min-width: 19.5em;">KERNEL FAMILIES &nbsp \( R(x,x';\theta) \)</th>
+                        <th style="min-width: 9.5em;">KERNEL MIXTURE</th>
+                        <th>SOLVER</th>
+                        <th style="min-width: 14.5em;">OPTIMIZATION ALGORITHM</th>
+                    </tr>
+                </thead>
+                <!-- TABLE BODY ORDINE ALFABETICO -->
+                <tbody>
+                    <tr id="DiceKriging"></tr>
+                    <tr id="egobox"></tr>
+                    <tr id="fbm"></tr>
+                    <tr id="GPflow"></tr>
+                    <tr id="GPflux"></tr>
+                    <tr id="GPML"></tr>
+                    <tr id="GPR"></tr>
+                    <tr id="GPstuff"></tr>
+                    <tr id="GPy"></tr>
+                    <tr id="GPyTorch"></tr>
+                    <tr id="OpenTurns"></tr>
+                    <tr id="PyMC"></tr>
+                    <tr id="scikitlearn"></tr>
+                    <tr id="SMT"></tr>
+                    <tr id="Stheno"></tr>
+                    <tr id="UQLab"></tr>
+                    <tr id="UQpyLab"></tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- FOOTER -->
+            <p style="font-size: 9pt !important; color:#9ca2a8; margin-top: -15px !important; width:2000px !important;">
+                <i>Source: © A. Faraci, P. Beaurepaire, N. Gayton; A comprehensive guide to Kriging metamodeling
+                    toolboxes: bridging theory with practice through features, limitations, and performance.
+                </i>
+            </p>
+            <br /><br />
+        </div>
+        </div>
+    </article>
+    <span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+    <!-- SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Event listener for search input to filter table rows
+            document.getElementById('searchInput').addEventListener('keyup', function () {
+                var searchQuery = this.value.toLowerCase();
                 var table = document.getElementById('myTable');
-                var lastFilter = '';
+                var tableRows = table.getElementsByTagName('tr');
 
-                function filterTableLanguage(filter) {
-                    var tableRows = table.getElementsByTagName('tr');
-                    var isFilterActive = lastFilter.toLowerCase() === filter.toLowerCase();
-                
-                    for (var i = 1; i < tableRows.length; i++) { // Assuming the first row is the header
-                        // Target only the second column (index 1) of the current row
-                        var cellText = tableRows[i].cells[1].textContent.toLowerCase();
-                        if (!isFilterActive && filter !== '') {
-                            var displayStyle = cellText.indexOf(filter.toLowerCase()) > -1 ? '' : 'none';
-                            tableRows[i].style.display = displayStyle;
-                        } else {
-                            tableRows[i].style.display = '';
-                        }
-                    }
-                    lastFilter = isFilterActive ? '' : filter; // Toggle the last filter
+                for (var i = 1; i < tableRows.length; i++) { // Starting from 1 to skip the header row
+                    var cells = tableRows[i].getElementsByTagName('td');
+                    var rowText = Array.from(cells).map(cell => cell.textContent.toLowerCase()).join(' ');
+                    var displayStyle = rowText.indexOf(searchQuery) > -1 ? '' : 'none';
+
+                    tableRows[i].style.display = displayStyle;
                 }
-         
-                document.getElementById('filterC').addEventListener('click', function() {
-                    filterTableLanguage('C ');
-                });
-
-                document.getElementById('filterCpp').addEventListener('click', function() {
-                    filterTableLanguage('C++');
-                });
-                
-                document.getElementById('filterGo').addEventListener('click', function() {
-                    filterTableLanguage('Go');
-                });
-            
-                document.getElementById('filterJulia').addEventListener('click', function() {
-                    filterTableLanguage('Julia');
-                });
-            
-                document.getElementById('filterMatlab').addEventListener('click', function() {
-                    filterTableLanguage('Matlab');
-                });
-            
-                document.getElementById('filterPython').addEventListener('click', function() {
-                    filterTableLanguage('Python');
-                });
-
-                document.getElementById('filterR').addEventListener('click', function() {
-                    filterTableLanguage('R ');
-                });
-            
-                document.getElementById('filterRust').addEventListener('click', function() {
-                    filterTableLanguage('Rust');
-                });
-            
-                // Optional: Clear the filter when the search input is modified
-                document.getElementById('searchInput').addEventListener('keyup', function() {
-                    // Clear the last filter when the user types in the search
-                    lastFilter = '';
-                    // Existing search functionality here...
-                });
-                // Rest of your search functionality...
             });
-        </script>
-             
-	</body>
+
+            // Event listener for document to capture "Cmd+K" or "Ctrl+K"
+            document.addEventListener('keydown', function (e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault(); // Prevent the default action to ensure the shortcut works as intended
+                    document.getElementById('searchInput').focus(); // Focus the search input
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var input = document.getElementById('searchInput');
+            if (navigator.platform.startsWith('Win')) {
+                input.placeholder = "Press ⌃ CTRL + K to search";
+            } else if (navigator.platform.startsWith('Linux')) {
+                input.placeholder = "Press ⌃ CTRL + K to search";
+            } else if (navigator.platform.startsWith('Mac')) {
+                input.placeholder = "Press ⌘ + K to search";
+            } else {
+                // Default or unknown OS
+                input.placeholder = "Press ⌘ / ⌃ + K to search";
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var table = document.getElementById('myTable');
+            var lastFilter = '';
+
+            function filterTableLanguage(filter) {
+                var tableRows = table.getElementsByTagName('tr');
+                var isFilterActive = lastFilter.toLowerCase() === filter.toLowerCase();
+
+                for (var i = 1; i < tableRows.length; i++) { // Assuming the first row is the header
+                    // Target only the second column (index 1) of the current row
+                    var cellText = tableRows[i].cells[1].textContent.toLowerCase();
+                    if (!isFilterActive && filter !== '') {
+                        var displayStyle = cellText.indexOf(filter.toLowerCase()) > -1 ? '' : 'none';
+                        tableRows[i].style.display = displayStyle;
+                    } else {
+                        tableRows[i].style.display = '';
+                    }
+                }
+                lastFilter = isFilterActive ? '' : filter; // Toggle the last filter
+            }
+
+            document.getElementById('filterC').addEventListener('click', function () {
+                filterTableLanguage('C ');
+            });
+
+            document.getElementById('filterCpp').addEventListener('click', function () {
+                filterTableLanguage('C++');
+            });
+
+            document.getElementById('filterGo').addEventListener('click', function () {
+                filterTableLanguage('Go');
+            });
+
+            document.getElementById('filterJulia').addEventListener('click', function () {
+                filterTableLanguage('Julia');
+            });
+
+            document.getElementById('filterMatlab').addEventListener('click', function () {
+                filterTableLanguage('Matlab');
+            });
+
+            document.getElementById('filterPython').addEventListener('click', function () {
+                filterTableLanguage('Python');
+            });
+
+            document.getElementById('filterR').addEventListener('click', function () {
+                filterTableLanguage('R ');
+            });
+
+            document.getElementById('filterRust').addEventListener('click', function () {
+                filterTableLanguage('Rust');
+            });
+
+            // Optional: Clear the filter when the search input is modified
+            document.getElementById('searchInput').addEventListener('keyup', function () {
+                // Clear the last filter when the user types in the search
+                lastFilter = '';
+                // Existing search functionality here...
+            });
+            // Rest of your search functionality...
+        });
+    </script>
+
+</body>
+
 </html>
