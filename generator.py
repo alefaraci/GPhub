@@ -155,7 +155,7 @@ def generate_packages_load_MAIN(packages, framework) -> str:
     return packages_load_MAIN
 
 
-def genrete_HTML(packages, framework) -> str:
+def generate_HTML(packages, framework) -> str:
 
     package_HTML = f"""
         <!-- FRAMEWORK -->
@@ -260,7 +260,7 @@ def main() -> None:
     load_package, table_rows, style_package_hover, style_package_hover_child = "", "", "", ""
     for framework in sorted(packages.keys(), key=lambda x: x.lower()):
 
-        package_HTML = genrete_HTML(packages, framework)
+        package_HTML = generate_HTML(packages, framework)
         with open(f"./packages_/{framework}.html", "w", encoding="UTF-8") as file:
             file.write(package_HTML)
         subprocess.run(["prettier", "--write", f"./packages_/{framework}.html"])  # pylint: disable=subprocess-run-check

@@ -1,11 +1,41 @@
 #DiceKriging:hover,
+#egobox:hover,
+#fbm:hover,
+#GPflow:hover,
+#GPflux:hover,
+#GPML:hover,
+#GPR:hover,
+#GPstuff:hover,
 #GPvecchia:hover,
-#GPyTorch:hover {
+#GPy:hover,
+#GPyTorch:hover,
+#OpenTURNS:hover,
+#PyMC:hover,
+#scikit-learn:hover,
+#SMT:hover,
+#Stheno:hover,
+#UQ[py]Lab Beta:hover,
+#UQLab:hover {
   background-color: #f7fff1;
 }
 
 #DiceKriging:hover td:first-child,
+#egobox:hover td:first-child,
+#fbm:hover td:first-child,
+#GPflow:hover td:first-child,
+#GPflux:hover td:first-child,
+#GPML:hover td:first-child,
+#GPR:hover td:first-child,
+#GPstuff:hover td:first-child,
 #GPvecchia:hover td:first-child,
-#GPyTorch:hover td:first-child {
+#GPy:hover td:first-child,
+#GPyTorch:hover td:first-child,
+#OpenTURNS:hover td:first-child,
+#PyMC:hover td:first-child,
+#scikit-learn:hover td:first-child,
+#SMT:hover td:first-child,
+#Stheno:hover td:first-child,
+#UQ[py]Lab Beta:hover td:first-child,
+#UQLab:hover td:first-child {
   background-color: #f7fff1;
 }
