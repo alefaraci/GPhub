@@ -7,147 +7,227 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            // Load package.html into the specified element
-            // celerite
-            $("#celerite").load("/packages/celerite.html", function () {
-                $("#celeriteLanguage").load("/languages/R.html");
-                $("#celeriteLicense1").load("/licenses/GPL2.html", function () {
-                    $("#celeriteLicense1 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-2");
-                })
-                $("#celeriteLicense2").load("/licenses/GPL3.html", function () {
-                    $("#celeriteLicense2 a").attr("href", "t");
-                })
-            });
-            // DiceKriging
-            $("#DiceKriging").load("/packages/DiceKriging.html", function () {
-                $("#DiceKrigingLanguage").load("/languages/R.html");
-                $("#DiceKrigingLicense1").load("/licenses/GPL2.html", function () {
-                    $("#DiceKrigingLicense1 a").attr(
-                        "href", 
-                        "https://cran.r-project.org/web/licenses/GPL-2"
-                    );
-                })
-                $("#DiceKrigingLicense2").load("/licenses/GPL3.html", function () {
-                    $("#DiceKrigingLicense2 a").attr("href", "https://cran.r-project.org/web/licenses/GPL-3");
-                })
-            });
-            // egobox
-            $("#egobox").load("/packages/egobox.html", function () {
-                $("#egoboxLanguage").load("/languages/Rust.html");
-                $("#egoboxLicense").load("/licenses/Apache2.html", function () {
-                    $("#egoboxLicense a").attr("href", "https://github.com/relf/egobox/blob/master/LICENSE");
-                })
-            });
-            // fbm
-            $("#fbm").load("/packages/fbm.html", function () {
-                $("#fbmLanguage").load("/languages/C.html");
-                $("#fbmLicense").load("/licenses/BSL1.html", function () {
-                    $("#fbmLicense a").attr("href", "https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads");
-                })
-            });
-            // GPflow
-            $("#GPflow").load("/packages/GPflow.html", function () {
-                $("#GPflowLanguage").load("/languages/Python.html");
-                $("#GPflowLicense").load("/licenses/Apache2.html", function () {
-                    $("#GPflowLicense a").attr("href", "https://github.com/GPflow/GPflow/blob/develop/LICENSE");
-                })
-            });
-            // GPflux
-            $("#GPflux").load("/packages/GPflux.html", function () {
-                $("#GPfluxLanguage").load("/languages/Python.html");
-                $("#GPfluxLicense").load("/licenses/Apache2.html", function () {
-                    $("#GPfluxLicense a").attr("href", "https://github.com/secondmind-labs/GPflux/blob/develop/LICENSE");
-                })
-            });
-            //GPML
-            $("#GPML").load("/packages/GPML.html", function () {
-                $("#GPMLLanguage").load("/languages/Matlab.html");
-                $("#GPMLLicense").load("/licenses/FreeBSD.html", function () {
-                    $("#GPMLLicense a").attr("href", "https://github.com/alshedivat/gpml/blob/master/Copyright");
-                })
-            });
-            // GPR
-            $("#GPR").load("/packages/GPR.html", function () {
-                $("#GPRLanguage").load("/languages/Cpp.html");
-                $("#GPRLicense").load("/licenses/Apache2.html", function () {
-                    $("#GPRLicense a").attr("href", "https://github.com/ChristophJud/GPR/blob/master/LICENSE");
-                })
-            });
-            // GPstuff
-            $("#GPstuff").load("/packages/GPstuff.html", function () {
-                $("#GPstuffLanguage1").load("/languages/Matlab.html");
-                $("#GPstuffLanguage2").load("/languages/R.html");
-                $("#GPstuffLicense").load("/licenses/GPL3.html", function () {
-                    $("#GPstuffLicense a").attr("href", "https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt");
-                })
-            });
-            // GPy
-            $("#GPy").load("/packages/GPy.html", function () {
-                $("#GPyLanguage").load("/languages/Python.html");
-                $("#GPyLicense").load("/licenses/BSD3.html", function () {
-                    $("#GPyLicense a").attr("href", "https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt");
-                })
-            });
-            // GPyTorch
-            $("#GPyTorch").load("/packages/GPyTorch.html", function () {
-                $("#GPyTorchLanguage").load("/languages/Python.html");
-                $("#GPyTorchLicense").load("/licenses/MIT.html", function () {
-                    $("#GPyTorchLicense a").attr("href", "https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE");
-                })
-            });
-            // OpenTURNS
-            $("#OpenTurns").load("/packages/openturns.html", function () {
-                $("#OpenTURNSLanguage1").load("/languages/Cpp.html");
-                $("#OpenTURNSLanguage2").load("/languages/Python.html");
-                $("#OpenTURNSLicense").load("/licenses/LGPL.html", function () {
-                    $("#OpenTURNSLicense a").attr("href", "https://github.com/openturns/openturns/blob/master/LICENSE");
-                })
-            });
-            //PyMC
-            $("#PyMC").load("/packages/PyMC.html", function () {
-                $("#PyMCLanguage").load("/languages/Python.html");
-                $("#PyMCLicense").load("/licenses/Apache2.html", function () {
-                    $("#PyMCLicense a").attr("href", "");
-                })
-            });
-            // scikit-learn
-            $("#scikitlearn").load("/packages/scikitlearn.html", function () {
-                $("#scikitlearnLanguage").load("/languages/Python.html");
-                $("#scikitlearnLicense").load("/licenses/BSD3.html", function () {
-                    $("#scikitlearnLicense a").attr("href", "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING");
-                })
-            });
-            // SMT
-            $("#SMT").load("/packages/SMT.html", function () {
-                $("#SMTLanguage").load("/languages/Python.html");
-                $("#SMTLicense").load("/licenses/BSD3.html", function () {
-                    $("#SMTLicense a").attr("href", "https://github.com/SMTorg/smt/blob/master/LICENSE.txt");
-                })
-            });
-            // Stheno
-            $("#Stheno").load("/packages/Stheno.html", function () {
-                $("#SthenoLanguage").load("/languages/Python.html");
-                $("#SthenoLicense").load("/licenses/BSD.html", function () {
-                    $("#SthenoLicense a").attr("href", "");
-                })
-            });
-            // UQLab
-            $("#UQLab").load("/packages/UQLab.html", function () {
-                $("#UQLabLanguage").load("/languages/Matlab.html");
-                $("#UQLabLicense").load("/licenses/BSD3.html", function () {
-                    $("#UQLabLicense a").attr("href", "https://www.uqlab.com/copy-of-release-notes");
-                })
-            });
-            // UQpyLab
-            $("#UQpyLab").load("/packages/UQpyLab.html", function () {
-                $("#UQpyLabLanguage").load("/languages/Python.html");
-                $("#UQpyLabLicense").load("/licenses/BSD3.html", function () {
-                    $("#UQpyLabLicense a").attr("href", "https://www.uqlab.com/copy-of-release-notes");
-                })
-            });
+      $(document).ready(function () {
+        // DiceKriging
+        $("#DiceKriging").load("/packages/DiceKriging.html", function () {
+          $("#DiceKrigingLanguage").load("/languages/R.html");
+          $("#DiceKrigingLicense1").load("/licenses/GPL2.html", function () {
+            $("#DiceKrigingLicense1 a").attr(
+              "href",
+              "https://cran.r-project.org/web/licenses/GPL-2",
+            );
+          });
+          $("#DiceKrigingLicense2").load("/licenses/GPL3.html", function () {
+            $("#DiceKrigingLicense2 a").attr(
+              "href",
+              "https://cran.r-project.org/web/licenses/GPL-3",
+            );
+          });
         });
-    </script>
+    
+        // egobox
+        $("#egobox").load("/packages/egobox.html", function () {
+          $("#egoboxLanguage").load("/languages/Rust.html");
+          $("#egoboxLicense").load("/licenses/Apache2.html", function () {
+            $("#egoboxLicense a").attr(
+              "href",
+              "https://github.com/relf/egobox/blob/master/LICENSE",
+            );
+          });
+        });
+    
+        // fbm
+        $("#fbm").load("/packages/fbm.html", function () {
+          $("#fbmLanguage").load("/languages/C.html");
+          $("#fbmLicense").load("/licenses/BSL1.html", function () {
+            $("#fbmLicense a").attr(
+              "href",
+              "https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads",
+            );
+          });
+        });
+    
+        // GPflow
+        $("#GPflow").load("/packages/GPflow.html", function () {
+          $("#GPflowLanguage").load("/languages/Python.html");
+          $("#GPflowLicense").load("/licenses/Apache2.html", function () {
+            $("#GPflowLicense a").attr(
+              "href",
+              "https://github.com/GPflow/GPflow/blob/develop/LICENSE",
+            );
+          });
+        });
+    
+        // GPflux
+        $("#GPflux").load("/packages/GPflux.html", function () {
+          $("#GPfluxLanguage").load("/languages/Python.html");
+          $("#GPfluxLicense").load("/licenses/Apache2.html", function () {
+            $("#GPfluxLicense a").attr(
+              "href",
+              "https://github.com/secondmind-labs/GPflux/blob/develop/LICENSE",
+            );
+          });
+        });
+    
+        // GPML
+        $("#GPML").load("/packages/GPML.html", function () {
+          $("#GPMLLanguage1").load("/languages/Matlab.html");
+          $("#GPMLLanguage2").load("/languages/Octave.html");
+    
+          $("#GPMLLicense").load("/licenses/FreeBSD.html", function () {
+            $("#GPMLLicense a").attr(
+              "href",
+              "https://gitlab.com/hnickisch/gpml-matlab/-/blob/master/Copyright?ref_type=heads",
+            );
+          });
+        });
+    
+        // GPR
+        $("#GPR").load("/packages/GPR.html", function () {
+          $("#GPRLanguage").load("/languages/Cpp.html");
+          $("#GPRLicense").load("/licenses/Apache2.html", function () {
+            $("#GPRLicense a").attr(
+              "href",
+              "https://github.com/ChristophJud/GPR/blob/master/LICENSE",
+            );
+          });
+        });
+    
+        // GPstuff
+        $("#GPstuff").load("/packages/GPstuff.html", function () {
+          $("#GPstuffLanguage1").load("/languages/R.html");
+          $("#GPstuffLanguage2").load("/languages/Matlab.html");
+          $("#GPstuffLanguage3").load("/languages/Octave.html");
+    
+          $("#GPstuffLicense").load("/licenses/GPL3.html", function () {
+            $("#GPstuffLicense a").attr(
+              "href",
+              "https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt",
+            );
+          });
+        });
+    
+        // GPvecchia
+        $("#GPvecchia").load("/packages/GPvecchia.html", function () {
+          $("#GPvecchiaLanguage").load("/languages/R.html");
+          $("#GPvecchiaLicense1").load("/licenses/GPL2.html", function () {
+            $("#GPvecchiaLicense1 a").attr(
+              "href",
+              "https://cran.r-project.org/web/licenses/GPL-2",
+            );
+          });
+          $("#GPvecchiaLicense2").load("/licenses/GPL3.html", function () {
+            $("#GPvecchiaLicense2 a").attr(
+              "href",
+              "https://cran.r-project.org/web/licenses/GPL-3",
+            );
+          });
+        });
+    
+        // GPy
+        $("#GPy").load("/packages/GPy.html", function () {
+          $("#GPyLanguage").load("/languages/Python.html");
+          $("#GPyLicense").load("/licenses/BSD3.html", function () {
+            $("#GPyLicense a").attr(
+              "href",
+              "https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt",
+            );
+          });
+        });
+    
+        // GPyTorch
+        $("#GPyTorch").load("/packages/GPyTorch.html", function () {
+          $("#GPyTorchLanguage").load("/languages/Python.html");
+          $("#GPyTorchLicense").load("/licenses/MIT.html", function () {
+            $("#GPyTorchLicense a").attr(
+              "href",
+              "https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE",
+            );
+          });
+        });
+    
+        // OpenTURNS
+        $("#OpenTURNS").load("/packages/OpenTURNS.html", function () {
+          $("#OpenTURNSLanguage1").load("/languages/Cpp.html");
+          $("#OpenTURNSLanguage2").load("/languages/Python.html");
+    
+          $("#OpenTURNSLicense").load("/licenses/LGPL.html", function () {
+            $("#OpenTURNSLicense a").attr(
+              "href",
+              "https://github.com/openturns/openturns/blob/master/LICENSE",
+            );
+          });
+        });
+    
+        // PyMC
+        $("#PyMC").load("/packages/PyMC.html", function () {
+          $("#PyMCLanguage").load("/languages/Python.html");
+          $("#PyMCLicense").load("/licenses/Apache2.html", function () {
+            $("#PyMCLicense a").attr(
+              "href",
+              "https://github.com/pymc-devs/pymc/blob/main/LICENSE",
+            );
+          });
+        });
+    
+        // scikit-learn
+        $("#scikit-learn").load("/packages/scikit-learn.html", function () {
+          $("#scikit-learnLanguage").load("/languages/Python.html");
+          $("#scikit-learnLicense").load("/licenses/BSD3.html", function () {
+            $("#scikit-learnLicense a").attr(
+              "href",
+              "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING",
+            );
+          });
+        });
+    
+        // SMT
+        $("#SMT").load("/packages/SMT.html", function () {
+          $("#SMTLanguage").load("/languages/Python.html");
+          $("#SMTLicense").load("/licenses/BSD3.html", function () {
+            $("#SMTLicense a").attr(
+              "href",
+              "https://github.com/SMTorg/smt/blob/master/LICENSE.txt",
+            );
+          });
+        });
+    
+        // Stheno
+        $("#Stheno").load("/packages/Stheno.html", function () {
+          $("#SthenoLanguage1").load("/languages/Julia.html");
+          $("#SthenoLanguage2").load("/languages/Python.html");
+    
+          $("#SthenoLicense").load("/licenses/MIT.html", function () {
+            $("#SthenoLicense a").attr(
+              "href",
+              "https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/LICENSE.md",
+            );
+          });
+        });
+    
+        // UQ[py]Lab Beta
+        $("#UQpyLabBeta").load("/packages/UQpyLabBeta.html", function () {
+          $("#UQpyLabBetaLanguage").load("/languages/Python.html");
+          $("#UQpyLabBetaLicense").load("/licenses/BSD3.html", function () {
+            $("#UQpyLabBetaLicense a").attr(
+              "href",
+              "https://www.uqlab.com/copy-of-release-notes",
+            );
+          });
+        });
+    
+        // UQLab
+        $("#UQLab").load("/packages/UQLab.html", function () {
+          $("#UQLabLanguage").load("/languages/Matlab.html");
+          $("#UQLabLicense").load("/licenses/BSD3.html", function () {
+            $("#UQLabLicense a").attr(
+              "href",
+              "https://www.uqlab.com/copy-of-release-notes",
+            );
+          });
+        });
+      });
+    </script>    
     <title>
         A comprehensive guide to Kriging metamodeling toolboxes
     </title>
@@ -162,7 +242,7 @@
             <h1 class="page-title" style="width: 1100px !important;">
                 A comprehensive guide to Kriging metamodeling toolboxes</h1>
         </header>
-        <div class="page-body">
+        <div class="page-body" style="width: 1000px !important;">
             <!-- SEARCHER -->
             <label>
                 <input type="text" id="searchInput" placeholder="Press ⌘ / ⌃ + K to search">
@@ -173,6 +253,7 @@
             <button id="filterGo" class="select-filter-go">GO</button>
             <button id="filterJulia" class="select-filter-julia">julia</button>
             <button id="filterMatlab" class="select-filter-matlab">MATLAB</button>
+            <button id="filterOctave" class="select-filter-octave">GNU Octave</button>
             <button id="filterPython" class="select-filter-python">Python</button>
             <button id="filterR" class="select-filter-r">R</button>
             <button id="filterRust" class="select-filter-rust">Rust</button>
@@ -198,24 +279,24 @@
                 </thead>
                 <!-- TABLE BODY ORDINE ALFABETICO -->
                 <tbody>
-                    <tr id="celerite"></tr>
-                    <tr id="DiceKriging"></tr>
-                    <tr id="egobox"></tr>
-                    <tr id="fbm"></tr>
-                    <tr id="GPflow"></tr>
-                    <tr id="GPflux"></tr>
-                    <tr id="GPML"></tr>
-                    <tr id="GPR"></tr>
-                    <tr id="GPstuff"></tr>
-                    <tr id="GPy"></tr>
-                    <tr id="GPyTorch"></tr>
-                    <tr id="OpenTurns"></tr>
-                    <tr id="PyMC"></tr>
-                    <tr id="scikitlearn"></tr>
-                    <tr id="SMT"></tr>
-                    <tr id="Stheno"></tr>
-                    <tr id="UQLab"></tr>
-                    <tr id="UQpyLab"></tr>
+                  <tr id="DiceKriging"></tr>
+                  <tr id="egobox"></tr>
+                  <tr id="fbm"></tr>
+                  <tr id="GPflow"></tr>
+                  <tr id="GPflux"></tr>
+                  <tr id="GPML"></tr>
+                  <tr id="GPR"></tr>
+                  <tr id="GPstuff"></tr>
+                  <tr id="GPvecchia"></tr>
+                  <tr id="GPy"></tr>
+                  <tr id="GPyTorch"></tr>
+                  <tr id="OpenTURNS"></tr>
+                  <tr id="PyMC"></tr>
+                  <tr id="scikit-learn"></tr>
+                  <tr id="SMT"></tr>
+                  <tr id="Stheno"></tr>
+                  <tr id="UQpyLabBeta"></tr>
+                  <tr id="UQLab"></tr>
                 </tbody>
             </table>
             <br>
@@ -312,6 +393,10 @@
 
             document.getElementById('filterMatlab').addEventListener('click', function () {
                 filterTableLanguage('Matlab');
+            });
+
+            document.getElementById('filterOctave').addEventListener('click', function () {
+              filterTableLanguage('Octave');
             });
 
             document.getElementById('filterPython').addEventListener('click', function () {

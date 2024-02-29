@@ -981,6 +981,12 @@ blockquote {
     font-weight: bold;
 }
 
+.select-value-color-octave {
+    background-color: #038FBF;
+    color: #ffff;
+    font-weight: bold;
+}
+
 .select-value-color-python {
     color: rgba(255, 222, 79, 1);
     background-color: #3776ab;
@@ -1183,6 +1189,33 @@ input::-moz-placeholder {
     padding: 0 0.5em;
 }
 
+
+.select-filter-octave {
+    display: inline-block;
+    padding: 0 0.5em;
+    background: rgba(206, 205, 202, 0.5);
+    border-radius: 3px;
+    border-color: rgba(206, 205, 202, 0.5);
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+    border-top-width: 1px;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    white-space: nowrap;
+    background-color: #038FBF;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.875rem;
+    width: 98;
+    height: 21;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
 .select-filter-python {
     display: inline-block;
     padding: 0 0.5em;
@@ -1365,44 +1398,73 @@ input::-moz-placeholder {
     padding: 0 0.5em;
 }
 
-#GPyTorch:hover,
-#UQLab:hover,
-#UQpyLab:hover,
-#GPflow:hover,
-#fbm:hover,
-#GPy:hover,
-#GPML:hover,
-#GPR:hover,
-#scikitlearn:hover,
-#PyMC:hover,
-#OpenTurns:hover,
-#egobox:hover,
-#Stheno:hover,
-#GPflux:hover,
-#SMT:hover,
-#DiceKriging:hover,
-#GPstuff:hover 
-{
-    background-color: #f7fff1;
+.url-value {
+    color: #838380; 
+    text-decoration: none; 
+    padding: 3px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px; 
 }
 
-#GPyTorch:hover td:first-child,
-#OpenTurns:hover td:first-child,
-#UQLab:hover td:first-child,
-#UQpyLab:hover td:first-child,
-#GPflow:hover td:first-child,
+.url-value:hover {
+    color: black; 
+    background-color: #DBEDDB; 
+}
+
+.version {
+    color: #838380; 
+    text-decoration: none; 
+    font-style: italic;
+    padding: 3px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px; 
+}
+
+.version:hover {
+    color: black; 
+    background-color: #DBEDDB; 
+}
+
+#DiceKriging:hover,
+#egobox:hover,
+#fbm:hover,
+#GPflow:hover,
+#GPflux:hover,
+#GPML:hover,
+#GPR:hover,
+#GPstuff:hover,
+#GPvecchia:hover,
+#GPy:hover,
+#GPyTorch:hover,
+#OpenTURNS:hover,
+#PyMC:hover,
+#scikit-learn:hover,
+#SMT:hover,
+#Stheno:hover,
+#UQpyLabBeta:hover,
+#UQLab:hover {
+  background-color: #f7fff1;
+}
+
+#DiceKriging:hover td:first-child,
+#egobox:hover td:first-child,
 #fbm:hover td:first-child,
-#GPy:hover td:first-child,
+#GPflow:hover td:first-child,
+#GPflux:hover td:first-child,
 #GPML:hover td:first-child,
 #GPR:hover td:first-child,
-#scikitlearn:hover td:first-child,
+#GPstuff:hover td:first-child,
+#GPvecchia:hover td:first-child,
+#GPy:hover td:first-child,
+#GPyTorch:hover td:first-child,
+#OpenTURNS:hover td:first-child,
 #PyMC:hover td:first-child,
-#Stheno:hover td:first-child,
+#scikit-learn:hover td:first-child,
 #SMT:hover td:first-child,
-#egobox:hover td:first-child,
-#GPflux:hover td:first-child,
-#DiceKriging:hover td:first-child,
-#GPstuff:hover td:first-child 
-{
-    background-color: #f7fff1;
+#Stheno:hover td:first-child,
+#UQpyLabBeta:hover td:first-child,
+#UQLab:hover td:first-child {
+  background-color: #f7fff1;
 }

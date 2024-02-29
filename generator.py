@@ -7,31 +7,31 @@ import packages.List as pk
 def get_Language(packages, framework) -> str:
     Language = ""
     if len(packages[framework]["Language"]) == 1:
-        Language += f"""$("#{framework}Language").load("/languages/{packages[framework]["Language"][0]}.html");"""
+        Language += f"""$("#{framework.translate(str.maketrans('', '', '[] .'))}Language").load("/languages/{packages[framework]["Language"][0].translate(str.maketrans('', '', '[] .'))}.html");"""
     else:
         for i, _ in enumerate(packages[framework]["Language"]):
             if i == 0:
-                Language += f"""$("#{framework}Language{i+1}").load("/languages/{packages[framework]["Language"][i]}.html");\n"""
+                Language += f"""$("#{framework.translate(str.maketrans('', '', '[] .'))}Language{i+1}").load("/languages/{packages[framework]["Language"][i].translate(str.maketrans('', '', '[] .'))}.html");\n"""
             else:
-                Language += f"""\t\t$("#{framework}Language{i+1}").load("/languages/{packages[framework]["Language"][i]}.html");\n"""
+                Language += f"""\t\t$("#{framework.translate(str.maketrans('', '', '[] .'))}Language{i+1}").load("/languages/{packages[framework]["Language"][i].translate(str.maketrans('', '', '[] .'))}.html");\n"""
     return Language
 
 
 def get_License(packages, framework) -> str:
     License = ""
     if len(packages[framework]["License"]["type"]) == 1:
-        License += f"""$("#{framework}License").load("/licenses/{packages[framework]["License"]["type"][0]}.html" , function () {{
-            $("#{framework}License a").attr("href", "{packages[framework]['License']['URL'][0]}");
+        License += f"""$("#{framework.translate(str.maketrans('', '', '[] .'))}License").load("/licenses/{packages[framework]["License"]["type"][0].translate(str.maketrans('', '', '[] .'))}.html" , function () {{
+            $("#{framework.translate(str.maketrans('', '', '[] .'))}License a").attr("href", "{packages[framework]['License']['URL'][0]}");
         }})"""
     else:
         for i, _ in enumerate(packages[framework]["License"]["type"]):
             if i == 0:
-                License += f"""$("#{framework}License{i+1}").load("/licenses/{packages[framework]["License"]["type"][i]}.html" , function () {{
-                    $("#{framework}License{i+1} a").attr("href", "{packages[framework]['License']['URL'][i]}");
+                License += f"""$("#{framework.translate(str.maketrans('', '', '[] .'))}License{i+1}").load("/licenses/{packages[framework]["License"]["type"][i].translate(str.maketrans('', '', '[] .'))}.html" , function () {{
+                    $("#{framework.translate(str.maketrans('', '', '[] .'))}License{i+1} a").attr("href", "{packages[framework]['License']['URL'][i]}");
                 }})\n"""
             else:
-                License += f"""\t\t$("#{framework}License{i+1}").load("/licenses/{packages[framework]["License"]["type"][i]}.html", function () {{
-                    $("#{framework}License{i+1} a").attr("href", "{packages[framework]['License']['URL'][i]}");
+                License += f"""\t\t$("#{framework.translate(str.maketrans('', '', '[] .'))}License{i+1}").load("/licenses/{packages[framework]["License"]["type"][i].translate(str.maketrans('', '', '[] .'))}.html", function () {{
+                    $("#{framework.translate(str.maketrans('', '', '[] .'))}License{i+1} a").attr("href", "{packages[framework]['License']['URL'][i]}");
                 }})\n"""
     return License
 
@@ -39,26 +39,26 @@ def get_License(packages, framework) -> str:
 def get_divLanguage(packages, framework) -> str:
     divLanguage = ""
     if len(packages[framework]["Language"]) == 1:
-        divLanguage += f"""<div id="{framework}Language"></div>\n"""
+        divLanguage += f"""<div id="{framework.translate(str.maketrans("", "", "[] ."))}Language"></div>\n"""
     else:
         for i, _ in enumerate(packages[framework]["Language"]):
             if i == 0:
-                divLanguage += f"""<div id="{framework}Language{i+1}"></div>\n"""
+                divLanguage += f"""<div id="{framework.translate(str.maketrans("", "", "[] ."))}Language{i+1}"></div>\n"""
             else:
-                divLanguage += f"""\t\t<div id="{framework}Language{i+1}"></div>\n"""
+                divLanguage += f"""\t\t<div id="{framework.translate(str.maketrans("", "", "[] ."))}Language{i+1}"></div>\n"""
     return divLanguage
 
 
 def get_divLicense(packages, framework) -> str:
     divLicense = ""
     if len(packages[framework]["License"]["type"]) == 1:
-        divLicense += f"""<div id="{framework}License"></div>\n"""
+        divLicense += f"""<div id="{framework.translate(str.maketrans("", "", "[] ."))}License"></div>\n"""
     else:
         for i, _ in enumerate(packages[framework]["License"]):
             if i == 0:
-                divLicense += f"""<div id="{framework}License{i+1}"></div>\n"""
+                divLicense += f"""<div id="{framework.translate(str.maketrans("", "", "[] ."))}License{i+1}"></div>\n"""
             else:
-                divLicense += f"""\t\t<div id="{framework}License{i+1}"></div>\n"""
+                divLicense += f"""\t\t<div id="{framework.translate(str.maketrans("", "", "[] ."))}License{i+1}"></div>\n"""
     return divLicense
 
 
@@ -96,50 +96,32 @@ def get_divDevelopers(packages, framework) -> str:
 def get_divDocs(packages, framework) -> str:
     divDocs = ""
     if len(packages[framework]["Docs"]) == 1:
-        divDocs += f"""
-            <a href="{packages[framework]["Docs"][0]["URL"]}" class="url-value">
-                {packages[framework]["Docs"][0]["link"]}
-            </a>
-            """
+        divDocs += f"""<span class="selected-value select-value-color-{packages[framework]["Docs"][0]["color"]}">
+        <a href="{packages[framework]["Docs"][0]["URL"]}" style="text-decoration: none">{packages[framework]["Docs"][0]["link"]}</a></span>"""
     else:
         for i, _ in enumerate(packages[framework]["Docs"]):
             if i == 0:
-                divDocs += f"""
-                    <a href="{packages[framework]["Docs"][i]["URL"]}" class="url-value">
-                        {packages[framework]["Docs"][i]["link"]}
-                    </a>
-                    """
+                divDocs += f"""<span class="selected-value select-value-color-{packages[framework]["Docs"][i]["color"]}">
+                <a href="{packages[framework]["Docs"][i]["URL"]}" style="text-decoration: none">{packages[framework]["Docs"][i]["link"]}</a></span>"""
             else:
-                divDocs += f"""\t\t
-                    <a href="{packages[framework]["Docs"][i]["URL"]}" class="url-value">
-                        {packages[framework]["Docs"][i]["link"]}
-                    </a>
-                    """
+                divDocs += f"""\t\t<span class="selected-value select-value-color-{packages[framework]["Docs"][i]["color"]}">
+                <a href="{packages[framework]["Docs"][i]["URL"]}" style="text-decoration: none">{packages[framework]["Docs"][i]["link"]}</a></span>"""
     return divDocs
 
 
 def get_divSupport(packages, framework) -> str:
     divSupport = ""
     if len(packages[framework]["Support"]) == 1:
-        divSupport += f"""
-            <a href="{packages[framework]["Support"][0]["URL"]}" class="url-value">
-                {packages[framework]["Support"][0]["link"]}
-            </a>
-            """
+        divSupport += f"""<span class="selected-value select-value-color-{packages[framework]["Support"][0]["color"]}">
+        <a href="{packages[framework]["Support"][0]["URL"]}" style="text-decoration: none" >{packages[framework]["Support"][0]["link"]}</a></span>"""
     else:
         for i, _ in enumerate(packages[framework]["Support"]):
             if i == 0:
-                divSupport += f"""
-                    <a href="{packages[framework]["Support"][i]["URL"]}" class="url-value">
-                        {packages[framework]["Support"][i]["link"]}
-                    </a>
-                    """
+                divSupport += f"""<span class="selected-value select-value-color-{packages[framework]["Support"][i]["color"]}">
+                    <a href="{packages[framework]["Support"][i]["URL"]}" style="text-decoration: none">{packages[framework]["Support"][i]["link"]}</a></span>"""
             else:
-                divSupport += f"""\t\t
-                    <a href="{packages[framework]["Support"][i]["URL"]}" class="url-value">
-                        {packages[framework]["Support"][i]["link"]}
-                    </a>
-                    """
+                divSupport += f"""\t\t<span class="selected-value select-value-color-{packages[framework]["Support"][i]["color"]}">
+                    <a href="{packages[framework]["Support"][i]["URL"]}" style="text-decoration: none">{packages[framework]["Support"][i]["link"]}</a></span>"""
     return divSupport
 
 
@@ -147,7 +129,7 @@ def generate_packages_load_MAIN(packages, framework) -> str:
 
     packages_load_MAIN = f"""
             // {framework}
-            $("#{framework}").load("/packages/{framework}.html", function () {{
+            $("#{framework.translate(str.maketrans("", "",  "[] ."))}").load("/packages/{framework.translate(str.maketrans('', '', '[] .'))}.html", function () {{
                 {get_Language(packages, framework)}
                 {get_License(packages, framework)}
             }});
@@ -163,7 +145,7 @@ def generate_HTML(packages, framework) -> str:
             <a href="{packages[framework]["URL"]}" style="text-decoration: none">
                 <b> {framework} </b>
                 <br style="margin-bottom: 8px" />
-                
+
                 <!-- REFERENCE -->
                 <a href="{packages[framework]["Reference"]["URL"]}" style="text-decoration: none">
                     <i> {packages[framework]["Reference"]["Authors"]} </i>
@@ -183,7 +165,7 @@ def generate_HTML(packages, framework) -> str:
 
         <!-- RELEASE -->
         <td class="cell-release">
-            <a href="{packages[framework]['Release']['URL']}" style="text-decoration: none">
+            <a href="{packages[framework]['Release']['URL']}" class="version" style="text-decoration: none">
                 {packages[framework]['Release']['version']}
             </a>
         </td>
@@ -257,15 +239,31 @@ def generate_HTML(packages, framework) -> str:
 def main() -> None:
 
     packages = pk.packages
-    load_package, table_rows, style_package_hover, style_package_hover_child = "", "", "", ""
+    load_package, table_rows, style_package_hover, style_package_hover_child = (
+        "",
+        "",
+        "",
+        "",
+    )
     for framework in sorted(packages.keys(), key=lambda x: x.lower()):
 
         package_HTML = generate_HTML(packages, framework)
-        with open(f"./packages_/{framework}.html", "w", encoding="UTF-8") as file:
+        with open(
+            f"./packages/{framework.translate(str.maketrans('', '', '[] .'))}.html",
+            "w",
+            encoding="UTF-8",
+        ) as file:
             file.write(package_HTML)
-        subprocess.run(["prettier", "--write", f"./packages_/{framework}.html"])  # pylint: disable=subprocess-run-check
+        subprocess.run(  # pylint: disable=subprocess-run-check
+            [
+                "prettier",
+                "--write",
+                f"./packages/{framework.translate(str.maketrans('', '', '[] .'))}.html",
+            ]
+        )
 
         load_package += generate_packages_load_MAIN(packages, framework)
+        framework = framework.translate(str.maketrans("", "", "[] ."))
         table_rows += f"""<tr id="{framework}"></tr>\n"""
         style_package_hover += f"""#{framework}:hover,\n"""
         style_package_hover_child += f"""#{framework}:hover  td:first-child,\n"""

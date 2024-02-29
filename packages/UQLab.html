@@ -3,12 +3,13 @@
   <a href="https://www.uqlab.com" style="text-decoration: none">
     <b> UQLab </b>
     <br style="margin-bottom: 8px" />
+
     <!-- REFERENCE -->
     <a
       href="https://ascelibrary.org/doi/10.1061/9780784413609.257"
       style="text-decoration: none"
     >
-      <i style="font-weight: 300"> Marelli et al. (2014) </i>
+      <i> Marelli et al. (2014) </i>
     </a>
   </a>
 </td>
@@ -25,14 +26,18 @@
 
 <!-- RELEASE -->
 <td class="cell-release">
-  <a href="https://www.uqlab.com/download" style="text-decoration: none">
+  <a
+    href="https://www.uqlab.com/release-notes"
+    class="version"
+    style="text-decoration: none"
+  >
     v2.0.0
   </a>
 </td>
 
 <!-- DEVELOPERS -->
 <td class="cell-dev">
-  <span class="selected-value select-value-color-gray">
+  <span class="selected-value select-value-color-blue">
     <a
       href="https://sudret.ibk.ethz.ch/software/uqlab.html"
       style="text-decoration: none"
@@ -44,84 +49,83 @@
 
 <!-- DOCS -->
 <td class="cell-documentation">
-  <a href="https://www.uqlab.com/documentation" class="url-value">
-    uqlab.com/documentation
-  </a>
+  <span class="selected-value select-value-color-default">
+    <a href="https://www.uqlab.com/documentation" style="text-decoration: none"
+      >docs</a
+    ></span
+  >
+  <span class="selected-value select-value-color-purple">
+    <a href="https://www.uqlab.com/user-manuals" style="text-decoration: none"
+      >user manuals</a
+    ></span
+  >
+  <span class="selected-value select-value-color-green">
+    <a href="https://www.uqlab.com/examples" style="text-decoration: none"
+      >examples</a
+    ></span
+  >
 </td>
 
 <!-- SUPPORT -->
 <td class="cell-support">
-  <a href="https://" class="url-value"> support-link </a>
+  <span class="selected-value select-value-color-blue">
+    <a href="https://www.uqlab.com/contact" style="text-decoration: none"
+      >contact form</a
+    ></span
+  >
+  <span class="selected-value select-value-color-green">
+    <a
+      href="https://uqworld.org/c/uq-with-uqlab/7"
+      style="text-decoration: none"
+      >UQWorld forum</a
+    ></span
+  >
 </td>
 
 <!-- BASIS -->
-<td class="cell-basis">
-  <span class="selected-value select-value-color-orange">
-    Ordinary Kriging
-  </span>
-  <span class="selected-value select-value-color-green"> Simple Kriging </span>
-  <span class="selected-value select-value-color-pink">
-    Universal Kriging
-  </span>
-</td>
+<td class="cell-basis"></td>
 
 <!-- KERNEL -->
 <td class="cell-kernel">
-  <span class="selected-value select-value-color-purple"> Isotropyic </span>
-  <span class="selected-value select-value-color-yellow"> Anisotrpic </span>
+  <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-  <span class="selected-value select-value-color-green"> Linear </span>
-  <span class="selected-value select-value-color-brown"> Exponential </span>
-  <span class="selected-value select-value-color-yellow"> Gaussian (RBF) </span>
-  <span class="selected-value select-value-color-blue"> Matérn </span>
+  <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
 </td>
 
 <!-- KERNEL MIXTURE -->
 <td class="cell-mixture" style="text-align: center">
-  <div class="checkbox checkbox-off"></div>
+  <div class="checkbox checkbox-on"></div>
 </td>
 
-<!-- OPTIMIZATION PROBLEM -->
+<!-- OPTIMIZATION PROBLEM SOLVER -->
 <td class="cell-opt-problem">
-  <span class="selected-value select-value-color-brown">
-    Cross validation estimate
-  </span>
-  <span class="selected-value select-value-color-gray">
-    Maximum-Likelihood estimation
-  </span>
+  <span class="selected-value select-value-color-brown"> Exact </span>
 </td>
 
 <!-- OPTIMIZATION ALGORITHM -->
-<td class="cell-opt-algo">
-  <span class="selected-value select-value-color-yellow"> CMA-ES </span>
-  <span class="selected-value select-value-color-red"> Genetic Algorithm </span>
-  <span class="selected-value select-value-color-purple"> Interior point </span>
-</td>
-
-<!-- HPC -->
-<!-- <td class="cell-HPC"><div class="checkbox checkbox-on"></div></td> -->
-
-<!-- CLOUD -->
-<!-- <td class="cell-cloud"><div class="checkbox checkbox-off"></div></td> -->
-
-<!-- RATING -->
-<!-- <td class="cell-rating"><span class="selected-value select-value-color-default">⭐️⭐️⭐️⭐️</span></td> -->
-
-<!-- PRO -->
-<!-- <td class="cell-pro">
-    <span class="selected-value select-value-color-blue">
-        HPC dispatcher
-    </span>
-    <span class="selected-value select-value-color-pink">
-        RBDO module
-    </span>
-</td> -->
-
-<!-- CONS -->
-<!-- <td class="cell-cons"></td> -->
-
-<!-- SUPPORT -->
-<!-- <td class="cell-check-support"><div class="checkbox checkbox-on"></div></td> -->
+<td class="cell-opt-algo"></td>
