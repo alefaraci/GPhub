@@ -30,7 +30,7 @@ python3 server.py
 
 The table is served at `http://localhost:8000/main.html` ➡️ [Link](http://localhost:8000/main.html)
 
-### Adding a new package
+### 🆕 Adding a new package
 
 To add a new package add a new dictionary entry to the `.packages/List.py` file having the following format:
 
@@ -90,7 +90,7 @@ Then build the project running:
 python3 build.py
 ```
 
-### To modify a package
+### ⚠️ To modify or fixing a package
 
 Modify the `.packages/List.py` file at the `package_name` entry point.
 
