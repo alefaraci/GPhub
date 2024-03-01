@@ -23,6 +23,7 @@ pip install aiohttp websockets watchdog
 You can start your server by executing:
 
 ```shell
+cd devs
 python3 server.py
 ```
 
@@ -89,6 +90,7 @@ To add a new package add a new dictionary entry to the `.packages/List.py` file 
 Then build the project running:
 
 ```shell
+cd devs
 python3 build.py
 ```
 
@@ -99,6 +101,7 @@ Modify the `.packages/List.py` file at the `package_name` entry point.
 Then rebuild the project running the script:
 
 ```shell
+cd devs
 python3 build.py
 ```
 
