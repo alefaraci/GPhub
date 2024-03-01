@@ -2,15 +2,15 @@
 
 A comprehensive guide to Kriging metamodeling toolboxes
 
-## Table.html
+## 📊 Table.html
 
 The comprehensive table is available by opening the file `Table.html` in whichever browser of your choice.
 
 ## 🧑🏻‍💻 Developing the table
 
-### Setting `watchdog` server
+### 🦮 Setting `watchdog` server
 
-#### Installation
+#### 🛠️ Installation
 
 You need to install the `aiohttp` package along with `websockets` for WebSocket support, and `watchdog` for monitoring file changes.
 
@@ -18,7 +18,7 @@ You need to install the `aiohttp` package along with `websockets` for WebSocket 
 pip install aiohttp websockets watchdog
 ```
 
-#### Running the server
+#### 🛜 Running the server
 
 You can start your server by executing:
 
@@ -26,7 +26,7 @@ You can start your server by executing:
 python3 server.py
 ```
 
-#### Open the table on the browser
+#### 🌐 Open the table on the browser
 
 The table is served at `http://localhost:8000/main.html` ➡️ [Link](http://localhost:8000/main.html)
 
@@ -90,7 +90,7 @@ Then build the project running:
 python3 build.py
 ```
 
-### ⚠️ To modify or fixing a package
+### ⚠️ Fixing or adding new data to an existing package
 
 Modify the `.packages/List.py` file at the `package_name` entry point.
 
