@@ -1,18 +1,16 @@
 # Kriging-Table-HTML
 
-A comprehensive guide to Kriging metamodeling toolboxes
-
-## 📊 Table.html
-
-The comprehensive table is available by opening the file `Table.html` in whichever browser of your choice.
+A comprehensive guide to Kriging metamodeling toolboxes is available in the `Table.html` file.
 
 ## 🧑🏻‍💻 Developing the table
 
-### 🦮 Setting `watchdog` server
+The table is built using `HTML`, `CSS`, and `JavaScript`, and it is served by a `Python server` using the `aiohttp` package and `websockets` for WebSocket support and `watchdog` for monitoring file changes.
+
+### Setting `aiohttp` server
 
 #### 🛠️ Installation
 
-You need to install the `aiohttp` package along with `websockets` for WebSocket support, and `watchdog` for monitoring file changes.
+You need to install the `aiohttp`, `websockets`, `watchdog` Python packages.
 
 ```shell
 pip install aiohttp websockets watchdog
