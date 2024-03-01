@@ -8,8 +8,6 @@ A comprehensive guide to Kriging metamodeling toolboxes is available in the `Tab
 
 The table is built using `HTML`, `CSS`, and `JavaScript`, and it is served by a `Python server` using the `aiohttp` package and `websockets` for WebSocket support and `watchdog` for monitoring file changes.
 
----
-
 ### Setting `aiohttp` server
 
 #### 🛠️ User installation
@@ -93,8 +91,6 @@ Then build the project running:
 ```shell
 python3 build.py
 ```
-
----
 
 ### ⚠️ Fixing or adding new data to an existing package
 
