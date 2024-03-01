@@ -1,3 +1,4 @@
+style = """
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -1427,44 +1428,7 @@ input::-moz-placeholder {
 }
 
 .link-style:hover {
-    color: #5778cd; /* Change to the orange color you prefer */
+    color: #5778CD; /* Change to the orange color you prefer */
 }
 
-#DiceKriging:hover,
-#DiceKriging:hover td:first-child,
-#egobox:hover,
-#egobox:hover td:first-child,
-#fbm:hover,
-#fbm:hover td:first-child,
-#GPflow:hover,
-#GPflow:hover td:first-child,
-#GPflux:hover,
-#GPflux:hover td:first-child,
-#GPML:hover,
-#GPML:hover td:first-child,
-#GPR:hover,
-#GPR:hover td:first-child,
-#GPstuff:hover,
-#GPstuff:hover td:first-child,
-#GPvecchia:hover,
-#GPvecchia:hover td:first-child,
-#GPy:hover,
-#GPy:hover td:first-child,
-#GPyTorch:hover,
-#GPyTorch:hover td:first-child,
-#OpenTURNS:hover,
-#OpenTURNS:hover td:first-child,
-#PyMC:hover,
-#PyMC:hover td:first-child,
-#scikit-learn:hover,
-#scikit-learn:hover td:first-child,
-#SMT:hover,
-#SMT:hover td:first-child,
-#Stheno:hover,
-#Stheno:hover td:first-child,
-#UQpyLabBeta:hover,
-#UQpyLabBeta:hover td:first-child,
-#UQLab:hover,
-#UQLab:hover td:first-child {
-    background-color: #f7fff1;
-}
+"""
