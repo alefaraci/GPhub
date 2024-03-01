@@ -2,13 +2,17 @@
 
 A comprehensive guide to Kriging metamodeling toolboxes is available in the `Table.html` file.
 
+---
+
 ## 🧑🏻‍💻 Developing the table
 
 The table is built using `HTML`, `CSS`, and `JavaScript`, and it is served by a `Python server` using the `aiohttp` package and `websockets` for WebSocket support and `watchdog` for monitoring file changes.
 
+---
+
 ### Setting `aiohttp` server
 
-#### 🛠️ Installation
+#### 🛠️ User installation
 
 You need to install the `aiohttp`, `websockets`, `watchdog` Python packages.
 
@@ -27,6 +31,8 @@ python3 server.py
 #### 🌐 Open the table on the browser
 
 The table is served at `http://localhost:8000/main.html` ➡️ [Link](http://localhost:8000/main.html)
+
+---
 
 ### 🆕 Adding a new package
 
@@ -88,6 +94,8 @@ Then build the project running:
 python3 build.py
 ```
 
+---
+
 ### ⚠️ Fixing or adding new data to an existing package
 
 Modify the `.packages/List.py` file at the `package_name` entry point.
@@ -97,3 +105,13 @@ Then rebuild the project running the script:
 ```shell
 python3 build.py
 ```
+
+---
+
+## Acknowledgements
+
+This project has received funding from the [European Union’s Horizon 2020](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en) research and innovation programme under the [Marie Sklodowska-Curie](https://marie-sklodowska-curie-actions.ec.europa.eu) grant agreement No. 955393.
+
+## License
+
+Licensed under the [MIT license](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE).
