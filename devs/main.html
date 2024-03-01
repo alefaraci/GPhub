@@ -423,14 +423,6 @@
 
         <!-- SCRIPTS -->
         <script>
-            var ws = new WebSocket("ws://localhost:8001/");
-            ws.onmessage = function (event) {
-                if (event.data === "reload") {
-                    window.location.reload();
-                }
-            };
-        </script>
-        <script>
             document.addEventListener("DOMContentLoaded", function () {
                 // Event listener for search input to filter table rows
                 document
