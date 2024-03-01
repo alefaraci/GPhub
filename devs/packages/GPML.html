@@ -1,5 +1,5 @@
-<!-- FRAMEWORK -->
-<td class="cell-framework">
+<!-- LIBRARY -->
+<td class="cell-library">
     <a
         href="http://gaussianprocess.org/gpml/code/matlab/doc/index.html"
         style="text-decoration: none"
@@ -41,13 +41,13 @@
 
 <!-- DEVELOPERS -->
 <td class="cell-dev">
-    <span class="selected-value select-value-color-purple">
+    <span class="selected-value select-value-color-yellow">
         <a href="https://www.cam.ac.uk" style="text-decoration: none">
             University of Cambridge
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-teal">
         <a
             href="https://www.kyb.tuebingen.mpg.de"
             style="text-decoration: none"
@@ -66,6 +66,13 @@
             >docs</a
         ></span
     >
+    <span class="selected-value select-value-color-default">
+        <a
+            href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+            style="text-decoration: none"
+            >user manual</a
+        ></span
+    >
 </td>
 
 <!-- SUPPORT -->
@@ -75,39 +82,202 @@
     ></span>
 </td>
 
-<!-- BASIS -->
-<td class="cell-basis"></td>
+<!-- FRAMEWORK -->
+<td class="cell-framework">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a
+    ></span>
+</td>
 
-<!-- KERNEL -->
-<td class="cell-kernel">
-    <!-- <span class="selected-value select-value-color-purple">
-                Isotropyic
-            </span>
-            <span class="selected-value select-value-color-yellow">
-                Anisotrpic
-            </span>  -->
+<!-- GPU -->
+<td class="cell-gpu" style="text-align: center">
+    <div class="checkbox checkbox-off"></div>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis">
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-green"> Zero</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> One</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-blue"> Constant</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Linear</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Polynomial</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Precomputed mean</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Predictive</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Nearest neighbor</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Weighted sum of projected cosines</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Scaled</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Product</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Power</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Mask</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Difference</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Warped</span
+        ></a
+    >
+</td>
+
+<!-- LENGTH SCALE -->
+<td class="cell-lengthscale">
+    <span class="selected-value select-value-color-purple"> Isotropic</span>
+    <span class="selected-value select-value-color-yellow"> Anisotropic</span>
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-    <!-- <span class="selected-value select-value-color-blue">
-                Constant
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Squared Exponential
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Periodic
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Change Points
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Matérn
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Custom
-            </span> -->
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-blue"> Constant</span></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            LinearWhite noise</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Picewice Polynomial</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern12</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern32</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern52</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Rational Quadratic</span
+        ></a
+    >
+    <a
+        href="http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Squared Exponential</span
+        ></a
+    >
 </td>
 
 <!-- KERNEL MIXTURE -->
@@ -115,10 +285,21 @@
     <div class="checkbox checkbox-on"></div>
 </td>
 
-<!-- OPTIMIZATION PROBLEM SOLVER -->
-<td class="cell-opt-problem">
-    <span class="selected-value select-value-color-brown"> Exact </span>
+<!-- MIXTURE MODEL -->
+<td class="cell-mixture-model">
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default"> </span
+    ></a>
 </td>
+
+<!-- ESTIMATION METHODS -->
+<td class="cell-estimation"></td>
 
 <!-- OPTIMIZATION ALGORITHM -->
 <td class="cell-opt-algo"></td>
+
+<!-- N RESTART -->
+<td class="cell-opt-restart"></td>
+
+<!-- NUGGET -->
+<td class="cell-opt-nugget"></td>

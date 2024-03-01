@@ -47,23 +47,6 @@ def start_watchdog(event_handler):
     observer.join()
 
 
-# if __name__ == "__main__":
-#     clients = set()
-
-#     def notify_clients():
-#         for ws in clients:
-#             asyncio.run(ws.send("reload"))
-
-#     event_handler = ChangeHandler(notify_clients)
-#     threading.Thread(target=lambda: start_watchdog(event_handler), daemon=True).start()
-#     threading.Thread(target=serve_http, daemon=True).start()
-
-#     # loop = asyncio.get_event_loop()
-#     loop = asyncio.get_running_loop()
-
-#     loop.run_until_complete(serve_websocket(clients))
-#     loop.run_forever()
-
 if __name__ == "__main__":
     clients = set()
 

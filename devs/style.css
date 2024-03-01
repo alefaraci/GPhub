@@ -939,6 +939,10 @@ blockquote {
     background-color: rgba(35, 131, 226, 0.07);
 }
 
+.select-value-color-teal {
+    background-color: rgba(199, 227, 229, 0.75);
+}
+
 .select-value-color-pink {
     background-color: rgba(245, 224, 233, 1);
 }
@@ -973,6 +977,18 @@ blockquote {
 
 .select-value-color-yellow {
     background-color: rgba(254, 236, 200, 1);
+}
+
+.select-value-color-blue {
+    background-color: rgba(211, 229, 239, 1);
+}
+
+.select-value-color-pageGlass {
+    background-color: undefined;
+}
+
+.select-value-color-washGlass {
+    background-color: undefined;
 }
 
 .select-value-color-matlab {
@@ -1027,18 +1043,6 @@ blockquote {
     background-color: #00599c;
     color: #ffffff;
     font-weight: bold;
-}
-
-.select-value-color-blue {
-    background-color: rgba(211, 229, 239, 1);
-}
-
-.select-value-color-pageGlass {
-    background-color: undefined;
-}
-
-.select-value-color-washGlass {
-    background-color: undefined;
 }
 
 .checkbox {
@@ -1100,6 +1104,13 @@ td:first-child {
 /* Top-left cell specific styling */
 th:first-child {
     z-index: 3;
+}
+
+.second-row th {
+    top: 32px;
+    background-color: #f6f8fa;
+    z-index: 2;
+    box-shadow: 0px -0px 0px 0.5px rgba(208, 215, 222, 1);
 }
 
 #searchInput {
@@ -1430,16 +1441,50 @@ input::-moz-placeholder {
     color: #5778cd; /* Change to the orange color you prefer */
 }
 
+table tr:hover {
+    background-color: #f7fff1 !important; /* Use !important to override any inline styles set by JavaScript */
+}
+
+#AbstractGPsjl:hover,
+#AbstractGPsjl:hover td:first-child,
+#albatross:hover,
+#albatross:hover td:first-child,
+#AutoGP:hover,
+#AutoGP:hover td:first-child,
+#AutoGPjl:hover,
+#AutoGPjl:hover td:first-child,
+#celerite:hover,
+#celerite:hover td:first-child,
+#celerite2:hover,
+#celerite2:hover td:first-child,
+#DACE:hover,
+#DACE:hover td:first-child,
+#deepgp:hover,
+#deepgp:hover td:first-child,
 #DiceKriging:hover,
 #DiceKriging:hover td:first-child,
 #egobox:hover,
 #egobox:hover td:first-child,
 #fbm:hover,
 #fbm:hover td:first-child,
+#friedrich:hover,
+#friedrich:hover td:first-child,
+#gaussianproc:hover,
+#gaussianproc:hover td:first-child,
+#GaussianProcessesjl:hover,
+#GaussianProcessesjl:hover td:first-child,
+#george:hover,
+#george:hover td:first-child,
+#go-kriging:hover,
+#go-kriging:hover td:first-child,
 #GPflow:hover,
 #GPflow:hover td:first-child,
 #GPflux:hover,
 #GPflux:hover td:first-child,
+#GpGp:hover,
+#GpGp:hover td:first-child,
+#GPJax:hover,
+#GPJax:hover td:first-child,
 #GPML:hover,
 #GPML:hover td:first-child,
 #GPR:hover,
@@ -1452,19 +1497,51 @@ input::-moz-placeholder {
 #GPy:hover td:first-child,
 #GPyTorch:hover,
 #GPyTorch:hover td:first-child,
+#GSTools:hover,
+#GSTools:hover td:first-child,
+#Keras-GP:hover,
+#Keras-GP:hover td:first-child,
+#libgp:hover,
+#libgp:hover td:first-child,
+#magptk:hover,
+#magptk:hover td:first-child,
+#MUQ:hover,
+#MUQ:hover td:first-child,
+#NeuralTangents:hover,
+#NeuralTangents:hover td:first-child,
 #OpenTURNS:hover,
 #OpenTURNS:hover td:first-child,
+#pyGPs:hover,
+#pyGPs:hover td:first-child,
+#PyKrige:hover,
+#PyKrige:hover td:first-child,
 #PyMC:hover,
 #PyMC:hover td:first-child,
+#PYRO:hover,
+#PYRO:hover td:first-child,
 #scikit-learn:hover,
 #scikit-learn:hover td:first-child,
 #SMT:hover,
 #SMT:hover td:first-child,
+#STAN:hover,
+#STAN:hover td:first-child,
 #Stheno:hover,
 #Stheno:hover td:first-child,
+#STK:hover,
+#STK:hover td:first-child,
+#SuperGauss:hover,
+#SuperGauss:hover td:first-child,
+#Surrogatesjl:hover,
+#Surrogatesjl:hover td:first-child,
+#TemporalGPjl:hover,
+#TemporalGPjl:hover td:first-child,
+#tinygp:hover,
+#tinygp:hover td:first-child,
 #UQpyLabBeta:hover,
 #UQpyLabBeta:hover td:first-child,
 #UQLab:hover,
-#UQLab:hover td:first-child {
+#UQLab:hover td:first-child,
+#UQpy:hover,
+#UQpy:hover td:first-child {
     background-color: #f7fff1;
 }

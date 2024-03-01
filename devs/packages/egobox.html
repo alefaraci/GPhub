@@ -1,5 +1,5 @@
-<!-- FRAMEWORK -->
-<td class="cell-framework">
+<!-- LIBRARY -->
+<td class="cell-library">
     <a href="https://github.com/relf/egobox" style="text-decoration: none">
         <b> egobox </b>
         <br style="margin-bottom: 8px" />
@@ -31,21 +31,30 @@
         class="version"
         style="text-decoration: none"
     >
-        0.15.3
+        v0.15.3
     </a>
 </td>
 
 <!-- DEVELOPERS -->
 <td class="cell-dev">
-    <span class="selected-value select-value-color-purple">
+    <span class="selected-value select-value-color-uiBlue">
         <a href="https://www.onera.fr/en" style="text-decoration: none">
             ONERA
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-blue">
         <a href="http://en.univ-toulouse.fr" style="text-decoration: none">
             University of Toulouse
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a
+            href="https://github.com/relf/egobox/graphs/contributors"
+            style="text-decoration: none"
+        >
+            egobox contributors
         </a>
     </span>
 </td>
@@ -68,50 +77,96 @@
     ></span>
 </td>
 
-<!-- BASIS -->
-<td class="cell-basis"></td>
+<!-- FRAMEWORK -->
+<td class="cell-framework">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a
+    ></span>
+</td>
 
-<!-- KERNEL -->
-<td class="cell-kernel">
-    <!-- <span class="selected-value select-value-color-purple">
-                Isotropyic
-            </span>
-            <span class="selected-value select-value-color-yellow">
-                Anisotrpic
-            </span>  -->
+<!-- GPU -->
+<td class="cell-gpu" style="text-align: center">
+    <div class="checkbox checkbox-off"></div>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis">
+    <a
+        href="https://github.com/relf/egobox/tree/master/gp#current-state"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-blue"> Constant</span></a
+    >
+    <a
+        href="https://github.com/relf/egobox/tree/master/gp#current-state"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Linear</span
+        ></a
+    >
+    <a
+        href="https://github.com/relf/egobox/tree/master/gp#current-state"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Quadratic</span
+        ></a
+    >
+</td>
+
+<!-- LENGTH SCALE -->
+<td class="cell-lengthscale">
+    <span class="selected-value select-value-color-default"> </span>
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-    <!-- <span class="selected-value select-value-color-blue">
-                Constant
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Squared Exponential
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Periodic
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Change Points
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Matérn
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Custom
-            </span> -->
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default">
+            Squared Exponential</span
+        ></a
+    >
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default">
+            Absolute Exponetial</span
+        ></a
+    >
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default">
+            Matern32</span
+        ></a
+    >
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default">
+            Matern52</span
+        ></a
+    >
 </td>
 
 <!-- KERNEL MIXTURE -->
 <td class="cell-mixture" style="text-align: center">
-    <div class="checkbox checkbox-on"></div>
+    <div class="checkbox checkbox-off"></div>
 </td>
 
-<!-- OPTIMIZATION PROBLEM SOLVER -->
-<td class="cell-opt-problem">
-    <span class="selected-value select-value-color-brown"> Exact </span>
+<!-- MIXTURE MODEL -->
+<td class="cell-mixture-model">
+    <a
+        href="https://github.com/relf/egobox/tree/master/gp#current-state"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> </span
+    ></a>
 </td>
+
+<!-- ESTIMATION METHODS -->
+<td class="cell-estimation"></td>
 
 <!-- OPTIMIZATION ALGORITHM -->
 <td class="cell-opt-algo"></td>
+
+<!-- N RESTART -->
+<td class="cell-opt-restart"></td>
+
+<!-- NUGGET -->
+<td class="cell-opt-nugget"></td>

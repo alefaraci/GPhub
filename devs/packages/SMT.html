@@ -1,5 +1,5 @@
-<!-- FRAMEWORK -->
-<td class="cell-framework">
+<!-- LIBRARY -->
+<td class="cell-library">
     <a
         href="https://smt.readthedocs.io/en/latest/index.html"
         style="text-decoration: none"
@@ -40,37 +40,46 @@
 
 <!-- DEVELOPERS -->
 <td class="cell-dev">
-    <span class="selected-value select-value-color-purple">
+    <span class="selected-value select-value-color-uiBlue">
         <a href="https://www.isae-supaero.fr/en/" style="text-decoration: none">
             ISAE SUPEAERO
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-blue">
         <a href="https://www.nasa.gov" style="text-decoration: none"> NASA </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-uiBlue">
         <a href="https://www.onera.fr/en" style="text-decoration: none">
             ONERA
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-blue">
         <a href="https://umich.edu" style="text-decoration: none">
             University of Michigan
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-blue">
         <a href="https://www.sandiego.edu" style="text-decoration: none">
             University of San Diego
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
+    <span class="selected-value select-value-color-red">
         <a href="https://www.polymtl.ca" style="text-decoration: none">
             Polytechnique Montréal
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a
+            href="https://github.com/SMTorg/smt/graphs/contributors"
+            style="text-decoration: none"
+        >
+            SMT contributors
         </a>
     </span>
 </td>
@@ -84,11 +93,11 @@
             >docs</a
         ></span
     >
-    <span class="selected-value select-value-color-blue">
+    <span class="selected-value select-value-color-purple">
         <a
             href="https://github.com/SMTorg/smt/tree/master/tutorial"
             style="text-decoration: none"
-            >tutorial</a
+            >tutorials</a
         ></span
     >
 </td>
@@ -96,54 +105,118 @@
 <!-- SUPPORT -->
 <td class="cell-support">
     <span class="selected-value select-value-color-default">
-        <a href="https://" style="text-decoration: none">support-link</a></span
-    >
+        <a href="" style="text-decoration: none"></a
+    ></span>
+</td>
+
+<!-- FRAMEWORK -->
+<td class="cell-framework">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a
+    ></span>
+</td>
+
+<!-- GPU -->
+<td class="cell-gpu" style="text-align: center">
+    <div class="checkbox checkbox-off"></div>
 </td>
 
 <!-- BASIS -->
-<td class="cell-basis"></td>
+<td class="cell-basis">
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-blue"> Constant</span></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Linear</span
+        ></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Quadratic</span
+        ></a
+    >
+</td>
 
-<!-- KERNEL -->
-<td class="cell-kernel">
-    <!-- <span class="selected-value select-value-color-purple">
-                Isotropyic
-            </span>
-            <span class="selected-value select-value-color-yellow">
-                Anisotrpic
-            </span>  -->
+<!-- LENGTH SCALE -->
+<td class="cell-lengthscale">
+    <span class="selected-value select-value-color-purple"> Isotropic</span>
+    <span class="selected-value select-value-color-yellow"> Anisotropic</span>
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-    <!-- <span class="selected-value select-value-color-blue">
-                Constant
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Squared Exponential
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Periodic
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Change Points
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Matérn
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Custom
-            </span> -->
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Power Exponential</span
+        ></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Absolute Exponetial</span
+        ></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Squared Exponetial</span
+        ></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern32</span
+        ></a
+    >
+    <a
+        href="https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern52</span
+        ></a
+    >
 </td>
 
 <!-- KERNEL MIXTURE -->
 <td class="cell-mixture" style="text-align: center">
-    <div class="checkbox checkbox-on"></div>
+    <div class="checkbox checkbox-off"></div>
 </td>
 
-<!-- OPTIMIZATION PROBLEM SOLVER -->
-<td class="cell-opt-problem">
-    <span class="selected-value select-value-color-brown"> Exact </span>
+<!-- MIXTURE MODEL -->
+<td class="cell-mixture-model">
+    <a href="javascript:void(0);" style="text-decoration: none">
+        <span class="selected-value select-value-color-default"> </span
+    ></a>
 </td>
+
+<!-- ESTIMATION METHODS -->
+<td class="cell-estimation"></td>
 
 <!-- OPTIMIZATION ALGORITHM -->
 <td class="cell-opt-algo"></td>
+
+<!-- N RESTART -->
+<td class="cell-opt-restart"></td>
+
+<!-- NUGGET -->
+<td class="cell-opt-nugget"></td>

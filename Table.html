@@ -1,0 +1,4183 @@
+<html style="width: 2600px !important"><!-- HEAD --><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                // DiceKriging
+                $("#DiceKriging").load(
+                    "/packages/DiceKriging.html",
+                    function () {
+                        $("#DiceKrigingLanguage").load("/languages/R.html");
+                        $("#DiceKrigingLicense1").load(
+                            "/licenses/GPL2.html",
+                            function () {
+                                $("#DiceKrigingLicense1 a").attr(
+                                    "href",
+                                    "https://cran.r-project.org/web/licenses/GPL-2",
+                                );
+                            },
+                        );
+                        $("#DiceKrigingLicense2").load(
+                            "/licenses/GPL3.html",
+                            function () {
+                                $("#DiceKrigingLicense2 a").attr(
+                                    "href",
+                                    "https://cran.r-project.org/web/licenses/GPL-3",
+                                );
+                            },
+                        );
+                    },
+                );
+
+                // egobox
+                $("#egobox").load("/packages/egobox.html", function () {
+                    $("#egoboxLanguage").load("/languages/Rust.html");
+                    $("#egoboxLicense").load(
+                        "/licenses/Apache2.html",
+                        function () {
+                            $("#egoboxLicense a").attr(
+                                "href",
+                                "https://github.com/relf/egobox/blob/master/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // fbm
+                $("#fbm").load("/packages/fbm.html", function () {
+                    $("#fbmLanguage").load("/languages/C.html");
+                    $("#fbmLicense").load("/licenses/BSL1.html", function () {
+                        $("#fbmLicense a").attr(
+                            "href",
+                            "https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads",
+                        );
+                    });
+                });
+
+                // GPflow
+                $("#GPflow").load("/packages/GPflow.html", function () {
+                    $("#GPflowLanguage").load("/languages/Python.html");
+                    $("#GPflowLicense").load(
+                        "/licenses/Apache2.html",
+                        function () {
+                            $("#GPflowLicense a").attr(
+                                "href",
+                                "https://github.com/GPflow/GPflow/blob/develop/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // GPflux
+                $("#GPflux").load("/packages/GPflux.html", function () {
+                    $("#GPfluxLanguage").load("/languages/Python.html");
+                    $("#GPfluxLicense").load(
+                        "/licenses/Apache2.html",
+                        function () {
+                            $("#GPfluxLicense a").attr(
+                                "href",
+                                "https://github.com/secondmind-labs/GPflux/blob/develop/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // GPML
+                $("#GPML").load("/packages/GPML.html", function () {
+                    $("#GPMLLanguage1").load("/languages/Matlab.html");
+                    $("#GPMLLanguage2").load("/languages/Octave.html");
+                    $("#GPMLLicense").load(
+                        "/licenses/FreeBSD.html",
+                        function () {
+                            $("#GPMLLicense a").attr(
+                                "href",
+                                "https://gitlab.com/hnickisch/gpml-matlab/-/blob/master/Copyright?ref_type=heads",
+                            );
+                        },
+                    );
+                });
+
+                // GPR
+                $("#GPR").load("/packages/GPR.html", function () {
+                    $("#GPRLanguage").load("/languages/Cpp.html");
+                    $("#GPRLicense").load(
+                        "/licenses/Apache2.html",
+                        function () {
+                            $("#GPRLicense a").attr(
+                                "href",
+                                "https://github.com/ChristophJud/GPR/blob/master/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // GPstuff
+                $("#GPstuff").load("/packages/GPstuff.html", function () {
+                    $("#GPstuffLanguage1").load("/languages/R.html");
+                    $("#GPstuffLanguage2").load("/languages/Matlab.html");
+                    $("#GPstuffLanguage3").load("/languages/Octave.html");
+                    $("#GPstuffLicense").load(
+                        "/licenses/GPL3.html",
+                        function () {
+                            $("#GPstuffLicense a").attr(
+                                "href",
+                                "https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt",
+                            );
+                        },
+                    );
+                });
+
+                // GPvecchia
+                $("#GPvecchia").load("/packages/GPvecchia.html", function () {
+                    $("#GPvecchiaLanguage").load("/languages/R.html");
+                    $("#GPvecchiaLicense1").load(
+                        "/licenses/GPL2.html",
+                        function () {
+                            $("#GPvecchiaLicense1 a").attr(
+                                "href",
+                                "https://cran.r-project.org/web/licenses/GPL-2",
+                            );
+                        },
+                    );
+                    $("#GPvecchiaLicense2").load(
+                        "/licenses/GPL3.html",
+                        function () {
+                            $("#GPvecchiaLicense2 a").attr(
+                                "href",
+                                "https://cran.r-project.org/web/licenses/GPL-3",
+                            );
+                        },
+                    );
+                });
+
+                // GPy
+                $("#GPy").load("/packages/GPy.html", function () {
+                    $("#GPyLanguage").load("/languages/Python.html");
+                    $("#GPyLicense").load("/licenses/BSD3.html", function () {
+                        $("#GPyLicense a").attr(
+                            "href",
+                            "https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt",
+                        );
+                    });
+                });
+
+                // GPyTorch
+                $("#GPyTorch").load("/packages/GPyTorch.html", function () {
+                    $("#GPyTorchLanguage").load("/languages/Python.html");
+                    $("#GPyTorchLicense").load(
+                        "/licenses/MIT.html",
+                        function () {
+                            $("#GPyTorchLicense a").attr(
+                                "href",
+                                "https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // OpenTURNS
+                $("#OpenTURNS").load("/packages/OpenTURNS.html", function () {
+                    $("#OpenTURNSLanguage1").load("/languages/Cpp.html");
+                    $("#OpenTURNSLanguage2").load("/languages/Python.html");
+                    $("#OpenTURNSLicense").load(
+                        "/licenses/LGPL.html",
+                        function () {
+                            $("#OpenTURNSLicense a").attr(
+                                "href",
+                                "https://github.com/openturns/openturns/blob/master/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // PyMC
+                $("#PyMC").load("/packages/PyMC.html", function () {
+                    $("#PyMCLanguage").load("/languages/Python.html");
+                    $("#PyMCLicense").load(
+                        "/licenses/Apache2.html",
+                        function () {
+                            $("#PyMCLicense a").attr(
+                                "href",
+                                "https://github.com/pymc-devs/pymc/blob/main/LICENSE",
+                            );
+                        },
+                    );
+                });
+
+                // scikit-learn
+                $("#scikit-learn").load(
+                    "/packages/scikit-learn.html",
+                    function () {
+                        $("#scikit-learnLanguage").load(
+                            "/languages/Python.html",
+                        );
+                        $("#scikit-learnLicense").load(
+                            "/licenses/BSD3.html",
+                            function () {
+                                $("#scikit-learnLicense a").attr(
+                                    "href",
+                                    "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING",
+                                );
+                            },
+                        );
+                    },
+                );
+
+                // SMT
+                $("#SMT").load("/packages/SMT.html", function () {
+                    $("#SMTLanguage").load("/languages/Python.html");
+                    $("#SMTLicense").load("/licenses/BSD3.html", function () {
+                        $("#SMTLicense a").attr(
+                            "href",
+                            "https://github.com/SMTorg/smt/blob/master/LICENSE.txt",
+                        );
+                    });
+                });
+
+                // Stheno
+                $("#Stheno").load("/packages/Stheno.html", function () {
+                    $("#SthenoLanguage1").load("/languages/Julia.html");
+                    $("#SthenoLanguage2").load("/languages/Python.html");
+                    $("#SthenoLicense").load("/licenses/MIT.html", function () {
+                        $("#SthenoLicense a").attr(
+                            "href",
+                            "https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/LICENSE.md",
+                        );
+                    });
+                });
+
+                // UQ[py]Lab Beta
+                $("#UQpyLabBeta").load(
+                    "/packages/UQpyLabBeta.html",
+                    function () {
+                        $("#UQpyLabBetaLanguage").load(
+                            "/languages/Python.html",
+                        );
+                        $("#UQpyLabBetaLicense").load(
+                            "/licenses/BSD3.html",
+                            function () {
+                                $("#UQpyLabBetaLicense a").attr(
+                                    "href",
+                                    "https://www.uqlab.com/copy-of-release-notes",
+                                );
+                            },
+                        );
+                    },
+                );
+
+                // UQLab
+                $("#UQLab").load("/packages/UQLab.html", function () {
+                    $("#UQLabLanguage").load("/languages/Matlab.html");
+                    $("#UQLabLicense").load("/licenses/BSD3.html", function () {
+                        $("#UQLabLicense a").attr(
+                            "href",
+                            "https://www.uqlab.com/copy-of-release-notes",
+                        );
+                    });
+                });
+            });
+        </script>
+
+        <title>A comprehensive guide to Kriging metamodeling toolboxes</title>
+        <style>
+            /* cspell:disable-file */
+            /* webkit printing magic: print all background colors */
+            html {
+                -webkit-print-color-adjust: exact;
+            }
+
+            * {
+                box-sizing: border-box;
+                -webkit-print-color-adjust: exact;
+            }
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            @media only screen {
+                body {
+                    margin: 50px;
+                    max-width: 900px;
+                    color: rgb(55, 53, 47);
+                }
+            }
+
+            body {
+                line-height: 1.5;
+            }
+
+            a,
+            a.visited {
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            .pdf-relative-link-path {
+                font-size: 80%;
+                color: #444;
+            }
+
+            h1,
+            h2,
+            h3 {
+                letter-spacing: -0.01em;
+                line-height: 1.2;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 0.75em;
+            }
+
+            h1 {
+                font-size: 1.875rem;
+                margin-top: 1.875rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                margin-top: 1.25rem;
+            }
+
+            .source {
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                padding: 1.5em;
+                word-break: break-all;
+            }
+
+            .callout {
+                border-radius: 3px;
+                padding: 1rem;
+            }
+
+            figure {
+                margin: 1.25em 0;
+                page-break-inside: avoid;
+            }
+
+            figcaption {
+                opacity: 0.5;
+                font-size: 85%;
+                margin-top: 0.5em;
+            }
+
+            mark {
+                background-color: transparent;
+            }
+
+            .indented {
+                padding-left: 1.5em;
+            }
+
+            hr {
+                background: transparent;
+                display: block;
+                width: 100%;
+                height: 1px;
+                visibility: visible;
+                border: none;
+                border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            @media only print {
+                img {
+                    max-height: 100vh;
+                    object-fit: contain;
+                }
+            }
+
+            @page {
+                margin: 1in;
+            }
+
+            .collection-content {
+                font-size: 0.875rem;
+            }
+
+            .column-list {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .column {
+                padding: 0 1em;
+            }
+
+            .column:first-child {
+                padding-left: 0;
+            }
+
+            .column:last-child {
+                padding-right: 0;
+            }
+
+            .table_of_contents-item {
+                display: block;
+                font-size: 0.875rem;
+                line-height: 1.3;
+                padding: 0.125rem;
+            }
+
+            .table_of_contents-indent-1 {
+                margin-left: 1.5rem;
+            }
+
+            .table_of_contents-indent-2 {
+                margin-left: 3rem;
+            }
+
+            .table_of_contents-indent-3 {
+                margin-left: 4.5rem;
+            }
+
+            .table_of_contents-link {
+                text-decoration: none;
+                opacity: 0.7;
+                border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+            }
+
+            table {
+                border: 1px solid rgb(255, 255, 255);
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid rgba(208, 215, 222, 1);
+                border-collapse: collapse;
+            }
+
+            th {
+                border: 1px solid rgb(255, 255, 255);
+                border-collapse: collapse;
+            }
+
+            table {
+                border-left: none;
+                border-right: none;
+            }
+
+            td {
+                font-weight: normal;
+                padding: 0.25em 0.5em;
+                line-height: 1.5;
+                min-height: 1.5em;
+                text-align: left;
+            }
+
+            th {
+                font-weight: normal;
+                padding: 0.25em 0.5em;
+                line-height: 1.75;
+                min-height: 1.5em;
+                text-align: left;
+            }
+
+            th {
+                color: rgba(55, 53, 47, 0.6);
+            }
+
+            ol,
+            ul {
+                margin: 0;
+                margin-block-start: 0.6em;
+                margin-block-end: 0.6em;
+            }
+
+            li > ol:first-child,
+            li > ul:first-child {
+                margin-block-start: 0.6em;
+            }
+
+            ul > li {
+                list-style: disc;
+            }
+
+            ul.to-do-list {
+                padding-inline-start: 0;
+            }
+
+            ul.to-do-list > li {
+                list-style: none;
+            }
+
+            .to-do-children-checked {
+                text-decoration: line-through;
+                opacity: 0.375;
+            }
+
+            ul.toggle > li {
+                list-style: none;
+            }
+
+            ul {
+                padding-inline-start: 1.7em;
+            }
+
+            ul > li {
+                padding-left: 0.1em;
+            }
+
+            ol {
+                padding-inline-start: 1.6em;
+            }
+
+            ol > li {
+                padding-left: 0.2em;
+            }
+
+            .mono ol {
+                padding-inline-start: 2em;
+            }
+
+            .mono ol > li {
+                text-indent: -0.4em;
+            }
+
+            .toggle {
+                padding-inline-start: 0em;
+                list-style-type: none;
+            }
+
+            /* Indent toggle children */
+            .toggle > li > details {
+                padding-left: 1.7em;
+            }
+
+            .toggle > li > details > summary {
+                margin-left: -1.1em;
+            }
+
+            .selected-value {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+            }
+
+            .collection-title {
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+            .page-description {
+                margin-bottom: 2em;
+            }
+
+            .simple-table {
+                margin-top: 1em;
+                font-size: 0.875rem;
+                empty-cells: show;
+            }
+
+            .simple-table td {
+                height: 29px;
+                min-width: 120px;
+            }
+
+            .simple-table th {
+                height: 29px;
+                min-width: 120px;
+            }
+
+            .simple-table-header-color {
+                background: rgb(247, 246, 243);
+                color: black;
+            }
+
+            .simple-table-header {
+                font-weight: 500;
+            }
+
+            time {
+                opacity: 0.5;
+            }
+
+            .icon {
+                display: inline-block;
+                max-width: 1.2em;
+                max-height: 1.2em;
+                text-decoration: none;
+                vertical-align: text-bottom;
+                margin-right: 0.5em;
+            }
+
+            img.icon {
+                border-radius: 3px;
+            }
+
+            .user-icon {
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 100%;
+                margin-right: 0.5rem;
+            }
+
+            .user-icon-inner {
+                font-size: 0.8em;
+            }
+
+            .text-icon {
+                border: 1px solid #000;
+                text-align: center;
+            }
+
+            .page-cover-image {
+                display: block;
+                object-fit: cover;
+                width: 100%;
+                max-height: 30vh;
+            }
+
+            .page-header-icon {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .page-header-icon-with-cover {
+                margin-top: -0.72em;
+                margin-left: 0.07em;
+            }
+
+            .page-header-icon img {
+                border-radius: 3px;
+            }
+
+            .link-to-page {
+                margin: 1em 0;
+                padding: 0;
+                border: none;
+                font-weight: 500;
+            }
+
+            p > .user {
+                opacity: 0.5;
+            }
+
+            td > .user,
+            td > time {
+                white-space: nowrap;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.5);
+                margin-right: 0.6em;
+                vertical-align: middle;
+            }
+
+            p {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .image {
+                border: none;
+                margin: 1.5em 0;
+                padding: 0;
+                border-radius: 0;
+                text-align: center;
+            }
+
+            .code,
+            code {
+                background: rgba(135, 131, 120, 0.15);
+                border-radius: 3px;
+                padding: 0.2em 0.4em;
+                border-radius: 3px;
+                font-size: 85%;
+                tab-size: 2;
+            }
+
+            code {
+                color: #eb5757;
+            }
+
+            .code {
+                padding: 1.5em 1em;
+            }
+
+            .code-wrap {
+                white-space: pre-wrap;
+                word-break: break-all;
+            }
+
+            .code > code {
+                background: none;
+                padding: 0;
+                font-size: 100%;
+                color: inherit;
+            }
+
+            blockquote {
+                font-size: 1.25em;
+                margin: 1em 0;
+                padding-left: 1em;
+                border-left: 3px solid rgb(55, 53, 47);
+            }
+
+            .bookmark {
+                text-decoration: none;
+                max-height: 8em;
+                padding: 0;
+                display: flex;
+                width: 100%;
+                align-items: stretch;
+            }
+
+            .bookmark-title {
+                font-size: 0.85em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 1.75em;
+                white-space: nowrap;
+            }
+
+            .bookmark-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bookmark-info {
+                flex: 4 1 180px;
+                padding: 12px 14px 14px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .bookmark-image {
+                width: 33%;
+                flex: 1 1 180px;
+                display: block;
+                position: relative;
+                object-fit: cover;
+                border-radius: 1px;
+            }
+
+            .bookmark-description {
+                color: rgba(55, 53, 47, 0.6);
+                font-size: 0.75em;
+                overflow: hidden;
+                max-height: 4.5em;
+                word-break: break-word;
+            }
+
+            .bookmark-href {
+                font-size: 0.75em;
+                margin-top: 0.25em;
+            }
+
+            .sans {
+                font-family:
+                    ui-sans-serif,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Helvetica,
+                    "Apple Color Emoji",
+                    Arial,
+                    sans-serif,
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol";
+            }
+
+            .code {
+                font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono",
+                    "Liberation Mono", Courier, monospace;
+            }
+
+            .serif {
+                font-family: Lyon-Text, Georgia, ui-serif, serif;
+            }
+
+            .mono {
+                font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+            }
+
+            .pdf .sans {
+                font-family:
+                    Inter,
+                    ui-sans-serif,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Helvetica,
+                    "Apple Color Emoji",
+                    Arial,
+                    sans-serif,
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol",
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans CJK JP";
+            }
+
+            .pdf:lang(zh-CN) .sans {
+                font-family:
+                    Inter,
+                    ui-sans-serif,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Helvetica,
+                    "Apple Color Emoji",
+                    Arial,
+                    sans-serif,
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol",
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans CJK SC";
+            }
+
+            .pdf:lang(zh-TW) .sans {
+                font-family:
+                    Inter,
+                    ui-sans-serif,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Helvetica,
+                    "Apple Color Emoji",
+                    Arial,
+                    sans-serif,
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol",
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans CJK TC";
+            }
+
+            .pdf:lang(ko-KR) .sans {
+                font-family:
+                    Inter,
+                    ui-sans-serif,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Helvetica,
+                    "Apple Color Emoji",
+                    Arial,
+                    sans-serif,
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol",
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans CJK KR";
+            }
+
+            .pdf .code {
+                font-family:
+                    Source Code Pro,
+                    "SFMono-Regular",
+                    Menlo,
+                    Consolas,
+                    "PT Mono",
+                    "Liberation Mono",
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK JP";
+            }
+
+            .pdf:lang(zh-CN) .code {
+                font-family:
+                    Source Code Pro,
+                    "SFMono-Regular",
+                    Menlo,
+                    Consolas,
+                    "PT Mono",
+                    "Liberation Mono",
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK SC";
+            }
+
+            .pdf:lang(zh-TW) .code {
+                font-family:
+                    Source Code Pro,
+                    "SFMono-Regular",
+                    Menlo,
+                    Consolas,
+                    "PT Mono",
+                    "Liberation Mono",
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK TC";
+            }
+
+            .pdf:lang(ko-KR) .code {
+                font-family:
+                    Source Code Pro,
+                    "SFMono-Regular",
+                    Menlo,
+                    Consolas,
+                    "PT Mono",
+                    "Liberation Mono",
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK KR";
+            }
+
+            .pdf .serif {
+                font-family:
+                    PT Serif,
+                    Lyon-Text,
+                    Georgia,
+                    ui-serif,
+                    serif,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Serif CJK JP";
+            }
+
+            .pdf:lang(zh-CN) .serif {
+                font-family:
+                    PT Serif,
+                    Lyon-Text,
+                    Georgia,
+                    ui-serif,
+                    serif,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Serif CJK SC";
+            }
+
+            .pdf:lang(zh-TW) .serif {
+                font-family:
+                    PT Serif,
+                    Lyon-Text,
+                    Georgia,
+                    ui-serif,
+                    serif,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Serif CJK TC";
+            }
+
+            .pdf:lang(ko-KR) .serif {
+                font-family:
+                    PT Serif,
+                    Lyon-Text,
+                    Georgia,
+                    ui-serif,
+                    serif,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Serif CJK KR";
+            }
+
+            .pdf .mono {
+                font-family:
+                    PT Mono,
+                    iawriter-mono,
+                    Nitti,
+                    Menlo,
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK JP";
+            }
+
+            .pdf:lang(zh-CN) .mono {
+                font-family:
+                    PT Mono,
+                    iawriter-mono,
+                    Nitti,
+                    Menlo,
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK SC";
+            }
+
+            .pdf:lang(zh-TW) .mono {
+                font-family:
+                    PT Mono,
+                    iawriter-mono,
+                    Nitti,
+                    Menlo,
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK TC";
+            }
+
+            .pdf:lang(ko-KR) .mono {
+                font-family:
+                    PT Mono,
+                    iawriter-mono,
+                    Nitti,
+                    Menlo,
+                    Courier,
+                    monospace,
+                    "Twemoji",
+                    "Noto Color Emoji",
+                    "Noto Sans Mono CJK KR";
+            }
+
+            .highlight-default {
+                color: rgba(55, 53, 47, 1);
+            }
+
+            .highlight-gray {
+                color: rgba(120, 119, 116, 1);
+                fill: rgba(120, 119, 116, 1);
+            }
+
+            .highlight-brown {
+                color: rgba(159, 107, 83, 1);
+                fill: rgba(159, 107, 83, 1);
+            }
+
+            .highlight-orange {
+                color: rgba(217, 115, 13, 1);
+                fill: rgba(217, 115, 13, 1);
+            }
+
+            .highlight-yellow {
+                color: rgba(203, 145, 47, 1);
+                fill: rgba(203, 145, 47, 1);
+            }
+
+            .highlight-teal {
+                color: rgba(68, 131, 97, 1);
+                fill: rgba(68, 131, 97, 1);
+            }
+
+            .highlight-blue {
+                color: rgba(51, 126, 169, 1);
+                fill: rgba(51, 126, 169, 1);
+            }
+
+            .highlight-purple {
+                color: rgba(144, 101, 176, 1);
+                fill: rgba(144, 101, 176, 1);
+            }
+
+            .highlight-pink {
+                color: rgba(193, 76, 138, 1);
+                fill: rgba(193, 76, 138, 1);
+            }
+
+            .highlight-red {
+                color: rgba(212, 76, 71, 1);
+                fill: rgba(212, 76, 71, 1);
+            }
+
+            .highlight-gray_background {
+                background: rgba(241, 241, 239, 1);
+            }
+
+            .highlight-brown_background {
+                background: rgba(244, 238, 238, 1);
+            }
+
+            .highlight-orange_background {
+                background: rgba(251, 236, 221, 1);
+            }
+
+            .highlight-yellow_background {
+                background: rgba(251, 243, 219, 1);
+            }
+
+            .highlight-teal_background {
+                background: rgba(237, 243, 236, 1);
+            }
+
+            .highlight-blue_background {
+                background: rgba(231, 243, 248, 1);
+            }
+
+            .highlight-purple_background {
+                background: rgba(244, 240, 247, 0.8);
+            }
+
+            .highlight-pink_background {
+                background: rgba(249, 238, 243, 0.8);
+            }
+
+            .highlight-red_background {
+                background: rgba(253, 235, 236, 1);
+            }
+
+            .block-color-default {
+                color: inherit;
+                fill: inherit;
+            }
+
+            .block-color-gray {
+                color: rgba(120, 119, 116, 1);
+                fill: rgba(120, 119, 116, 1);
+            }
+
+            .block-color-brown {
+                color: rgba(159, 107, 83, 1);
+                fill: rgba(159, 107, 83, 1);
+            }
+
+            .block-color-orange {
+                color: rgba(217, 115, 13, 1);
+                fill: rgba(217, 115, 13, 1);
+            }
+
+            .block-color-yellow {
+                color: rgba(203, 145, 47, 1);
+                fill: rgba(203, 145, 47, 1);
+            }
+
+            .block-color-teal {
+                color: rgba(68, 131, 97, 1);
+                fill: rgba(68, 131, 97, 1);
+            }
+
+            .block-color-blue {
+                color: rgba(51, 126, 169, 1);
+                fill: rgba(51, 126, 169, 1);
+            }
+
+            .block-color-purple {
+                color: rgba(144, 101, 176, 1);
+                fill: rgba(144, 101, 176, 1);
+            }
+
+            .block-color-pink {
+                color: rgba(193, 76, 138, 1);
+                fill: rgba(193, 76, 138, 1);
+            }
+
+            .block-color-red {
+                color: rgba(212, 76, 71, 1);
+                fill: rgba(212, 76, 71, 1);
+            }
+
+            .block-color-gray_background {
+                background: rgba(241, 241, 239, 1);
+            }
+
+            .block-color-brown_background {
+                background: rgba(244, 238, 238, 1);
+            }
+
+            .block-color-orange_background {
+                background: rgba(251, 236, 221, 1);
+            }
+
+            .block-color-yellow_background {
+                background: rgba(251, 243, 219, 1);
+            }
+
+            .block-color-teal_background {
+                background: rgba(237, 243, 236, 1);
+            }
+
+            .block-color-blue_background {
+                background: rgba(231, 243, 248, 1);
+            }
+
+            .block-color-purple_background {
+                background: rgba(244, 240, 247, 0.8);
+            }
+
+            .block-color-pink_background {
+                background: rgba(249, 238, 243, 0.8);
+            }
+
+            .block-color-red_background {
+                background: rgba(253, 235, 236, 1);
+            }
+
+            .select-value-color-uiBlue {
+                background-color: rgba(35, 131, 226, 0.07);
+            }
+
+            .select-value-color-pink {
+                background-color: rgba(245, 224, 233, 1);
+            }
+
+            .select-value-color-purple {
+                background-color: rgba(232, 222, 238, 1);
+            }
+
+            .select-value-color-green {
+                background-color: rgba(219, 237, 219, 1);
+            }
+
+            .select-value-color-gray {
+                background-color: rgba(227, 226, 224, 1);
+            }
+
+            .select-value-color-translucentGray {
+                background-color: rgba(255, 255, 255, 0.0375);
+            }
+
+            .select-value-color-orange {
+                background-color: rgba(250, 222, 201, 1);
+            }
+
+            .select-value-color-brown {
+                background-color: rgba(238, 224, 218, 1);
+            }
+
+            .select-value-color-red {
+                background-color: rgba(255, 226, 221, 1);
+            }
+
+            .select-value-color-yellow {
+                background-color: rgba(254, 236, 200, 1);
+            }
+
+            .select-value-color-matlab {
+                background-color: rgba(192, 76, 10, 1);
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-octave {
+                background-color: #038fbf;
+                color: #ffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-python {
+                color: rgba(255, 222, 79, 1);
+                background-color: #3776ab;
+                font-weight: bold;
+            }
+
+            .select-value-color-c {
+                background-color: #a9bacd;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-julia {
+                background-color: #9558b2;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-r {
+                background-color: #296cc2;
+                color: #dcdee0;
+                font-weight: bold;
+            }
+
+            .select-value-color-go {
+                background-color: #05acd7;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-rust {
+                background-color: #f56300;
+                color: #000000;
+                font-weight: bold;
+            }
+
+            .select-value-color-cpp {
+                background-color: #00599c;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .select-value-color-blue {
+                background-color: rgba(211, 229, 239, 1);
+            }
+
+            .select-value-color-pageGlass {
+                background-color: undefined;
+            }
+
+            .select-value-color-washGlass {
+                background-color: undefined;
+            }
+
+            .checkbox {
+                display: inline-flex;
+                vertical-align: text-bottom;
+                width: 16;
+                height: 16;
+                background-size: 16px;
+                margin-left: 2px;
+                margin-right: 5px;
+            }
+
+            .checkbox-on {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+            }
+
+            .checkbox-off {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+            }
+
+            table tr:nth-child(odd) {
+                background-color: #ffffff; /* Color for odd rows */
+            }
+
+            table tr:nth-child(even) {
+                background-color: #f6f8fa; /* Color for even rows */
+            }
+
+            th,
+            td {
+                text-align: left;
+                border: 1px solid rgba(208, 215, 222, 1);
+            }
+
+            /* Sticky first row */
+            th {
+                position: sticky;
+                top: 0px;
+                background-color: #f6f8fa;
+                z-index: 2;
+                box-shadow: 0px -0px 0px 0.5px rgba(208, 215, 222, 1);
+            }
+
+            td:first-child {
+                background-color: #f6f8fa;
+                z-index: 2;
+            }
+
+            /* Sticky first column */
+            th:first-child,
+            td:first-child {
+                position: sticky;
+                left: 0px;
+                /* background-color: #F6F8FA;  */
+                z-index: 1;
+                box-shadow: 0px -0px 0px 0.5px rgba(208, 215, 222, 1);
+            }
+
+            /* Top-left cell specific styling */
+            th:first-child {
+                z-index: 3;
+            }
+
+            #searchInput {
+                padding: 8px;
+                width: 300px;
+                border-radius: 10px;
+                border: 1px solid #d0d7de;
+                color: #838380;
+                background-color: #f6f8fa;
+                margin-bottom: 50px;
+            }
+
+            label {
+                position: relative;
+            }
+
+            label:before {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: 0px;
+                bottom: -7px;
+                width: 20px;
+                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 150 150' fill-rule='evenodd'><path fill='%23A9A9A9' d='m120.8 117.2-40-40c6.7-7.5 10.8-17.4 10.8-28.2C91.5 25.6 72.4 6.5 49 6.5S6.5 25.6 6.5 49 25.6 91.5 49 91.5c10.8 0 20.7-4.1 28.2-10.8l40 40c.5.5 1.1.7 1.8.7s1.3-.2 1.8-.7c.9-.9.9-2.5 0-3.5zM11.5 49c0-20.7 16.8-37.5 37.5-37.5S86.5 28.3 86.5 49 69.7 86.5 49 86.5 11.5 69.7 11.5 49z'></path><path stroke='%23A9A9A9' fill='%23A9A9A9' d='M74 51.5c-1.4 0-2.5-1.1-2.5-2.5 0-12.4-10.1-22.5-22.5-22.5-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5c15.2 0 27.5 12.3 27.5 27.5 0 1.4-1.1 2.5-2.5 2.5z'></path></svg>")
+                    center / contain no-repeat;
+            }
+
+            input {
+                padding: 10px 30px;
+                padding-left: 37px !important;
+            }
+
+            input::placeholder {
+                color: #a9a9a9;
+            }
+
+            input:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #a9a9a9;
+            }
+
+            input::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #a9a9a9;
+            }
+
+            input::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #a9a9a9;
+            }
+
+            input:-moz-placeholder {
+                /* Firefox 18- */
+                color: #a9a9a9;
+                opacity: 1; /* Firefox adds an opacity by default */
+            }
+
+            input::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #a9a9a9;
+                opacity: 1; /* Firefox adds an opacity by default */
+            }
+
+            .select-filter-matlab {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: rgba(192, 76, 10, 1);
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 73;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-octave {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #038fbf;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 98;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-python {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #3776ab;
+                color: rgba(255, 222, 79, 1);
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 63;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-julia {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #9558b2;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 46;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-r {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #296cc2;
+                color: #dcdee0;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 28;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-go {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #05acd7;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 36;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-rust {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #f56300;
+                color: #000000;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 50;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-cpp {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #00599c;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 42;
+                height: 21;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .select-filter-c {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                border-color: rgba(206, 205, 202, 0.5);
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 2px;
+                border-top-width: 1px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+                background-color: #a9bacd;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 0.875rem;
+                width: 28;
+                height: 21;
+                margin-left: 25px;
+                margin-right: 5px;
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            .url-value {
+                color: #838380;
+                text-decoration: none;
+                padding: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-radius: 3px;
+            }
+
+            .url-value:hover {
+                color: black;
+                background-color: #dbeddb;
+            }
+
+            .version {
+                color: #838380;
+                text-decoration: none;
+                font-style: italic;
+                padding: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-radius: 3px;
+            }
+
+            .version:hover {
+                color: black;
+                background-color: #dbeddb;
+            }
+
+            .link-style:hover {
+                color: #5778cd; /* Change to the orange color you prefer */
+            }
+
+            #DiceKriging:hover,
+            #DiceKriging:hover td:first-child,
+            #egobox:hover,
+            #egobox:hover td:first-child,
+            #fbm:hover,
+            #fbm:hover td:first-child,
+            #GPflow:hover,
+            #GPflow:hover td:first-child,
+            #GPflux:hover,
+            #GPflux:hover td:first-child,
+            #GPML:hover,
+            #GPML:hover td:first-child,
+            #GPR:hover,
+            #GPR:hover td:first-child,
+            #GPstuff:hover,
+            #GPstuff:hover td:first-child,
+            #GPvecchia:hover,
+            #GPvecchia:hover td:first-child,
+            #GPy:hover,
+            #GPy:hover td:first-child,
+            #GPyTorch:hover,
+            #GPyTorch:hover td:first-child,
+            #OpenTURNS:hover,
+            #OpenTURNS:hover td:first-child,
+            #PyMC:hover,
+            #PyMC:hover td:first-child,
+            #scikit-learn:hover,
+            #scikit-learn:hover td:first-child,
+            #SMT:hover,
+            #SMT:hover td:first-child,
+            #Stheno:hover,
+            #Stheno:hover td:first-child,
+            #UQpyLabBeta:hover,
+            #UQpyLabBeta:hover td:first-child,
+            #UQLab:hover,
+            #UQLab:hover td:first-child {
+                background-color: #f7fff1;
+            }
+        </style>
+
+
+</head>
+    <!-- BODY -->
+    <body>
+        <article id="Article" class="page sans">
+            <header style="width: 400px !important; height: 100px !important">
+                <!-- TABLE TITLE -->
+                <h1 class="page-title" style="width: 1100px !important">
+                    A comprehensive guide to Kriging metamodeling toolboxes
+                </h1>
+            </header>
+            <div class="page-body" style="width: 1000px !important">
+                <!-- SEARCHER -->
+                <label>
+                    <input type="text" id="searchInput" placeholder="Press ⌘ + K to search">
+                </label>
+                <!-- BUTTON -->
+                <button id="filterC" class="select-filter-c">C</button>
+                <button id="filterCpp" class="select-filter-cpp">C++</button>
+                <button id="filterGo" class="select-filter-go">GO</button>
+                <button id="filterJulia" class="select-filter-julia">
+                    julia
+                </button>
+                <button id="filterMatlab" class="select-filter-matlab">
+                    MATLAB
+                </button>
+                <button id="filterOctave" class="select-filter-octave">
+                    GNU Octave
+                </button>
+                <button id="filterPython" class="select-filter-python">
+                    Python
+                </button>
+                <button id="filterR" class="select-filter-r">R</button>
+                <button id="filterRust" class="select-filter-rust">Rust</button>
+                <!-- TABLE -->
+                <table id="myTable" class="collection-content">
+                    <!-- TABLE HEADER -->
+                    <thead>
+                        <tr>
+                            <th style="min-width: 9em; position: sticky">
+                                FRAMEWORK
+                            </th>
+                            <th style="min-width: 4.5em">LANGUAGE</th>
+                            <th>LICENSE</th>
+                            <th>RELEASE</th>
+                            <th style="min-width: 14.5em">
+                                DEVELOPERS &amp; FUNDING
+                            </th>
+                            <th style="min-width: 6.5em">DOCUMENTATION</th>
+                            <th style="min-width: 21em">
+                                COMMUNITY SUPPORT &amp; DISCUSSIONS
+                            </th>
+                            <th>TREND TYPES</th>
+                            <th>KERNEL</th>
+                            <th style="min-width: 19.5em">
+                                KERNEL FAMILIES &nbsp; <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" style="font-size: 119%; position: relative;" tabindex="0" ctxtmenu_counter="0"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D703 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo data-mjx-alternate="1">′</mo></msup><mo>;</mo><mi>θ</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
+                            </th>
+                            <th style="min-width: 9.5em">KERNEL MIXTURE</th>
+                            <th>SOLVER</th>
+                            <th style="min-width: 14.5em">
+                                OPTIMIZATION ALGORITHM
+                            </th>
+                        </tr>
+                    </thead>
+                    <!-- TABLE BODY ORDINE ALFABETICO -->
+
+                    <tbody>
+                        <tr id="DiceKriging"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://cran.r-project.org/package=DiceKriging" style="text-decoration: none">
+        <b> DiceKriging </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://www.jstatsoft.org/article/view/v051i01" style="text-decoration: none">
+            <i> Roustant et al. (2012) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="DiceKrigingLanguage"><span class="selected-value select-value-color-r">
+    <a href="https://www.r-project.org" style="text-decoration: none">R </a>
+</span>
+</div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="DiceKrigingLicense1"><span class="selected-value select-value-color-blue">
+    <a href="https://cran.r-project.org/web/licenses/GPL-2" style="text-decoration: none"> GPL-2.0 </a>
+</span>
+</div>
+    <div id="DiceKrigingLicense2"><span class="selected-value select-value-color-blue">
+  <a href="https://cran.r-project.org/web/licenses/GPL-3" style="text-decoration: none"> GPL-3.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://cran.r-project.org/src/contrib/DiceKriging_1.6.0.tar.gz" class="version" style="text-decoration: none">
+        v1.6.0
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.insa-toulouse.fr" style="text-decoration: none">
+            INSA Toulose
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://cran.r-project.org/web/packages/DiceKriging/DiceKriging.pdf" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://dicekrigingclub.github.io/www/" style="text-decoration: none">dicekrigingclub</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="egobox"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://github.com/relf/egobox" style="text-decoration: none">
+        <b> egobox </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://joss.theoj.org/papers/10.21105/joss.04737" style="text-decoration: none">
+            <i> Lafage (2022) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="egoboxLanguage"><span class="selected-value select-value-color-rust">
+    <a href="https://www.rust-lang.org" style="text-decoration: none">Rust</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="egoboxLicense"><span class="selected-value select-value-color-yellow">
+    <a href="https://github.com/relf/egobox/blob/master/LICENSE" style="text-decoration: none"> Apache-2.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/relf/egobox/releases/tag/0.15.3" class="version" style="text-decoration: none">
+        0.15.3
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.onera.fr/en" style="text-decoration: none">
+            ONERA
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="http://en.univ-toulouse.fr" style="text-decoration: none">
+            University of Toulouse
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/relf/egobox/tree/master/doc" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="fbm"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://glizen.com/radfordneal/fbm.software.html" style="text-decoration: none">
+        <b> fbm </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://link.springer.com/book/10.1007/978-1-4612-0745-0" style="text-decoration: none">
+            <i> Neal (1996) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="fbmLanguage"><span class="selected-value select-value-color-c">
+    <a href="https://www.open-std.org/jtc1/sc22/wg14/" style="text-decoration: none">C </a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="fbmLicense"><span class="selected-value select-value-color-orange">
+    <a href="https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads" style="text-decoration: none"> BSL-1.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://glizen.com/radfordneal/fbm.2022-04-21.doc/Release.2022-04-21.html" class="version" style="text-decoration: none">
+        v2022-04-21
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.statistics.utoronto.ca" style="text-decoration: none">
+            University of Toronto
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://glizen.com/radfordneal/fbm.2022-04-21.doc/index.html" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPflow"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://www.gpflow.org" style="text-decoration: none">
+        <b> GPflow </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://jmlr.org/papers/v18/16-537.html" style="text-decoration: none">
+            <i> Matthews et al. (2017) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPflowLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPflowLicense"><span class="selected-value select-value-color-yellow">
+    <a href="https://github.com/GPflow/GPflow/blob/develop/LICENSE" style="text-decoration: none"> Apache-2.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/GPflow/GPflow/releases/tag/v2.9.1" class="version" style="text-decoration: none">
+        v2.9.1
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.cam.ac.uk" style="text-decoration: none">
+            Cambridge University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.ox.ac.uk" style="text-decoration: none">
+            University of Oxford
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.kyoto-u.ac.jp" style="text-decoration: none">
+            Kyoto University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.manchester.ac.uk" style="text-decoration: none">
+            Manchster University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.lancaster.ac.uk" style="text-decoration: none">
+            Lancaster University
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://gpflow.github.io/GPflow/develop/getting_started.html" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-brown">
+        <a href="https://gpflow.slack.com/join/shared_invite/enQtOTE5MDA0Nzg5NjA2LTYwZWI3MzhjYjNlZWI1MWExYzZjMGNhOWIwZWMzMGY0YjVkYzAyYjQ4NjgzNDUyZTgyNzcwYjAyY2QzMWRmYjE#/shared-invite/email" style="text-decoration: none">slack</a></span>
+    <span class="selected-value select-value-color-purple">
+        <a href="https://github.com/GPflow/GPflow/discussions" style="text-decoration: none">GitHub discussions</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://stackoverflow.com/tags/gpflow" style="text-decoration: none">stackoverflow</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPflux"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://secondmind-labs.github.io/GPflux/#" style="text-decoration: none">
+        <b> GPflux </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://arxiv.org/abs/2104.05674" style="text-decoration: none">
+            <i> Dutordoir et al. (2021) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPfluxLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPfluxLicense"><span class="selected-value select-value-color-yellow">
+    <a href="https://github.com/secondmind-labs/GPflux/blob/develop/LICENSE" style="text-decoration: none"> Apache-2.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/secondmind-labs/GPflux/releases/tag/v0.4.3" class="version" style="text-decoration: none">
+        v0.4.3
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.secondmind.ai" style="text-decoration: none">
+            Secondimind labs
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://secondmind-labs.github.io/GPflux/#getting-started" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://secondmind-labs.slack.com/join/shared_invite/zt-ph07nuie-gMlkle__tjvXBay4FNSLkw#/shared-invite/email" style="text-decoration: none">slack</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPML"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="http://gaussianprocess.org/gpml/code/matlab/doc/index.html" style="text-decoration: none">
+        <b> GPML </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://jmlr.csail.mit.edu/papers/volume11/rasmussen10a/rasmussen10a.pdf" style="text-decoration: none">
+            <i> Rasmussen et al. (2010) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPMLLanguage1"><span class="selected-value select-value-color-matlab">
+    <a href="https://mathworks.com/products/matlab.html" style="text-decoration: none">MATLAB</a>
+</span></div>
+    <div id="GPMLLanguage2"><span class="selected-value select-value-color-octave">
+    <a href="https://octave.org" style="text-decoration: none">GNU Octave</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPMLLicense"><span class="selected-value select-value-color-green">
+    <a href="https://gitlab.com/hnickisch/gpml-matlab/-/blob/master/Copyright?ref_type=heads" style="text-decoration: none"> FreeBSD </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://gitlab.com/hnickisch/gpml-matlab/-/releases/v4.2+dev2" class="version" style="text-decoration: none">
+        v4.2
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.cam.ac.uk" style="text-decoration: none">
+            University of Cambridge
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.kyb.tuebingen.mpg.de" style="text-decoration: none">
+            Max Planck Institute
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="http://gaussianprocess.org/gpml/code/matlab/doc/" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPR"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://github.com/ChristophJud/GPR" style="text-decoration: none">
+        <b> GPR </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="" style="text-decoration: none">
+            <i> </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPRLanguage"><span class="selected-value select-value-color-cpp">
+    <a href="https://isocpp.org" style="text-decoration: none">C++</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPRLicense"><span class="selected-value select-value-color-yellow">
+    <a href="https://github.com/ChristophJud/GPR/blob/master/LICENSE" style="text-decoration: none"> Apache-2.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="" class="version" style="text-decoration: none"> </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.unibas.ch" style="text-decoration: none">
+            University of Basel
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPstuff"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://research.cs.aalto.fi//pml/software/gpstuff/" style="text-decoration: none">
+        <b> GPstuff </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://jmlr.csail.mit.edu/papers/v14/vanhatalo13a.html" style="text-decoration: none">
+            <i> Vanhatalo et al. (2017) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPstuffLanguage1"><span class="selected-value select-value-color-r">
+    <a href="https://www.r-project.org" style="text-decoration: none">R </a>
+</span>
+</div>
+    <div id="GPstuffLanguage2"><span class="selected-value select-value-color-matlab">
+    <a href="https://mathworks.com/products/matlab.html" style="text-decoration: none">MATLAB</a>
+</span></div>
+    <div id="GPstuffLanguage3"><span class="selected-value select-value-color-octave">
+    <a href="https://octave.org" style="text-decoration: none">GNU Octave</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPstuffLicense"><span class="selected-value select-value-color-blue">
+  <a href="https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt" style="text-decoration: none"> GPL-3.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/gpstuff-dev/gpstuff/releases/tag/v4.7" class="version" style="text-decoration: none">
+        v4.7
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.aalto.fi/en/department-of-computer-science" style="text-decoration: none">
+            Aalto University of Science
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://arxiv.org/pdf/1206.5754.pdf" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPvecchia"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://cran.r-project.org/package=GPvecchia" style="text-decoration: none">
+        <b> GPvecchia </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://arxiv.org/abs/1708.06302" style="text-decoration: none">
+            <i> Katzfuss et al. (2017) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPvecchiaLanguage"><span class="selected-value select-value-color-r">
+    <a href="https://www.r-project.org" style="text-decoration: none">R </a>
+</span>
+</div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPvecchiaLicense1"><span class="selected-value select-value-color-blue">
+    <a href="https://cran.r-project.org/web/licenses/GPL-2" style="text-decoration: none"> GPL-2.0 </a>
+</span>
+</div>
+    <div id="GPvecchiaLicense2"><span class="selected-value select-value-color-blue">
+  <a href="https://cran.r-project.org/web/licenses/GPL-3" style="text-decoration: none"> GPL-3.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://cran.r-project.org/src/contrib/GPvecchia_0.1.6.tar.gz" class="version" style="text-decoration: none">
+        v0.1.6
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.tamu.edu" style="text-decoration: none">
+            Texas A&amp;M University
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://cran.r-project.org/web/packages/GPvecchia/GPvecchia.pdf" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-blue">
+        <a href="https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html" style="text-decoration: none">tutorial</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="" style="text-decoration: none"></a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPy"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://sheffieldml.github.io/GPy/" style="text-decoration: none">
+        <b> GPy </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="http://github.com/SheffieldML/GPy" style="text-decoration: none">
+            <i> GPy (2012) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPyLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPyLicense"><span class="selected-value select-value-color-green">
+    <a href="https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt" style="text-decoration: none"> BSD-3-Clause </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/SheffieldML/GPy/releases/tag/v1.13.1" class="version" style="text-decoration: none">
+        v1.13.1
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.sheffield.ac.uk/dcs/research/groups/machine-learning" style="text-decoration: none">
+            University of Sheffield
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://gpy.readthedocs.io/en/deploy/" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-orange">
+        <a href="https://nbviewer.org/github/SheffieldML/notebook/blob/master/GPy/index.ipynb" style="text-decoration: none">jupyter notebooks</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://lists.shef.ac.uk/sympa/subscribe/gpy-users" style="text-decoration: none">user mailing list</a></span>
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/SheffieldML/GPy/discussions" style="text-decoration: none">GitHub discussions</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="GPyTorch"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://gpytorch.ai" style="text-decoration: none">
+        <b> GPyTorch </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://arxiv.org/abs/1809.11165" style="text-decoration: none">
+            <i> Gardner et al. (2018) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="GPyTorchLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="GPyTorchLicense"><span class="selected-value select-value-color-purple">
+  <a href="https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE" style="text-decoration: none"> MIT </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11" class="version" style="text-decoration: none">
+        v1.11
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.columbia.edu/" style="text-decoration: none">
+            Columbia University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.cornell.edu/" style="text-decoration: none">
+            Cornell University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-blue">
+        <a href="https://research.facebook.com" style="text-decoration: none">
+            Meta
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-orange">
+        <a href="https://www.nyu.edu/" style="text-decoration: none">
+            New York University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://www.upenn.edu/" style="text-decoration: none">
+            University of Pennsylvania
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://docs.gpytorch.ai/en/stable/" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://github.com/cornellius-gp/gpytorch/tree/master/examples/" style="text-decoration: none">examples</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/cornellius-gp/gpytorch/discussions" style="text-decoration: none">GitHub discussions</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="OpenTURNS"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://openturns.github.io/www/" style="text-decoration: none">
+        <b> OpenTURNS </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://link.springer.com/referenceworkentry/10.1007/978-3-319-11259-6_64-1" style="text-decoration: none">
+            <i> Baudin et al. (2016) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="OpenTURNSLanguage1"><span class="selected-value select-value-color-cpp">
+    <a href="https://isocpp.org" style="text-decoration: none">C++</a>
+</span></div>
+    <div id="OpenTURNSLanguage2"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="OpenTURNSLicense"><span class="selected-value select-value-color-default">
+  <a href="https://github.com/openturns/openturns/blob/master/LICENSE" style="text-decoration: none"> LGPL </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/openturns/openturns/releases/tag/v1.22" class="version" style="text-decoration: none">
+        v1.22
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.airbus.com/en" style="text-decoration: none">
+            Airbus Group
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.edf.fr/en/the-edf-group/inventing-the-future-of-energy/r-d-global-expertise" style="text-decoration: none">
+            EDF R&amp;D
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.phimeca.com" style="text-decoration: none">
+            Phimeca Engineering
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://imacs.polytechnique.fr" style="text-decoration: none">
+            IMACS
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.onera.fr/en" style="text-decoration: none">
+            ONERA
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="http://openturns.github.io/openturns/latest/contents.html" style="text-decoration: none">docs</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://app.gitter.im/#/room/#openturns_community:gitter.im" style="text-decoration: none">chat</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://openturns.discourse.group" style="text-decoration: none">forum</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://stackoverflow.com/questions/tagged/openturns" style="text-decoration: none">stackoverflow</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="PyMC"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://www.pymc.io/welcome.html" style="text-decoration: none">
+        <b> PyMC </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://peerj.com/articles/cs-1516/" style="text-decoration: none">
+            <i> Abril-Pla et al. (2023) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="PyMCLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="PyMCLicense"><span class="selected-value select-value-color-yellow">
+    <a href="https://github.com/pymc-devs/pymc/blob/main/LICENSE" style="text-decoration: none"> Apache-2.0 </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/pymc-devs/pymc/releases/tag/v5.10.4" class="version" style="text-decoration: none">
+        v5.10.4
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://arviz-devs.github.io/arviz/" style="text-decoration: none">
+            ArviZ-Devs
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.bu.edu" style="text-decoration: none">
+            Boston University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://research.google" style="text-decoration: none">
+            Google Research
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.utoronto.ca" style="text-decoration: none">
+            University of Toronto
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.sickkids.ca" style="text-decoration: none">
+            The Hospital for Sick Children
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://boards.greenhouse.io/philadelphiaphilliesrddepartment" style="text-decoration: none">
+            Philadelphia Phillies Baseball Operations Department
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.pymc-labs.com" style="text-decoration: none">
+            PyMC Labs
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.stonybrook.edu" style="text-decoration: none">
+            Stony Brook University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.unsl.edu.ar" style="text-decoration: none">
+            Universidad Nacional de San Luis
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.fz-juelich.de" style="text-decoration: none">
+            Forschungszentrum Jülich
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.ox.ac.uk" style="text-decoration: none">
+            Oxford University
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-blue">
+        <a href="https://numfocus.org" style="text-decoration: none">
+            NumFOCUS
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.mistplay.com" style="text-decoration: none">
+            Mistplay
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-blue">
+        <a href="https://odsc.com/california/?utm_source=pymc&amp;utm_medium=referral" style="text-decoration: none">
+            ODSC
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.adialab.ae" style="text-decoration: none">
+            ADIA Lab
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.pymc.io/projects/docs/en/stable/learn.html" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://www.pymc.io/projects/examples/en/latest/blog/tag/gaussian-process.html" style="text-decoration: none">example</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://www.pymc.io/projects/docs/en/stable/api/gp.html" style="text-decoration: none">API</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://discourse.pymc.io" style="text-decoration: none">forum</a></span>
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/pymc-devs/pymc/discussions" style="text-decoration: none">GitHub discussions</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="scikit-learn"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://scikit-learn.org/stable/#" style="text-decoration: none">
+        <b> scikit-learn </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html" style="text-decoration: none">
+            <i> Pedregosa et al. (2011) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="scikit-learnLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="scikit-learnLicense"><span class="selected-value select-value-color-green">
+    <a href="https://github.com/scikit-learn/scikit-learn/blob/main/COPYING" style="text-decoration: none"> BSD-3-Clause </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/scikit-learn/scikit-learn/releases/tag/1.4.1.post1" class="version" style="text-decoration: none">
+        v1.4.1
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://scikit-learn.org/stable/about.html#people" style="text-decoration: none">
+            Community driven
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.nvidia.com" style="text-decoration: none">
+            NVIDIA
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.inria.fr/en" style="text-decoration: none">
+            INRIA
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://huggingface.co" style="text-decoration: none">
+            Hugging Face
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.microsoft.com" style="text-decoration: none">
+            Microsoft
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.quansight.com/labs" style="text-decoration: none">
+            Quansight Labs
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://scikit-learn.org/stable/modules/gaussian_process.html" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://scikit-learn.org/stable/auto_examples/index.html#gaussian-process-for-machine-learning" style="text-decoration: none">examples</a></span>
+    <span class="selected-value select-value-color-blue">
+        <a href="https://scikit-learn.org/stable/tutorial/index.html" style="text-decoration: none">tutorial</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://scikit-learn.org/stable/modules/classes.html" style="text-decoration: none">API</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://blog.scikit-learn.org" style="text-decoration: none">blog</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://stackoverflow.com/questions/tagged/scikit-learn" style="text-decoration: none">stackoverflow</a></span>
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/scikit-learn/scikit-learn/discussions" style="text-decoration: none">GitHub discussions</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="SMT"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://smt.readthedocs.io/en/latest/index.html" style="text-decoration: none">
+        <b> SMT </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://www.sciencedirect.com/science/article/abs/pii/S096599782300162X?via%3Dihub" style="text-decoration: none">
+            <i> Saves et al. (2024) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="SMTLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="SMTLicense"><span class="selected-value select-value-color-green">
+    <a href="https://github.com/SMTorg/smt/blob/master/LICENSE.txt" style="text-decoration: none"> BSD-3-Clause </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/SMTorg/smt/releases/tag/v2.3.0" class="version" style="text-decoration: none">
+        v2.3.0
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.isae-supaero.fr/en/" style="text-decoration: none">
+            ISAE SUPEAERO
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.nasa.gov" style="text-decoration: none"> NASA </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.onera.fr/en" style="text-decoration: none">
+            ONERA
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://umich.edu" style="text-decoration: none">
+            University of Michigan
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.sandiego.edu" style="text-decoration: none">
+            University of San Diego
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.polymtl.ca" style="text-decoration: none">
+            Polytechnique Montréal
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://smt.readthedocs.io/en/stable/" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-blue">
+        <a href="https://github.com/SMTorg/smt/tree/master/tutorial" style="text-decoration: none">tutorial</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://" style="text-decoration: none">support-link</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="Stheno"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://wessel.ai/stheno/docs/_build/html/index.html" style="text-decoration: none">
+        <b> Stheno </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://willtebbutt.github.io/resources/stheno_juliacon_2019.pdf" style="text-decoration: none">
+            <i> Tebbutt et al. (2019) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="SthenoLanguage1"><span class="selected-value select-value-color-julia">
+    <a href="https://julialang.org" style="text-decoration: none">julia</a>
+</span></div>
+    <div id="SthenoLanguage2"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="SthenoLicense"><span class="selected-value select-value-color-purple">
+  <a href="https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/LICENSE.md" style="text-decoration: none"> MIT </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://github.com/JuliaGaussianProcesses/Stheno.jl/releases/tag/v0.8.2" class="version" style="text-decoration: none">
+        v0.8.2
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.cam.ac.uk" style="text-decoration: none">
+            University of Cambridge
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://wessel.ai/stheno/docs/_build/html/index.html" style="text-decoration: none">py docs</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://wessel.ai/stheno/docs/_build/html/readme.html#examples" style="text-decoration: none">py examples</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://wessel.ai/stheno/docs/_build/html/api.html" style="text-decoration: none">py API</a></span>
+    <span class="selected-value select-value-color-default">
+        <a href="https://juliagaussianprocesses.github.io/Stheno.jl/stable/" style="text-decoration: none">jl docs</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://juliagaussianprocesses.github.io/Stheno.jl/stable/examples_note/" style="text-decoration: none">jl examples</a></span>
+    <span class="selected-value select-value-color-yellow">
+        <a href="https://juliagaussianprocesses.github.io/Stheno.jl/stable/api/" style="text-decoration: none">jl API</a></span>
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.youtube.com/watch?v=OO3BBkGEMV8" style="text-decoration: none">talk</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-default">
+        <a href="https://github.com/wesselb/stheno/discussions" style="text-decoration: none">GitHub discussions</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="UQpyLabBeta"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://uqpylab.uq-cloud.io" style="text-decoration: none">
+        <b> UQ[py]Lab Beta </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://www.eccomasproceedia.org/conferences/thematic-conferences/uncecomp-2021/8033" style="text-decoration: none">
+            <i> Lataniotis et al. (2021) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="UQpyLabBetaLanguage"><span class="selected-value select-value-color-python">
+    <a href="https://www.python.org" style="text-decoration: none">Python</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="UQpyLabBetaLicense"><span class="selected-value select-value-color-green">
+    <a href="https://www.uqlab.com/copy-of-release-notes" style="text-decoration: none"> BSD-3-Clause </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://uqpylab.uq-cloud.io/#beta-testing-application" class="version" style="text-decoration: none">
+        v0.95
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://sudret.ibk.ethz.ch/software/uqpylab.html" style="text-decoration: none">
+            ETH Zürich
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://uqpylab.uq-cloud.io/getting-started" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-purple">
+        <a href="https://uqpylab.uq-cloud.io/documentation" style="text-decoration: none">user manuals</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://uqpylab.uq-cloud.io/examples" style="text-decoration: none">examples</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.uqlab.com/contact" style="text-decoration: none">contact form</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://uqworld.org/c/uq-with-uqlab/7" style="text-decoration: none">UQWorld forum</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                        <tr id="UQLab"><!-- FRAMEWORK -->
+<td class="cell-framework">
+    <a href="https://www.uqlab.com" style="text-decoration: none">
+        <b> UQLab </b>
+        <br style="margin-bottom: 8px">
+
+        <!-- REFERENCE -->
+        </a><a href="https://ascelibrary.org/doi/10.1061/9780784413609.257" style="text-decoration: none">
+            <i> Marelli et al. (2014) </i>
+        </a>
+
+</td>
+
+<!-- LANGUAGE -->
+<td class="cell-language">
+    <div id="UQLabLanguage"><span class="selected-value select-value-color-matlab">
+    <a href="https://mathworks.com/products/matlab.html" style="text-decoration: none">MATLAB</a>
+</span></div>
+</td>
+
+<!-- LICENSE -->
+<td class="cell-license">
+    <div id="UQLabLicense"><span class="selected-value select-value-color-green">
+    <a href="https://www.uqlab.com/copy-of-release-notes" style="text-decoration: none"> BSD-3-Clause </a>
+</span>
+</div>
+</td>
+
+<!-- RELEASE -->
+<td class="cell-release">
+    <a href="https://www.uqlab.com/release-notes" class="version" style="text-decoration: none">
+        v2.0.0
+    </a>
+</td>
+
+<!-- DEVELOPERS -->
+<td class="cell-dev">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://sudret.ibk.ethz.ch/software/uqlab.html" style="text-decoration: none">
+            ETH Zürich
+        </a>
+    </span>
+</td>
+
+<!-- DOCS -->
+<td class="cell-documentation">
+    <span class="selected-value select-value-color-default">
+        <a href="https://www.uqlab.com/documentation" style="text-decoration: none">docs</a></span>
+    <span class="selected-value select-value-color-purple">
+        <a href="https://www.uqlab.com/user-manuals" style="text-decoration: none">user manuals</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://www.uqlab.com/examples" style="text-decoration: none">examples</a></span>
+</td>
+
+<!-- SUPPORT -->
+<td class="cell-support">
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.uqlab.com/contact" style="text-decoration: none">contact form</a></span>
+    <span class="selected-value select-value-color-green">
+        <a href="https://uqworld.org/c/uq-with-uqlab/7" style="text-decoration: none">UQWorld forum</a></span>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis"></td>
+
+<!-- KERNEL -->
+<td class="cell-kernel">
+    <!-- <span class="selected-value select-value-color-purple">
+                Isotropyic
+            </span>
+            <span class="selected-value select-value-color-yellow">
+                Anisotrpic
+            </span>  -->
+</td>
+
+<!-- CORRELATION -->
+<td class="cell-correlation">
+    <!-- <span class="selected-value select-value-color-blue">
+                Constant
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Squared Exponential
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Periodic
+            </span>
+            <span class="selected-value select-value-color-brown">
+                Change Points
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Matérn
+            </span>
+            <span class="selected-value select-value-color-blue">
+                Custom
+            </span> -->
+</td>
+
+<!-- KERNEL MIXTURE -->
+<td class="cell-mixture" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- OPTIMIZATION PROBLEM SOLVER -->
+<td class="cell-opt-problem">
+    <span class="selected-value select-value-color-brown"> Exact </span>
+</td>
+
+<!-- OPTIMIZATION ALGORITHM -->
+<td class="cell-opt-algo"></td>
+</tr>
+                    </tbody>
+                </table>
+                <br>
+                <!-- FOOTER -->
+
+                <p style="
+                        font-size: 9pt !important;
+                        color: #9ca2a8;
+                        margin-top: -15px !important;
+                        width: 2000px !important;
+                    ">
+                    <i>Source: © A. Faraci, P. Beaurepaire, N. Gayton; A
+                        comprehensive guide to Kriging metamodeling toolboxes:
+                        bridging theory with practice through features,
+                        limitations, and performance.
+                    </i>
+                </p>
+                <p style="
+                        font-size: 9pt !important;
+                        color: #9ca2a8;
+                        margin-top: -1px !important;
+                        width: 2000px !important;
+                    ">
+                    <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en" class="link-style" style="text-decoration: none; font-style: italic">
+                        This Project has received funding from the European
+                        Union’s Horizon 2020 research and innovation programme
+                        under Marie Sklodowska-Curie project GREYDIENT – Grant
+                        Agreement n°955393
+                    </a>
+                </p>
+                <br><br>
+            </div>
+        </article>
+        <span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+
+        <!-- SCRIPTS -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Event listener for search input to filter table rows
+                document
+                    .getElementById("searchInput")
+                    .addEventListener("keyup", function () {
+                        var searchQuery = this.value.toLowerCase();
+                        var table = document.getElementById("myTable");
+                        var tableRows = table.getElementsByTagName("tr");
+
+                        for (var i = 1; i < tableRows.length; i++) {
+                            // Starting from 1 to skip the header row
+                            var cells = tableRows[i].getElementsByTagName("td");
+                            var rowText = Array.from(cells)
+                                .map((cell) => cell.textContent.toLowerCase())
+                                .join(" ");
+                            var displayStyle =
+                                rowText.indexOf(searchQuery) > -1 ? "" : "none";
+
+                            tableRows[i].style.display = displayStyle;
+                        }
+                    });
+
+                // Event listener for document to capture "Cmd+K" or "Ctrl+K"
+                document.addEventListener("keydown", function (e) {
+                    if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+                        e.preventDefault(); // Prevent the default action to ensure the shortcut works as intended
+                        document.getElementById("searchInput").focus(); // Focus the search input
+                    }
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var input = document.getElementById("searchInput");
+                if (navigator.platform.startsWith("Win")) {
+                    input.placeholder = "Press ⌃ CTRL + K to search";
+                } else if (navigator.platform.startsWith("Linux")) {
+                    input.placeholder = "Press ⌃ CTRL + K to search";
+                } else if (navigator.platform.startsWith("Mac")) {
+                    input.placeholder = "Press ⌘ + K to search";
+                } else {
+                    // Default or unknown OS
+                    input.placeholder = "Press ⌘ / ⌃ + K to search";
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var table = document.getElementById("myTable");
+                var lastFilter = "";
+
+                function filterTableLanguage(filter) {
+                    var tableRows = table.getElementsByTagName("tr");
+                    var isFilterActive =
+                        lastFilter.toLowerCase() === filter.toLowerCase();
+
+                    for (var i = 1; i < tableRows.length; i++) {
+                        // Assuming the first row is the header
+                        // Target only the second column (index 1) of the current row
+                        var cellText =
+                            tableRows[i].cells[1].textContent.toLowerCase();
+                        if (!isFilterActive && filter !== "") {
+                            var displayStyle =
+                                cellText.indexOf(filter.toLowerCase()) > -1
+                                    ? ""
+                                    : "none";
+                            tableRows[i].style.display = displayStyle;
+                        } else {
+                            tableRows[i].style.display = "";
+                        }
+                    }
+                    lastFilter = isFilterActive ? "" : filter; // Toggle the last filter
+                }
+
+                document
+                    .getElementById("filterC")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("C ");
+                    });
+
+                document
+                    .getElementById("filterCpp")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("C++");
+                    });
+
+                document
+                    .getElementById("filterGo")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Go");
+                    });
+
+                document
+                    .getElementById("filterJulia")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Julia");
+                    });
+
+                document
+                    .getElementById("filterMatlab")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Matlab");
+                    });
+
+                document
+                    .getElementById("filterOctave")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Octave");
+                    });
+
+                document
+                    .getElementById("filterPython")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Python");
+                    });
+
+                document
+                    .getElementById("filterR")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("R ");
+                    });
+
+                document
+                    .getElementById("filterRust")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Rust");
+                    });
+
+                // Optional: Clear the filter when the search input is modified
+                document
+                    .getElementById("searchInput")
+                    .addEventListener("keyup", function () {
+                        // Clear the last filter when the user types in the search
+                        lastFilter = "";
+                        // Existing search functionality here...
+                    });
+                // Rest of your search functionality...
+            });
+        </script>
+
+
+</body></html>

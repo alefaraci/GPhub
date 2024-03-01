@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" style="width: 2600px !important">
+<!-- HEAD -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>{{.Title}}</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+<!-- BODY -->
+
+<body>
+    <article id="Article" class="page sans">
+        <header style="width: 400px !important; height: 100px !important">
+            <!-- TABLE TITLE -->
+            <h1 class="page-title" style="width: 1200px !important">
+                {{.Title}}
+            </h1>
+        </header>
+        <div class="page-body" style="width: 1000px !important">
+            <!-- SEARCHER -->
+            <label>
+                <input type="text" id="searchInput" placeholder="Press ⌘ / ⌃ + K to search" />
+            </label>
+            <!-- BUTTON -->
+            <button id="filterC" class="select-filter-c">C</button>
+            <button id="filterCpp" class="select-filter-cpp">C++</button>
+            <button id="filterGo" class="select-filter-go">GO</button>
+            <button id="filterJulia" class="select-filter-julia">julia</button>
+            <button id="filterMatlab" class="select-filter-matlab">MATLAB</button>
+            <button id="filterOctave" class="select-filter-octave">GNU Octave</button>
+            <button id="filterPython" class="select-filter-python">Python</button>
+            <button id="filterR" class="select-filter-r">R</button>
+            <button id="filterRust" class="select-filter-rust">Rust</button>
+            <!-- TABLE -->
+            <table id="myTable" class="collection-content">
+                <!-- TABLE HEADER -->
+                <thead>
+                    <!-- FIRST ROW -->
+                    <tr>
+                        <th rowspan="2" style="min-width: 166px !important">LIBRARY</th>
+                        <th rowspan="2" style="min-width: 121px !important">LANGUAGE</th>
+                        <th rowspan="2" style="min-width: 129px !important">LICENSE</th>
+                        <th rowspan="2" style="min-width: 120px !important">RELEASE</th>
+                        <th rowspan="2" style="min-width: 14.5em">DEVELOPERS & FUNDING</th>
+                        <th rowspan="2" style="min-width: 6.5em">DOCUMENTATION</th>
+                        <th rowspan="2" style="min-width: 175px !important">COMMUNITY SUPPORT</th>
+                        <th rowspan="2" style="">FRAMEWORK</th>
+                        <th rowspan="2" style="text-align: center">GPU ACCELERATION</th>
+                        <th rowspan="2" style="min-width: 122px !important">TREND TYPES</th>
+                        <th colspan="4" style="text-align: center">KERNEL &nbsp \( R(x,x';\theta) \)</th>
+                        <th rowspan="2" style="">ESTIMATION METHODS</th>
+                        <th colspan="3" style="min-width: 14.5em; text-align: center">OPTIMIZATION METHODS</th>
+                    </tr>
+                    <!-- SECOND ROW -->
+                    <tr class="second-row">
+                        <th style="min-width: 120px !important">LENGTH SCALE</th>
+                        <th style="min-width: 175px !important">CORRELATION FAMILIES</th>
+                        <th style="">MIXTURE</th>
+                        <th style="min-width: 140px !important">MIXTURE MODEL</th>
+                        <th style="min-width: 9.5em">ALGORITHMS</th>
+                        <th style="min-width: 9.5em">N. RESTARTS</th>
+                        <th style="min-width: 9.5em">NUGGET</th>
+                    </tr>
+                </thead>
+                <!-- TABLE BODY ORDINE ALFABETICO -->
+                <tbody>
+                    {{range .Libraries}}
+                    <tr id="{{.PackageID}}">
+                        <!-- LIBRARY -->
+                        <td class="cell-library">
+                            <a href="{{.PackageURL}}" title="{{.PackageURL}}" style="text-decoration: none">
+                                <b> {{.PackageName}} </b>
+                                <br style="margin-bottom: 8px" />
+                                <!-- REFERENCE -->
+                                <a href='{{if eq .ReferenceURL ""}}{{"javascript:void(0);"}}{{else}}{{.ReferenceURL}}{{end}}'
+                                    title='{{ .ReferenceURL }}'
+                                    style="text-decoration: none; font-style: italic; color: #5D5C5E;">
+                                    {{if eq .Reference ""}}{{"n/a"}}{{else}}{{.Reference}}{{end}}
+                                </a>
+                            </a>
+                        </td>
+                        <!-- LANGUAGE -->
+                        <td class="cell-language">
+                            {{range .Language}}
+                            {{if eq . "C"}}
+                            {{template "C" .}}
+                            {{else if eq . "Cpp"}}
+                            {{template "Cpp" .}}
+                            {{else if eq . "GO"}}
+                            {{template "GO" .}}
+                            {{else if eq . "Julia"}}
+                            {{template "Julia" .}}
+                            {{else if eq . "Matlab"}}
+                            {{template "Matlab" .}}
+                            {{else if eq . "Octave"}}
+                            {{template "Octave" .}}
+                            {{else if eq . "Python"}}
+                            {{template "Python" .}}
+                            {{else if eq . "R"}}
+                            {{template "R" .}}
+                            {{else if eq . "Rust"}}
+                            {{template "Rust" .}}
+                            {{end}}
+                            {{end}}
+                        </td>
+                        <!-- LICENSE -->
+                        <td class="cell-license">
+                            {{range .Licenses}}
+                            <a href='{{if eq .Name "NA"}}{{" javascript:void(0);"}}{{else}}{{.URL}}{{end}}'
+                                title='{{if eq .Name "NA"}}{{""}}{{else}}{{.URL}}{{end}}' style="text-decoration: none">
+                                {{if eq .Name "Apache2"}}
+                                {{template "Apache2" .}}
+                                {{else if eq .Name "BSD"}}
+                                {{template "BSD" .}}
+                                {{else if eq .Name "BSD3"}}
+                                {{template "BSD3" .}}
+                                {{else if eq .Name "BSL1"}}
+                                {{template "BSL1" .}}
+                                {{else if eq .Name "FreeBSD"}}
+                                {{template "FreeBSD" .}}
+                                {{else if eq .Name "GPL2"}}
+                                {{template "GPL2" .}}
+                                {{else if eq .Name "GPL3"}}
+                                {{template "GPL3" .}}
+                                {{else if eq .Name "LGPL"}}
+                                {{template "LGPL" .}}
+                                {{else if eq .Name "MIT"}}
+                                {{template "MIT" .}}
+                                {{else if eq .Name "NA"}}
+                                {{template "NA" .}}
+                                {{end}}
+                            </a>
+                            {{end}}
+                        </td>
+                        <!-- RELEASE -->
+                        <td class="cell-release">
+                            <a href='{{if eq .VersionURL ""}}{{"javascript:void(0)"}}{{else}}{{.VersionURL}}{{end}}'
+                                title="{{.VersionURL}}" class="version" style="text-decoration: none">
+                                {{if eq .Version ""}}{{"n/a"}}{{else}}{{.Version}}{{end}}
+                            </a>
+                        </td>
+                        <!-- DEVELOPERS -->
+                        <td class="cell-dev">
+                            {{range .Developers}}
+                            <span class="selected-value select-value-color-{{.Tag}}">
+                                <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+                                    {{.Name}}
+                                </a>
+                            </span>
+                            {{end}}
+                        </td>
+                        <!-- DOCS -->
+                        <td class="cell-documentation">
+                            {{range .Docs}}
+                            <span class="selected-value select-value-color-{{.Tag}}">
+                                <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+                                    {{.Name}}
+                                </a>
+                            </span>
+                            {{end}}
+                        </td>
+                        <!-- SUPPORT -->
+                        <td class="cell-support">
+                            {{range .Support}}
+                            <span class="selected-value select-value-color-{{.Tag}}">
+                                <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+                                    {{.Name}}
+                                </a>
+                            </span>
+                            {{end}}
+                        </td>
+                        <!-- FRAMEWORK -->
+                        <td class="cell-framework">
+                            {{range .Frameworks}}
+                            {{if eq . "PyTorch"}}
+                            {{template "PyTorch" .}}
+                            {{else if eq . "TensorFlow"}}
+                            {{template "TensorFlow" .}}
+                            {{else if eq . "Numpy"}}
+                            {{template "Numpy" .}}
+                            {{else if eq . "JAX"}}
+                            {{template "JAX" .}}
+                            {{end}}
+                            {{end}}
+                        </td>
+                        <!-- GPU -->
+                        <td class="cell-gpu" style="text-align: center">
+                            {{if eq .GPU true}}
+                            {{template "Check-on" .}}
+                            {{else}}
+                            {{template "Check-off" .}}
+                            {{end}}
+                        </td>
+                        <!-- TRENDS -->
+                        <td class="cell-trends">
+                            {{ range .Trends}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                                style="text-decoration: none">
+                                {{range .Group}}
+                                <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
+                                {{end}}
+                            </a>
+                            {{end}}
+                        </td>
+                        <!-- LENGTH SCALE -->
+                        <td class="cell-length-scale">
+                            {{range .LengthScale}}
+                            {{if eq . "Isotropic"}}
+                            {{template "Isotropic" .}}
+                            {{else if eq . "Anisotropic"}}
+                            {{template "Anisotropic" .}}
+                            {{else if eq . "NA"}}
+                            {{"n/a"}}
+                            {{end}}
+                            {{end}}
+                        </td>
+                        <!-- CORRELATION -->
+                        <td class="cell-correlation">
+                            {{ range .Correlation}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                                style="text-decoration: none">
+                                {{range .Group}}
+                                <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
+                                {{end}}
+                            </a>
+                            {{end}}
+                        </td>
+                        <!-- MIXTURE -->
+                        <td class="cell-gpu" style="text-align: center">
+                            {{if eq .Mixture true}}
+                            {{template "Check-on" .}}
+                            {{else}}
+                            {{template "Check-off" .}}
+                            {{end}}
+                        </td>
+                        <!-- MIXTURE MODELS -->
+                        <td class="cell-mixture-models">
+                            {{ range .MixtureModels}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                                style="text-decoration: none">
+                                {{range .Group}}
+                                <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
+                                {{end}}
+                            </a>
+                            {{end}}
+                        </td>
+                        <!--  -->
+                        <!--  -->
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+
+            <!-- FOOTER -->
+            <br />
+            <p
+                style=" font-size: 9pt !important; color: #9ca2a8; margin-top: -15px !important; width: 2000px!important;">
+                <a href='{{if eq .SourceURL ""}}{{" javascript:void(0);"}}{{else}}{{.SourceURL}}{{end}}'
+                    title="{{.SourceURL}}" class="link-style"
+                    style="text-decoration: none; font-style: italic">{{.Source}}</a>
+            </p>
+            <p style="
+                font-size: 9pt !important;
+                color: #9ca2a8;
+                margin-top: -1px !important;
+                width: 2000px !important;">
+                <a href="{{.AknowledgementsURL}}" title="{{.AknowledgementsURL}}" class="link-style"
+                    style="text-decoration: none; font-style: italic">
+                    {{.Aknowledgements}}
+                </a>
+            </p>
+            <br /><br />
+            <!-- ALTRO -->
+    </article>
+    <span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+
+    <!-- SCRIPTS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var table = document.getElementById("myTable");
+            var input = document.getElementById("searchInput");
+            var lastFilter = "";
+
+            // Function to update row colors
+            function updateRowColors() {
+                var tableRows = table.getElementsByTagName("tr");
+                var visibleRowIndex = 0;
+                for (var i = 2; i < tableRows.length; i++) {
+                    if (tableRows[i].style.display !== "none") {
+                        tableRows[i].style.backgroundColor =
+                            visibleRowIndex % 2 === 0
+                                ? "#ffffff"
+                                : "#f6f8fa";
+                        visibleRowIndex++;
+                    }
+                }
+            }
+
+            // Search functionality
+            input.addEventListener("keyup", function () {
+                var searchQuery = this.value.toLowerCase();
+                var tableRows = table.getElementsByTagName("tr");
+
+                for (var i = 2; i < tableRows.length; i++) {
+                    var cells = tableRows[i].getElementsByTagName("td");
+                    var rowText = Array.from(cells)
+                        .map((cell) => cell.textContent.toLowerCase())
+                        .join(" ");
+                    tableRows[i].style.display =
+                        rowText.indexOf(searchQuery) > -1 ? "" : "none";
+                }
+                lastFilter = ""; // Reset filter
+                updateRowColors();
+            });
+
+            // Filter functionality
+            function filterTableLanguage(filter) {
+                var tableRows = table.getElementsByTagName("tr");
+                var isFilterActive =
+                    lastFilter.toLowerCase() === filter.toLowerCase();
+
+                for (var i = 2; i < tableRows.length; i++) {
+                    // Check if the filter is active or if a specific filter should be applied
+                    if (!isFilterActive && filter !== "") {
+                        var cellText =
+                            tableRows[i].cells[1].textContent.toLowerCase();
+                        var shouldDisplay =
+                            cellText.indexOf(filter.toLowerCase()) > -1;
+                        tableRows[i].style.display = shouldDisplay
+                            ? ""
+                            : "none";
+                    } else {
+                        // If the filter is currently active, or no specific filter is applied, reset to show all rows
+                        tableRows[i].style.display = "";
+                    }
+                }
+
+                // Toggle the lastFilter value: if the filter is active, clear it, otherwise set it to the current filter
+                lastFilter = isFilterActive ? "" : filter;
+                updateRowColors();
+            }
+
+            // Filter buttons
+            document
+                .getElementById("filterC")
+                .addEventListener("click", function () {
+                    filterTableLanguage("C ");
+                });
+
+            document
+                .getElementById("filterCpp")
+                .addEventListener("click", function () {
+                    filterTableLanguage("C++");
+                });
+
+            document
+                .getElementById("filterGo")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Go");
+                });
+
+            document
+                .getElementById("filterJulia")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Julia");
+                });
+
+            document
+                .getElementById("filterMatlab")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Matlab");
+                });
+
+            document
+                .getElementById("filterOctave")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Octave");
+                });
+
+            document
+                .getElementById("filterPython")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Python");
+                });
+
+            document
+                .getElementById("filterR")
+                .addEventListener("click", function () {
+                    filterTableLanguage("R ");
+                });
+
+            document
+                .getElementById("filterRust")
+                .addEventListener("click", function () {
+                    filterTableLanguage("Rust");
+                });
+
+            // Keyboard shortcut functionality
+            document.addEventListener("keydown", function (e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+                    e.preventDefault();
+                    input.focus();
+                }
+            });
+
+            // Placeholder text based on OS
+            if (
+                navigator.platform.startsWith("Win") ||
+                navigator.platform.startsWith("Linux")
+            ) {
+                input.placeholder = "Press ⌃ CTRL + K to search";
+            } else if (navigator.platform.startsWith("Mac")) {
+                input.placeholder = "Press ⌘ + K to search";
+            } else {
+                input.placeholder = "Press ⌘ / ⌃ + K to search";
+            }
+        });
+    </script>
+</body>
+
+</html>

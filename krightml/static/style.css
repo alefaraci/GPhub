@@ -1,4 +1,3 @@
-style = """
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -940,6 +939,10 @@ blockquote {
     background-color: rgba(35, 131, 226, 0.07);
 }
 
+.select-value-color-teal {
+    background-color: rgba(199, 227, 229, 0.75);
+}
+
 .select-value-color-pink {
     background-color: rgba(245, 224, 233, 1);
 }
@@ -974,6 +977,18 @@ blockquote {
 
 .select-value-color-yellow {
     background-color: rgba(254, 236, 200, 1);
+}
+
+.select-value-color-blue {
+    background-color: rgba(211, 229, 239, 1);
+}
+
+.select-value-color-pageGlass {
+    background-color: undefined;
+}
+
+.select-value-color-washGlass {
+    background-color: undefined;
 }
 
 .select-value-color-matlab {
@@ -1030,42 +1045,14 @@ blockquote {
     font-weight: bold;
 }
 
-.select-value-color-blue {
-    background-color: rgba(211, 229, 239, 1);
-}
-
-.select-value-color-pageGlass {
-    background-color: undefined;
-}
-
-.select-value-color-washGlass {
-    background-color: undefined;
-}
-
-.checkbox {
-    display: inline-flex;
-    vertical-align: text-bottom;
-    width: 16;
-    height: 16;
-    background-size: 16px;
-    margin-left: 2px;
-    margin-right: 5px;
-}
-
-.checkbox-on {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
 table tr:nth-child(odd) {
-    background-color: #ffffff; /* Color for odd rows */
+    background-color: #ffffff;
+    /* Color for odd rows */
 }
 
 table tr:nth-child(even) {
-    background-color: #f6f8fa; /* Color for even rows */
+    background-color: #f6f8fa;
+    /* Color for even rows */
 }
 
 th,
@@ -1101,6 +1088,13 @@ td:first-child {
 /* Top-left cell specific styling */
 th:first-child {
     z-index: 3;
+}
+
+.second-row th {
+    top: 32px;
+    background-color: #f6f8fa;
+    z-index: 2;
+    box-shadow: 0px -0px 0px 0.5px rgba(208, 215, 222, 1);
 }
 
 #searchInput {
@@ -1155,13 +1149,15 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
     /* Firefox 18- */
     color: #a9a9a9;
-    opacity: 1; /* Firefox adds an opacity by default */
+    opacity: 1;
+    /* Firefox adds an opacity by default */
 }
 
 input::-moz-placeholder {
     /* Firefox 19+ */
     color: #a9a9a9;
-    opacity: 1; /* Firefox adds an opacity by default */
+    opacity: 1;
+    /* Firefox adds an opacity by default */
 }
 
 .select-filter-matlab {
@@ -1428,7 +1424,112 @@ input::-moz-placeholder {
 }
 
 .link-style:hover {
-    color: #5778CD; /* Change to the orange color you prefer */
+    color: #5778cd;
+    /* Change to the orange color you prefer */
 }
 
-"""
+table tr:hover {
+    background-color: #f7fff1 !important;
+    /* Use !important to override any inline styles set by JavaScript */
+}
+
+#AbstractGPsjl:hover,
+#AbstractGPsjl:hover td:first-child,
+#albatross:hover,
+#albatross:hover td:first-child,
+#AutoGP:hover,
+#AutoGP:hover td:first-child,
+#AutoGPjl:hover,
+#AutoGPjl:hover td:first-child,
+#celerite:hover,
+#celerite:hover td:first-child,
+#celerite2:hover,
+#celerite2:hover td:first-child,
+#DACE:hover,
+#DACE:hover td:first-child,
+#deepgp:hover,
+#deepgp:hover td:first-child,
+#DiceKriging:hover,
+#DiceKriging:hover td:first-child,
+#egobox:hover,
+#egobox:hover td:first-child,
+#fbm:hover,
+#fbm:hover td:first-child,
+#friedrich:hover,
+#friedrich:hover td:first-child,
+#gaussianproc:hover,
+#gaussianproc:hover td:first-child,
+#GaussianProcessesjl:hover,
+#GaussianProcessesjl:hover td:first-child,
+#george:hover,
+#george:hover td:first-child,
+#go-kriging:hover,
+#go-kriging:hover td:first-child,
+#GPflow:hover,
+#GPflow:hover td:first-child,
+#GPflux:hover,
+#GPflux:hover td:first-child,
+#GpGp:hover,
+#GpGp:hover td:first-child,
+#GPJax:hover,
+#GPJax:hover td:first-child,
+#GPML:hover,
+#GPML:hover td:first-child,
+#GPR:hover,
+#GPR:hover td:first-child,
+#GPstuff:hover,
+#GPstuff:hover td:first-child,
+#GPvecchia:hover,
+#GPvecchia:hover td:first-child,
+#GPy:hover,
+#GPy:hover td:first-child,
+#GPyTorch:hover,
+#GPyTorch:hover td:first-child,
+#GSTools:hover,
+#GSTools:hover td:first-child,
+#Keras-GP:hover,
+#Keras-GP:hover td:first-child,
+#libgp:hover,
+#libgp:hover td:first-child,
+#magptk:hover,
+#magptk:hover td:first-child,
+#MUQ:hover,
+#MUQ:hover td:first-child,
+#NeuralTangents:hover,
+#NeuralTangents:hover td:first-child,
+#OpenTURNS:hover,
+#OpenTURNS:hover td:first-child,
+#pyGPs:hover,
+#pyGPs:hover td:first-child,
+#PyKrige:hover,
+#PyKrige:hover td:first-child,
+#PyMC:hover,
+#PyMC:hover td:first-child,
+#PYRO:hover,
+#PYRO:hover td:first-child,
+#scikit-learn:hover,
+#scikit-learn:hover td:first-child,
+#SMT:hover,
+#SMT:hover td:first-child,
+#STAN:hover,
+#STAN:hover td:first-child,
+#Stheno:hover,
+#Stheno:hover td:first-child,
+#STK:hover,
+#STK:hover td:first-child,
+#SuperGauss:hover,
+#SuperGauss:hover td:first-child,
+#Surrogatesjl:hover,
+#Surrogatesjl:hover td:first-child,
+#TemporalGPjl:hover,
+#TemporalGPjl:hover td:first-child,
+#tinygp:hover,
+#tinygp:hover td:first-child,
+#UQpyLabBeta:hover,
+#UQpyLabBeta:hover td:first-child,
+#UQLab:hover,
+#UQLab:hover td:first-child,
+#UQpy:hover,
+#UQpy:hover td:first-child {
+    background-color: #f7fff1;
+}

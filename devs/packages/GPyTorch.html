@@ -1,5 +1,5 @@
-<!-- FRAMEWORK -->
-<td class="cell-framework">
+<!-- LIBRARY -->
+<td class="cell-library">
     <a href="https://gpytorch.ai" style="text-decoration: none">
         <b> GPyTorch </b>
         <br style="margin-bottom: 8px" />
@@ -37,15 +37,15 @@
 
 <!-- DEVELOPERS -->
 <td class="cell-dev">
-    <span class="selected-value select-value-color-purple">
-        <a href="https://www.columbia.edu/" style="text-decoration: none">
-            Columbia University
+    <span class="selected-value select-value-color-red">
+        <a href="https://www.cornell.edu/" style="text-decoration: none">
+            Cornell University
         </a>
     </span>
 
-    <span class="selected-value select-value-color-default">
-        <a href="https://www.cornell.edu/" style="text-decoration: none">
-            Cornell University
+    <span class="selected-value select-value-color-blue">
+        <a href="https://www.ubc.ca" style="text-decoration: none">
+            The University of British Columbia
         </a>
     </span>
 
@@ -55,15 +55,24 @@
         </a>
     </span>
 
-    <span class="selected-value select-value-color-orange">
+    <span class="selected-value select-value-color-purple">
         <a href="https://www.nyu.edu/" style="text-decoration: none">
             New York University
         </a>
     </span>
 
-    <span class="selected-value select-value-color-yellow">
+    <span class="selected-value select-value-color-brown">
         <a href="https://www.upenn.edu/" style="text-decoration: none">
             University of Pennsylvania
+        </a>
+    </span>
+
+    <span class="selected-value select-value-color-default">
+        <a
+            href="https://github.com/cornellius-gp/gpytorch/graphs/contributors"
+            style="text-decoration: none"
+        >
+            GPyTorch contributors
         </a>
     </span>
 </td>
@@ -88,6 +97,13 @@
 
 <!-- SUPPORT -->
 <td class="cell-support">
+    <span class="selected-value select-value-color-yellow">
+        <a
+            href="https://stackoverflow.com/questions/tagged/gpytorch"
+            style="text-decoration: none"
+            >stackoverflow</a
+        ></span
+    >
     <span class="selected-value select-value-color-default">
         <a
             href="https://github.com/cornellius-gp/gpytorch/discussions"
@@ -97,39 +113,180 @@
     >
 </td>
 
-<!-- BASIS -->
-<td class="cell-basis"></td>
+<!-- FRAMEWORK -->
+<td class="cell-framework">
+    <span class="selected-value select-value-color-purple">
+        <a href="https://pytorch.org/" style="text-decoration: none"
+            >PyTorch</a
+        ></span
+    >
+</td>
 
-<!-- KERNEL -->
-<td class="cell-kernel">
-    <!-- <span class="selected-value select-value-color-purple">
-                Isotropyic
-            </span>
-            <span class="selected-value select-value-color-yellow">
-                Anisotrpic
-            </span>  -->
+<!-- GPU -->
+<td class="cell-gpu" style="text-align: center">
+    <div class="checkbox checkbox-on"></div>
+</td>
+
+<!-- BASIS -->
+<td class="cell-basis">
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-green"> Zero</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-blue"> Constant</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Linear</span
+        ></a
+    >
+</td>
+
+<!-- LENGTH SCALE -->
+<td class="cell-lengthscale">
+    <span class="selected-value select-value-color-purple"> Isotropic</span>
+    <span class="selected-value select-value-color-yellow"> Anisotropic</span>
 </td>
 
 <!-- CORRELATION -->
 <td class="cell-correlation">
-    <!-- <span class="selected-value select-value-color-blue">
-                Constant
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Squared Exponential
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Periodic
-            </span>
-            <span class="selected-value select-value-color-brown">
-                Change Points
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Matérn
-            </span>
-            <span class="selected-value select-value-color-blue">
-                Custom
-            </span> -->
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Cosine</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Cylindrical</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-yellow"> Linear</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Matern</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Periodic</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Picewise Polynomial</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Polynomial</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> RBF</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> RQK</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Spectral Delta</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Arc</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Index</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> LCMK</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Multitask</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Grid</span></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Grid Interpolation</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Inducing Point</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> RFFK</span></a
+    >
 </td>
 
 <!-- KERNEL MIXTURE -->
@@ -137,10 +294,48 @@
     <div class="checkbox checkbox-on"></div>
 </td>
 
-<!-- OPTIMIZATION PROBLEM SOLVER -->
-<td class="cell-opt-problem">
-    <span class="selected-value select-value-color-brown"> Exact </span>
+<!-- MIXTURE MODEL -->
+<td class="cell-mixture-model">
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Spectral Mixture</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default">
+            Additive</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-yellow">
+            Product</span
+        ></a
+    >
+    <a
+        href="https://docs.gpytorch.ai/en/stable/kernels.html"
+        style="text-decoration: none"
+    >
+        <span class="selected-value select-value-color-default"> Scale</span></a
+    >
 </td>
+
+<!-- ESTIMATION METHODS -->
+<td class="cell-estimation"></td>
 
 <!-- OPTIMIZATION ALGORITHM -->
 <td class="cell-opt-algo"></td>
+
+<!-- N RESTART -->
+<td class="cell-opt-restart"></td>
+
+<!-- NUGGET -->
+<td class="cell-opt-nugget"></td>
