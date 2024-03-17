@@ -9,12 +9,12 @@ var Gaussianproc = rows.Library{
 	PackageID:    "gaussianproc",
 	PackageName:  "gaussianproc",
 	PackageURL:   "",
-	Reference:    " et al. ()",
+	Reference:    "",
 	ReferenceURL: "",
 	Language:     []string{"GO"},
 	Licenses: []cells.NameURL{
 		{
-			Name: "NA",
+			Name: "",
 			URL:  "",
 		},
 	},
@@ -22,21 +22,19 @@ var Gaussianproc = rows.Library{
 	VersionURL: "https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process?tab=versions",
 	Developers: []cells.TagNameURL{
 		{
-			Tag:  "blue",
+			Tag:  "",
 			Name: "",
 			URL:  "",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -47,7 +45,7 @@ var Gaussianproc = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -59,7 +57,7 @@ var Gaussianproc = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -71,7 +69,7 @@ var Gaussianproc = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

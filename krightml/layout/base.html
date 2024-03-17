@@ -8,8 +8,15 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>{{.Title}}</title>
-    <script src="https://unpkg.com/htmx.org"></script>
-    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <style>
+    {{template "Style"}}
+    {{range .Libraries}}
+	    #{{.PackageID}}:hover,
+	    #{{.PackageID}}:hover td:first-child{
+	        background-color: #f7fff1;
+	    }
+    {{end}}
+    </style>
 </head>
 <!-- BODY -->
 
@@ -17,6 +24,14 @@
     <article id="Article" class="page sans">
         <header style="width: 400px !important; height: 100px !important">
             <!-- TABLE TITLE -->
+            <!-- WITH LOGO -->
+            <!-- <div style="display: flex; align-items: center; width: 1200px !important">
+           	<img title="GPhubLogo" alt="GPhub" src="https://res.cloudinary.com/dkytv4nwx/image/upload/v1710786255/GPhubLogo_nn1pyz.svg" width="120" style="margin-bottom: 26px !important; margin-right: 15px !important;" >
+            <h1 class="page-title" style="width: 1200px !important">
+                {{.Title}}
+            </h1>
+            </div> -->
+            <!-- WITHOUT LOGO -->
             <h1 class="page-title" style="width: 1200px !important">
                 {{.Title}}
             </h1>
@@ -27,17 +42,26 @@
                 <input type="text" id="searchInput" placeholder="Press ⌘ / ⌃ + K to search" />
             </label>
             <!-- BUTTON -->
-            <button id="filterC" class="select-filter-c">C</button>
-            <button id="filterCpp" class="select-filter-cpp">C++</button>
-            <button id="filterGo" class="select-filter-go">GO</button>
-            <button id="filterJulia" class="select-filter-julia">julia</button>
-            <button id="filterMatlab" class="select-filter-matlab">MATLAB</button>
-            <button id="filterOctave" class="select-filter-octave">GNU Octave</button>
-            <button id="filterPython" class="select-filter-python">Python</button>
-            <button id="filterR" class="select-filter-r">R</button>
-            <button id="filterRust" class="select-filter-rust">Rust</button>
+            <button id="filterC" class="select-filter-c"
+                style="width:28px !important; height: 21px !important;">C</button>
+            <button id="filterCpp" class="select-filter-cpp"
+                style="width:42px !important; height: 21px !important;">C++</button>
+            <button id="filterGo" class="select-filter-go"
+                style="width:36px !important; height: 21px !important;">GO</button>
+            <button id="filterJulia" class="select-filter-julia"
+                style="width:46px !important; height: 21px !important;">julia</button>
+            <button id="filterMatlab" class="select-filter-matlab"
+                style="width:73px !important; height: 21px !important;">MATLAB</button>
+            <button id="filterOctave" class="select-filter-octave"
+                style="width:98px !important; height: 21px !important;">GNU Octave</button>
+            <button id="filterPython" class="select-filter-python"
+                style="width:63px !important; height: 21px !important;">Python</button>
+            <button id="filterR" class="select-filter-r"
+                style="width:28px !important; height: 21px !important;">R</button>
+            <button id="filterRust" class="select-filter-rust"
+                style="width:50px !important; height: 21px !important;">Rust</button>
             <!-- TABLE -->
-            <table id="myTable" class="collection-content">
+            <table id="GPTable" class="collection-content">
                 <!-- TABLE HEADER -->
                 <thead>
                     <!-- FIRST ROW -->
@@ -79,7 +103,7 @@
                             </a>
                             <br style="margin-bottom: 8px" />
                             <!-- REFERENCE -->
-                            <a href='{{if eq .ReferenceURL ""}}{{"javascript:void(0);"}}{{else}}{{.ReferenceURL}}{{end}}'
+                            <a href='{{if eq .ReferenceURL ""}}{{"javascript:void(0)"}}{{else}}{{.ReferenceURL}}{{end}}'
                                 title='{{ .ReferenceURL }}'
                                 style="text-decoration: none; font-style: italic; color: #5D5C5E;">
                                 {{if eq .Reference ""}}{{"n/a"}}{{else}}{{.Reference}}{{end}}
@@ -112,8 +136,9 @@
                         <!-- LICENSE -->
                         <td class="cell-license">
                             {{range .Licenses}}
-                            <a href='{{if eq .Name "NA"}}{{" javascript:void(0);"}}{{else}}{{.URL}}{{end}}'
-                                title='{{if eq .Name "NA"}}{{""}}{{else}}{{.URL}}{{end}}' style="text-decoration: none">
+                            <a href='{{if eq .Name ""}}{{" javascript:void(0)"}}{{else}}{{.URL}}{{end}}'
+                                title='{{if eq .Name ""}}{{"n/a"}}{{else}}{{.URL}}{{end}}'
+                                style="text-decoration: none">
                                 {{if eq .Name "Apache2"}}
                                 {{template "Apache2" .}}
                                 {{else if eq .Name "BSD"}}
@@ -132,7 +157,7 @@
                                 {{template "LGPL" .}}
                                 {{else if eq .Name "MIT"}}
                                 {{template "MIT" .}}
-                                {{else if eq .Name "NA"}}
+                                {{else if eq .Name ""}}
                                 {{template "NA" .}}
                                 {{end}}
                             </a>
@@ -158,21 +183,65 @@
                         <!-- DOCS -->
                         <td class="cell-documentation">
                             {{range .Docs}}
-                            <span class="selected-value select-value-color-{{.Tag}}">
-                                <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
-                                    {{.Name}}
-                                </a>
-                            </span>
+                            {{if eq .Name "docs"}}
+                            {{template "Docs" .}}
+                            {{else if eq .Name "py docs"}}
+                            {{template "Docs" .}}
+                            {{else if eq .Name "jl docs"}}
+                            {{template "Docs" .}}
+                            {{else if eq .Name "r docs"}}
+                            {{template "Docs" .}}
+                            {{else if eq .Name "mat docs"}}
+                            {{template "Docs" .}}
+                            {{else if eq .Name "user manuals"}}
+                            {{template "Manuals" .}}
+                            {{else if eq .Name "examples"}}
+                            {{template "Examples" .}}
+                            {{else if eq .Name "py examples"}}
+                            {{template "Examples" .}}
+                            {{else if eq .Name "jl examples"}}
+                            {{template "Examples" .}}
+                            {{else if eq .Name "r examples"}}
+                            {{template "Examples" .}}
+                            {{else if eq .Name "API"}}
+                            {{template "API" .}}
+                            {{else if eq .Name "py API"}}
+                            {{template "API" .}}
+                            {{else if eq .Name "jl API"}}
+                            {{template "API" .}}
+                            {{else if eq .Name "r API"}}
+                            {{template "API" .}}
+                            {{else if eq .Name "tutorials"}}
+                            {{template "Tutorials" .}}
+                            {{else if eq .Name "jupyter notebooks"}}
+                            {{template "Notebooks" .}}
+                            {{else if eq .Name "colab cookbook"}}
+                            {{template "Notebooks" .}}
+                            {{else if eq .Name "talk"}}
+                            {{template "Talk" .}}
+                            {{end}}
                             {{end}}
                         </td>
                         <!-- SUPPORT -->
                         <td class="cell-support">
                             {{range .Support}}
-                            <span class="selected-value select-value-color-{{.Tag}}">
-                                <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
-                                    {{.Name}}
-                                </a>
-                            </span>
+                            {{if eq .Name "blog"}}
+                            {{template "Blog" .}}
+                            {{else if eq .Name "chat"}}
+                            {{template "Chat" .}}
+                            {{else if eq .Name "contact form"}}
+                            {{template "Form" .}}
+                            {{else if eq .Name "forum"}}
+                            {{template "Forum" .}}
+                            {{else if eq .Name "GitHub discussions"}}
+                            {{template "GitHub" .}}
+                            {{else if eq .Name "mailing-list"}}
+                            {{template "Mail" .}}
+                            {{else if eq .Name "stackoverflow"}}
+                            {{template "Stackoverflow" .}}
+                            {{else if eq .Name "slack"}}
+                            {{template "Slack" .}}
+                            {{end}}
                             {{end}}
                         </td>
                         <!-- FRAMEWORK -->
@@ -200,12 +269,14 @@
                         <!-- TRENDS -->
                         <td class="cell-trends">
                             {{ range .Trends}}
-                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                            {{if ne .URL ""}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0)"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
                                 style="text-decoration: none">
                                 {{range .Group}}
                                 <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
                                 {{end}}
                             </a>
+                            {{end}}
                             {{end}}
                         </td>
                         <!-- LENGTH SCALE -->
@@ -215,24 +286,24 @@
                             {{template "Isotropic" .}}
                             {{else if eq . "Anisotropic"}}
                             {{template "Anisotropic" .}}
-                            {{else if eq . "NA"}}
-                            {{"n/a"}}
                             {{end}}
                             {{end}}
                         </td>
                         <!-- CORRELATION -->
                         <td class="cell-correlation">
                             {{ range .Correlation}}
-                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                            {{if ne .URL ""}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0)"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
                                 style="text-decoration: none">
                                 {{range .Group}}
                                 <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
                                 {{end}}
                             </a>
                             {{end}}
+                            {{end}}
                         </td>
                         <!-- MIXTURE -->
-                        <td class="cell-gpu" style="text-align: center">
+                        <td class="cell-mixture" style="text-align: center">
                             {{if eq .Mixture true}}
                             {{template "Check-on" .}}
                             {{else}}
@@ -242,12 +313,14 @@
                         <!-- MIXTURE MODELS -->
                         <td class="cell-mixture-models">
                             {{ range .MixtureModels}}
-                            <a href='{{if eq .URL ""}}{{"javascript:void(0);"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+                            {{if ne .URL ""}}
+                            <a href='{{if eq .URL ""}}{{"javascript:void(0)"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
                                 style="text-decoration: none">
                                 {{range .Group}}
                                 <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
                                 {{end}}
                             </a>
+                            {{end}}
                             {{end}}
                         </td>
                         <!--  -->
@@ -261,7 +334,7 @@
             <br />
             <p
                 style=" font-size: 9pt !important; color: #9ca2a8; margin-top: -15px !important; width: 2000px!important;">
-                <a href='{{if eq .SourceURL ""}}{{" javascript:void(0);"}}{{else}}{{.SourceURL}}{{end}}'
+                <a href='{{if eq .SourceURL ""}}{{" javascript:void(0)"}}{{else}}{{.SourceURL}}{{end}}'
                     title="{{.SourceURL}}" class="link-style"
                     style="text-decoration: none; font-style: italic">{{.Source}}</a>
             </p>
@@ -283,7 +356,7 @@
     <!-- SCRIPTS -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var table = document.getElementById("myTable");
+            var table = document.getElementById("GPTable");
             var input = document.getElementById("searchInput");
             var lastFilter = "";
 
@@ -315,7 +388,7 @@
                     tableRows[i].style.display =
                         rowText.indexOf(searchQuery) > -1 ? "" : "none";
                 }
-                lastFilter = ""; // Reset filter
+                lastFilter = "";
                 updateRowColors();
             });
 
@@ -326,7 +399,6 @@
                     lastFilter.toLowerCase() === filter.toLowerCase();
 
                 for (var i = 2; i < tableRows.length; i++) {
-                    // Check if the filter is active or if a specific filter should be applied
                     if (!isFilterActive && filter !== "") {
                         var cellText =
                             tableRows[i].cells[1].textContent.toLowerCase();
@@ -336,12 +408,10 @@
                             ? ""
                             : "none";
                     } else {
-                        // If the filter is currently active, or no specific filter is applied, reset to show all rows
                         tableRows[i].style.display = "";
                     }
                 }
 
-                // Toggle the lastFilter value: if the filter is active, clear it, otherwise set it to the current filter
                 lastFilter = isFilterActive ? "" : filter;
                 updateRowColors();
             }

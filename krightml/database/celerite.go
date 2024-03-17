@@ -47,21 +47,18 @@ var Celerite = rows.Library{
 			URL:  "https://github.com/dfm/celerite/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://celerite.readthedocs.io/en/stable/",
 		},
 		{
-			Tag:  "default",
 			Name: "API",
 			URL:  "https://celerite.readthedocs.io/en/stable/cpp/api/",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -72,7 +69,7 @@ var Celerite = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -84,7 +81,7 @@ var Celerite = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -96,7 +93,7 @@ var Celerite = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

@@ -18,7 +18,7 @@ var AutoGPjl = rows.Library{
 			URL:  "https://github.com/probsys/AutoGP.jl/blob/main/LICENSE.txt",
 		},
 	},
-	Version:    "n/a",
+	Version:    "",
 	VersionURL: "",
 	Developers: []cells.TagNameURL{
 		{
@@ -37,26 +37,22 @@ var AutoGPjl = rows.Library{
 			URL:  "https://www.mit.edu/",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://probsys.github.io/AutoGP.jl/stable/gp.html",
 		},
 		{
-			Tag:  "default",
 			Name: "tutorials",
 			URL:  "https://probsys.github.io/AutoGP.jl/stable/tutorials/overview.html",
 		},
 		{
-			Tag:  "default",
 			Name: "API",
 			URL:  "https://probsys.github.io/AutoGP.jl/stable/api.html",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -67,7 +63,7 @@ var AutoGPjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -79,7 +75,7 @@ var AutoGPjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -91,7 +87,7 @@ var AutoGPjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

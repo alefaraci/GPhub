@@ -27,16 +27,14 @@ var Fbm = rows.Library{
 			URL:  "https://www.statistics.utoronto.ca",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://glizen.com/radfordneal/fbm.2022-04-21.doc/index.html",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -59,7 +57,7 @@ var Fbm = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -71,7 +69,7 @@ var Fbm = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

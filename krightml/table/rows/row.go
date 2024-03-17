@@ -13,8 +13,8 @@ type Library struct {
 	Version       string
 	VersionURL    string
 	Developers    []cells.TagNameURL
-	Docs          []cells.TagNameURL
-	Support       []cells.TagNameURL
+	Docs          []cells.NameURL
+	Support       []cells.NameURL
 	Frameworks    []string
 	GPU           bool
 	Trends        []cells.TagGroup

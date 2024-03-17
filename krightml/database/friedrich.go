@@ -9,7 +9,7 @@ var Friedrich = rows.Library{
 	PackageID:    "friedrich",
 	PackageName:  "friedrich",
 	PackageURL:   "https://github.com/nestordemeure/friedrich?tab=readme-ov-file",
-	Reference:    "n/a",
+	Reference:    "",
 	ReferenceURL: "",
 	Language:     []string{"Rust"},
 	Licenses: []cells.NameURL{
@@ -18,7 +18,7 @@ var Friedrich = rows.Library{
 			URL:  "https://github.com/nestordemeure/friedrich/blob/master/LICENSE",
 		},
 	},
-	Version:    "n/a",
+	Version:    "",
 	VersionURL: "",
 	Developers: []cells.TagNameURL{
 		{
@@ -27,16 +27,14 @@ var Friedrich = rows.Library{
 			URL:  "https://github.com/nestordemeure/friedrich/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -47,7 +45,7 @@ var Friedrich = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -59,7 +57,7 @@ var Friedrich = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -71,7 +69,7 @@ var Friedrich = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

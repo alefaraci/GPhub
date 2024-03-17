@@ -37,16 +37,14 @@ var Egobox = rows.Library{
 			URL:  "https://github.com/relf/egobox/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://github.com/relf/egobox/tree/master/doc",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -101,7 +99,7 @@ var Egobox = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

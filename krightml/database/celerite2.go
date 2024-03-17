@@ -37,21 +37,18 @@ var Celerite2 = rows.Library{
 			URL:  "https://github.com/exoplanet-dev/celerite2/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://celerite2.readthedocs.io/en/latest/",
 		},
 		{
-			Tag:  "default",
 			Name: "tutorials",
 			URL:  "https://celerite2.readthedocs.io/en/latest/tutorials/first/",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -62,7 +59,7 @@ var Celerite2 = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -74,7 +71,7 @@ var Celerite2 = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -86,7 +83,7 @@ var Celerite2 = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

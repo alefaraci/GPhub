@@ -9,7 +9,7 @@ var AbstractGPsjl = rows.Library{
 	PackageID:    "AbstractGPsjl",
 	PackageName:  "AbstractGPs.jl",
 	PackageURL:   "https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/",
-	Reference:    "n/a",
+	Reference:    "",
 	ReferenceURL: "",
 	Language:     []string{"Julia"},
 	Licenses: []cells.NameURL{
@@ -27,21 +27,18 @@ var AbstractGPsjl = rows.Library{
 			URL:  "https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/api/",
 		},
 		{
-			Tag:  "default",
 			Name: "examples",
 			URL:  "https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/concrete_features/",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -52,7 +49,7 @@ var AbstractGPsjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -64,7 +61,7 @@ var AbstractGPsjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -76,7 +73,7 @@ var AbstractGPsjl = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

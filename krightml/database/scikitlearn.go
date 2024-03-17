@@ -57,41 +57,34 @@ var Scikitlearn = rows.Library{
 			URL:  "https://github.com/scikit-learn/scikit-learn/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://scikit-learn.org/stable/modules/gaussian_process.html",
 		},
 		{
-			Tag:  "default",
 			Name: "examples",
 			URL:  "https://scikit-learn.org/stable/auto_examples/index.html#gaussian-process-for-machine-learning",
 		},
 		{
-			Tag:  "default",
 			Name: "tutorials",
 			URL:  "https://scikit-learn.org/stable/tutorial/index.html",
 		},
 		{
-			Tag:  "default",
 			Name: "API",
 			URL:  "https://scikit-learn.org/stable/modules/classes.html",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "blog",
 			URL:  "https://blog.scikit-learn.org",
 		},
 		{
-			Tag:  "default",
 			Name: "stackoverflow",
 			URL:  "https://stackoverflow.com/questions/tagged/scikit-learn",
 		},
 		{
-			Tag:  "default",
 			Name: "GitHub discussions",
 			URL:  "https://github.com/scikit-learn/scikit-learn/discussions",
 		},
@@ -114,7 +107,7 @@ var Scikitlearn = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -126,7 +119,7 @@ var Scikitlearn = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

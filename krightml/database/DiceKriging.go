@@ -46,16 +46,14 @@ var DiceKriging = rows.Library{
 			URL:  "http://www.alpestat.com",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://cran.r-project.org/web/packages/DiceKriging/DiceKriging.pdf",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "blog",
 			URL:  "https://dicekrigingclub.github.io/www/",
 		},
@@ -118,7 +116,7 @@ var DiceKriging = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

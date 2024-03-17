@@ -27,21 +27,18 @@ var Deepgp = rows.Library{
 			URL:  "https://www.vt.edu/",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://cran.r-project.org/web/packages/deepgp/deepgp.pdf",
 		},
 		{
-			Tag:  "default",
 			Name: "tutorials",
 			URL:  "https://cran.r-project.org/web/packages/deepgp/vignettes/deepgp.html",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -52,7 +49,7 @@ var Deepgp = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -64,7 +61,7 @@ var Deepgp = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -76,7 +73,7 @@ var Deepgp = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

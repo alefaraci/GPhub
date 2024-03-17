@@ -22,23 +22,22 @@ type PageData struct {
 
 func main() {
 	http.HandleFunc("/", serveTemplate)
-	http.HandleFunc("/new-content", serveDynamicContent)
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "static/favicon.ico")
+	})
 	fmt.Println("Server is running at http://localhost:8080/")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe("localhost:8080", nil); err != nil {
 		fmt.Printf("Error starting server: %s\n", err)
 	}
 }
 
-// serveTemplate handles the root path and renders the HTML page using Go templates.
+// serveTemplate handles the root path and renders the HTML page using Go templates
 func serveTemplate(w http.ResponseWriter, r *http.Request) {
 	var filePaths []string
-	// Walk through the base directory to find all .html files
 	err := filepath.Walk("./layout", func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-		// Check if the file is a .html file
 		if !info.IsDir() && filepath.Ext(path) == ".html" {
 			filePaths = append(filePaths, path)
 		}
@@ -57,6 +56,7 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Insert data into the Table template
 	TableRows := []rows.Library{
 		database.AbstractGPsjl,
 		database.Albatross,
@@ -109,10 +109,11 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 		database.UQpyLabBeta,
 	}
 
+	// Render the template with the data
 	data := PageData{
-		Title:              "A comprehensive guide to Gaussian Process Regression libraries",
+		Title:              "A comprehensive guide to Gaussian Process libraries",
 		Libraries:          TableRows,
-		Source:             "Source: © A. Faraci, P. Beaurepaire, N. Gayton; A comprehensive guide to Gaussian Process Regression libraries: bridging theory with practice through features, limitations, and performance.",
+		Source:             "Source: © A. Faraci, P. Beaurepaire, N. Gayton; A comprehensive guide to Gaussian Process libraries: bridging theory with practice through features, limitations, and performance.",
 		SourceURL:          "",
 		Aknowledgements:    "This Project has received funding from the European Union’s Horizon 2020 research and innovation programme under Marie Sklodowska-Curie project GREYDIENT – Grant Agreement n°955393",
 		AknowledgementsURL: "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en",
@@ -122,9 +123,4 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, fmt.Sprintf("Failed to render template: %v", err), http.StatusInternalServerError)
 	}
 
-}
-
-// serveDynamicContent handles the dynamic content update requested by HTMX.
-func serveDynamicContent(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "This new content was dynamically loaded with HTMX without a full page reload.")
 }

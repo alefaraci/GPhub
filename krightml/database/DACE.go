@@ -14,7 +14,7 @@ var DACE = rows.Library{
 	Language:     []string{"Matlab"},
 	Licenses: []cells.NameURL{
 		{
-			Name: "NA",
+			Name: "",
 			URL:  "",
 		},
 	},
@@ -27,21 +27,18 @@ var DACE = rows.Library{
 			URL:  "https://www.dtu.dk",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://www.omicron.dk/dace/dace.pdf",
 		},
 		{
-			Tag:  "default",
 			Name: "user manuals",
 			URL:  "https://www.omicron.dk/dace/dace-aspects.pdf",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -52,7 +49,7 @@ var DACE = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -64,7 +61,7 @@ var DACE = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -76,7 +73,7 @@ var DACE = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

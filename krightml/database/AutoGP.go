@@ -18,7 +18,7 @@ var AutoGP = rows.Library{
 			URL:  "https://github.com/ebonilla/AutoGP/blob/master/LICENSE",
 		},
 	},
-	Version:    "n/a",
+	Version:    "",
 	VersionURL: "",
 	Developers: []cells.TagNameURL{
 		{
@@ -37,16 +37,14 @@ var AutoGP = rows.Library{
 			URL:  "https://github.com/ebonilla/AutoGP/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -57,7 +55,7 @@ var AutoGP = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -69,7 +67,7 @@ var AutoGP = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -81,7 +79,7 @@ var AutoGP = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

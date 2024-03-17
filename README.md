@@ -1,152 +1,205 @@
-# Kriging-Table-HTML
-
 <p align="center">
-    <img title="Kriging-Table-HTML" alt="Kriging-Table-HTML" src="https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png">
+    <img title="GPhubLogo" alt="GPhub" src="https://res.cloudinary.com/dkytv4nwx/image/upload/v1710786255/GPhubLogo_nn1pyz.svg" width="300">
 </p>
 
----
+[![build](https://img.shields.io/badge/build-passing-brightgreen)](https://img.shields.io/badge/build-passing-brightgreen)
+[![version](https://img.shields.io/badge/version-v0.0.dev-brightgreen)](https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs)
+[![language](https://img.shields.io/badge/language-GO-blue)](https://go.dev)
+[![language](https://img.shields.io/badge/language-html-orange)](https://html.spec.whatwg.org)
+[![language](https://img.shields.io/badge/language-CSS-green)](https://www.w3.org/TR/CSS/)
+[![language](https://img.shields.io/badge/language-JS-yellow)](developer.mozilla.org/it/docs/Web/JavaScript)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE)
+[![issues](https://img.shields.io/badge/issues-1-red)](https://github.com/alefaraci/Kriging-Table-HTML/issues)
 
-<div align="center"><p>
-A comprehensive guide to Kriging metamodeling toolboxes.
-<br> Check the full table opening the <code>Table.html</code> file on the web browser of your choice.
-</p></div>
+![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
 
-<div align="center"><p>
-    <a href="https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs">
-      <img title="version" alt="version" src="https://img.shields.io/badge/version-v0.0.dev-brightgreen">
-    </a>
-    <a href="https://www.python.org">
-      <img title="language" alt="language" src="https://img.shields.io/badge/language-python-blue">
-    </a>
-    <a href="https://html.spec.whatwg.org">
-      <img title="language" alt="language" src="https://img.shields.io/badge/language-html-orange">
-    </a>
-    <a href="https://www.w3.org/TR/CSS/">
-      <img title="language" alt="language" src="https://img.shields.io/badge/language-CSS-green">
-    </a>
-    <a href="developer.mozilla.org/it/docs/Web/JavaScript">
-      <img title="language" alt="language" src="https://img.shields.io/badge/language-JS-yellow">
-    </a>
-    <a href="https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE">
-      <img title="license" alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg">
-    </a>
-    <a href="https://github.com/alefaraci/Kriging-Table-HTML/issues">
-      <img title="issues" alt="issues" src="https://img.shields.io/badge/issues-1-red">
-    </a>
-    </p>
-</div>
+`GPhub` offers an interactive guide to Gaussian Process (GP) libraries. This project is built using `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
 
----
+# Usage: displaying the table
 
-## 🧑🏻‍💻 Developing the table
+### 🛜 Running a local server
 
-The table is built using `HTML`, `CSS`, and `JavaScript`, and it is served by a `Python server`.
-
-### Setting server
-
-#### 🛜 Running the server
-
-You can start your server by executing:
+You can start your local server by executing:
 
 ```shell
-cd devs
-python3 -m http.server
+make
 ```
 
-#### 🌐 Open the table on the browser
+The table is served at [`http://localhost:8080`](http://localhost:8080)
 
-The table is served at `http://localhost:8000/main.html` ➡️ [Link](http://localhost:8000/main.html)
+### 🛠️ Building a static HTML file
 
----
+You can generate a static file `Table.html` by running:
 
-### 🆕 Adding a new package
+```shell
+sh TableHTMLgen.sh
+```
 
-To add a new package add a new dictionary entry to the `.packages/List.py` file having the following format:
+The table is available by opening the `Table.html` file on the web browser of your choice.
 
-```python
-"GPvecchia": {
-        "URL": "https://cran.r-project.org/package=GPvecchia",
-        "Language": ["R"],
-        "License": {
-            "type": ["GPL2", "GPL3"],
-            "URL": [
-                "https://cran.r-project.org/web/licenses/GPL-2",
-                "https://cran.r-project.org/web/licenses/GPL-3",
-            ],
+# Contributing
+
+The table is built using `GO Template`, `HTML`, `CSS`, and `JavaScript`.
+
+### 👨‍💻 Adding a new library to the Table
+
+To add a new library to the table create a new `PackageName.go` entry to the `./database` directory using this template:
+
+```go
+package database
+
+import (
+    "github.com/alefaraci/krightml/table/cells"
+    "github.com/alefaraci/krightml/table/rows"
+)
+
+var TemplateVar = rows.Library{
+    PackageID:    "TemplateID",
+    PackageName:  "Template",
+    PackageURL:   "",
+    Reference:    "",
+    ReferenceURL: "",
+    Language:     []string{""},
+    Licenses: []cells.NameURL{
+        {
+            Name: "",
+            URL:  "",
         },
-        "Reference": {
-            "Authors": "Katzfuss et al. (2017)",
-            "URL": "https://arxiv.org/abs/1708.06302",
-        },
-        "Release": {
-            "version": "v0.1.6",
-            "URL": "https://cran.r-project.org/src/contrib/GPvecchia_0.1.6.tar.gz",
-        },
-        "Developers": [
-            {
-                "color": "blue",
-                "name": "Southern Methodist University",
-                "URL": "https://www.smu.edu/",
-            },
-        ],
-        "Docs": [
-            {
-                "color": "default",
-                "URL": "https://cran.r-project.org/web/packages/GPvecchia/GPvecchia.pdf",
-                "link": "cran.r-project.org/web/packages/GPvecchia/GPvecchia.pdf",
-            },
-            {
-                "color": "blue",
-                "URL": "https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html",
-                "link": "cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette",
-            },
-        ],
-        "Support": [
-            {
-                "color": "default",
-                "URL": "",
-                "link": "",
-            },
-        ],
     },
-"""
-`
+    Version:    "",
+    VersionURL: "",
+    Developers: []cells.TagNameURL{
+        {
+            Tag:  "",
+            Name: "",
+            URL:  "",
+        },
+    },
+    Docs: []cells.NameURL{
+        {
+            Name: "",
+            URL:  "",
+        },
+    },
+    Support: []cells.NameURL{
+        {
+            Name: "",
+            URL:  "",
+        },
+    },
+    Frameworks: []string{""},
+    GPU:        false,
+    Trends: []cells.TagGroup{
+        {
+            Group: []cells.TagName{
+                {
+                    Tag:  "",
+                    Name: "",
+                },
+            },
+            URL: "",
+        },
+    },
+    LengthScale: []string{""},
+    Correlation: []cells.TagGroup{
+        {
+            Group: []cells.TagName{
+                {
+                    Tag:  "",
+                    Name: "",
+                },
+            },
+            URL: "",
+        },
+    },
+    Mixture: false,
+    MixtureModels: []cells.TagGroup{
+        {
+            Group: []cells.TagName{
+                {
+                    Tag:  "",
+                    Name: "",
+                },
+            },
+            URL: "",
+        },
+    },
+}
 ```
 
-Then build the project running:
+Then include the `TemplateVar` into the `TableRows` in the `main.go` file:
+
+```go
+package main
+
+...
+
+// serveTemplate handles the root path and renders the HTML page using Go templates
+func serveTemplate(w http.ResponseWriter, r *http.Request) {
+
+    ...
+	// Insert data into the Table template
+	TableRows := []rows.Library{
+		database.AbstractGPsjl,
+		database.Albatross,
+		...
+		database.TemplateVar,
+	}
+
+...
+```
+
+Finally rebuild the project by running:
 
 ```shell
-cd devs
-python3 build.py
+make
 ```
 
-or to auto-build on changes:
-
-```python
-find . -name '*.py' | entr -r python3 build.py
-```
-
-### ⚠️ Fixing or adding new data to an existing package
-
-Modify the `.packages/List.py` file at the `package_name` entry point.
-
-Then rebuild the project running the script:
+or:
 
 ```shell
-cd devs
-python3 build.py
+sh TableHTMLgen.sh
 ```
 
-or to auto-build on changes:
+### ⚠️ Fixing or adding data to an existing library
 
-```python
-find . -name '*.py' | entr -r python3 build.py
+Modify the `./database/PackageName.go` file.
+
+Then rebuild the project by running:
+
+```shell
+make
 ```
 
-## Acknowledgements
+or:
+
+```shell
+sh TableHTMLgen.sh
+```
+
+# Citing GPhub
+
+If you use GPhub in your research, please cite our [Journal paper]().
+
+```
+@article{Faraci2024,
+  doi = {},
+  url = {},
+  year = {2024},
+  publisher = {Springer},
+  volume = {},
+  number = {},
+  pages = {},
+  author = {Faraci, A., Beaurepaire, P., Gayton, N.},
+  title = {GPhub: a comprehensive guide to Gaussian Process libraries, bridging theory with practice through features, limitations, and performance.},
+  journal = {Structural and Multidisciplinary Optimization}
+}
+```
+
+# Acknowledgments
 
 This project has received funding from the [European Union’s Horizon 2020](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en) research and innovation programme under the [Marie Sklodowska-Curie](https://marie-sklodowska-curie-actions.ec.europa.eu) grant agreement No. 955393.
 
-## License
+# License
 
 Licensed under the [MIT license](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE).

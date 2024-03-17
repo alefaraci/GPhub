@@ -9,7 +9,7 @@ var Albatross = rows.Library{
 	PackageID:    "albatross",
 	PackageName:  "albatross",
 	PackageURL:   "https://swiftnav-albatross.readthedocs.io/en/latest/",
-	Reference:    "n/a",
+	Reference:    "",
 	ReferenceURL: "",
 	Language:     []string{"Cpp"},
 	Licenses: []cells.NameURL{
@@ -18,7 +18,7 @@ var Albatross = rows.Library{
 			URL:  "https://github.com/swift-nav/albatross/blob/master/LICENSE",
 		},
 	},
-	Version:    "n/a",
+	Version:    "",
 	VersionURL: "",
 	Developers: []cells.TagNameURL{
 		{
@@ -32,16 +32,14 @@ var Albatross = rows.Library{
 			URL:  "https://github.com/swift-nav/albatross/graphs/contributors",
 		},
 	},
-	Docs: []cells.TagNameURL{
+	Docs: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "docs",
 			URL:  "https://swiftnav-albatross.readthedocs.io/en/latest/",
 		},
 	},
-	Support: []cells.TagNameURL{
+	Support: []cells.NameURL{
 		{
-			Tag:  "default",
 			Name: "",
 			URL:  "",
 		},
@@ -52,7 +50,7 @@ var Albatross = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -64,7 +62,7 @@ var Albatross = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},
@@ -76,7 +74,7 @@ var Albatross = rows.Library{
 		{
 			Group: []cells.TagName{
 				{
-					Tag:  "default",
+					Tag:  "",
 					Name: "",
 				},
 			},

@@ -1,171 +1,166 @@
 package database
 
 import (
-    "github.com/alefaraci/krightml/table/cells"
-    "github.com/alefaraci/krightml/table/rows"
+	"github.com/alefaraci/krightml/table/cells"
+	"github.com/alefaraci/krightml/table/rows"
 )
 
 var PyMC = rows.Library{
-    PackageID: "PyMC",
-    PackageName: "PyMC",
-    PackageURL:   "https://www.pymc.io/welcome.html",   
-    Reference:    "Abril-Pla et al. (2023)",
-    ReferenceURL: "https://peerj.com/articles/cs-1516/",
-    Language:     []string{"Python"},
-    Licenses: []cells.NameURL{
-        {
-            Name: "Apache2",
-            URL:  "https://github.com/pymc-devs/pymc/blob/main/LICENSE",
-        },
-    },
-    Version:    "v5.10.4",
-    VersionURL: "https://github.com/pymc-devs/pymc/releases/tag/v5.10.4",
-    Developers: []cells.TagNameURL{
-        {
-            Tag:  "teal",
-            Name: "ArviZ-Devs",
-            URL:  "https://arviz-devs.github.io/arviz/",
-        },
+	PackageID:    "PyMC",
+	PackageName:  "PyMC",
+	PackageURL:   "https://www.pymc.io/welcome.html",
+	Reference:    "Abril-Pla et al. (2023)",
+	ReferenceURL: "https://peerj.com/articles/cs-1516/",
+	Language:     []string{"Python"},
+	Licenses: []cells.NameURL{
 		{
-            Tag:  "red",
-            Name: "Boston University",
-            URL:  "https://www.bu.edu",
-        },
+			Name: "Apache2",
+			URL:  "https://github.com/pymc-devs/pymc/blob/main/LICENSE",
+		},
+	},
+	Version:    "v5.10.4",
+	VersionURL: "https://github.com/pymc-devs/pymc/releases/tag/v5.10.4",
+	Developers: []cells.TagNameURL{
 		{
-            Tag:  "green",
-            Name: "Google Research",
-            URL:  "https://research.google",
-        },
+			Tag:  "teal",
+			Name: "ArviZ-Devs",
+			URL:  "https://arviz-devs.github.io/arviz/",
+		},
 		{
-            Tag:  "blue",
-            Name: "University of Toronto",
-            URL:  "https://www.utoronto.ca",
-        },
+			Tag:  "red",
+			Name: "Boston University",
+			URL:  "https://www.bu.edu",
+		},
 		{
-            Tag:  "uiBlue",
-            Name: "The Hospital for Sick Children",
-            URL:  "https://www.sickkids.ca",
-        },
+			Tag:  "green",
+			Name: "Google Research",
+			URL:  "https://research.google",
+		},
 		{
-            Tag:  "red",
-            Name: "Philadelphia Phillies Baseball Operations Department",
-            URL:  "https://boards.greenhouse.io/philadelphiaphilliesrddepartment",
-        },
+			Tag:  "blue",
+			Name: "University of Toronto",
+			URL:  "https://www.utoronto.ca",
+		},
 		{
-            Tag:  "blue",
-            Name: "PyMC Labs",
-            URL:  "https://www.pymc-labs.com",
-        },
+			Tag:  "uiBlue",
+			Name: "The Hospital for Sick Children",
+			URL:  "https://www.sickkids.ca",
+		},
 		{
-            Tag:  "red",
-            Name: "Stony Brook University",
-            URL:  "https://www.stonybrook.edu",
-        },
+			Tag:  "red",
+			Name: "Philadelphia Phillies Baseball Operations Department",
+			URL:  "https://boards.greenhouse.io/philadelphiaphilliesrddepartment",
+		},
 		{
-            Tag:  "purple",
-            Name: "Universidad Nacional de San Luis",
-            URL:  "https://www.unsl.edu.ar",
-        },
+			Tag:  "blue",
+			Name: "PyMC Labs",
+			URL:  "https://www.pymc-labs.com",
+		},
 		{
-            Tag:  "blue",
-            Name: "Forschungszentrum Jülich",
-            URL:  "https://www.fz-juelich.de",
-        },
+			Tag:  "red",
+			Name: "Stony Brook University",
+			URL:  "https://www.stonybrook.edu",
+		},
 		{
-            Tag:  "blue",
-            Name: "University of Oxford",
-            URL:  "https://www.ox.ac.uk",
-        },
+			Tag:  "purple",
+			Name: "Universidad Nacional de San Luis",
+			URL:  "https://www.unsl.edu.ar",
+		},
 		{
-            Tag:  "orange",
-            Name: "NumFOCUS",
-            URL:  "https://numfocus.org",
-        },
+			Tag:  "blue",
+			Name: "Forschungszentrum Jülich",
+			URL:  "https://www.fz-juelich.de",
+		},
 		{
-            Tag:  "teal",
-            Name: "Mistplay",
-            URL:  "https://www.mistplay.com",
-        },
+			Tag:  "blue",
+			Name: "University of Oxford",
+			URL:  "https://www.ox.ac.uk",
+		},
 		{
-            Tag:  "default",
-            Name: "ODSC",
-            URL:  "https://odsc.com/california/?utm_source=pymc&utm_medium=referral",
-        },
+			Tag:  "orange",
+			Name: "NumFOCUS",
+			URL:  "https://numfocus.org",
+		},
 		{
-            Tag:  "default",
-            Name: "ADIA Lab",
-            URL:  "https://www.adialab.ae",
-        },
+			Tag:  "teal",
+			Name: "Mistplay",
+			URL:  "https://www.mistplay.com",
+		},
 		{
-            Tag:  "default",
-            Name: "PyMC contributors",
-            URL:  "https://github.com/pymc-devs/pymc/graphs/contributors",
-        },
-    },
-    Docs: []cells.TagNameURL{
-        {
-            Tag:  "default",
-            Name: "docs",
-            URL:  "https://www.pymc.io/projects/docs/en/stable/learn.html",
-        },
+			Tag:  "default",
+			Name: "ODSC",
+			URL:  "https://odsc.com/california/?utm_source=pymc&utm_medium=referral",
+		},
 		{
-            Tag:  "default",
-            Name: "examples",
-            URL:  "https://www.pymc.io/projects/examples/en/latest/blog/tag/gaussian-process.html",
-        },
+			Tag:  "default",
+			Name: "ADIA Lab",
+			URL:  "https://www.adialab.ae",
+		},
 		{
-            Tag:  "default",
-            Name: "API",
-            URL:  "https://www.pymc.io/projects/docs/en/stable/api/gp.html",
-        },
-    },
-    Support: []cells.TagNameURL{
-        {
-            Tag:  "default",
-            Name: "forum",
-            URL:  "https://discourse.pymc.io",
-        },
+			Tag:  "default",
+			Name: "PyMC contributors",
+			URL:  "https://github.com/pymc-devs/pymc/graphs/contributors",
+		},
+	},
+	Docs: []cells.NameURL{
 		{
-            Tag:  "default",
-            Name: "GitHub discussions",
-            URL:  "https://github.com/pymc-devs/pymc/discussions",
-        },
-    },
-    Frameworks: []string{""},
-    GPU:        false,
-    Trends: []cells.TagGroup{
-        {
-        Group: []cells.TagName{
-            {
-                Tag:  "default",
-                Name: "",
-            },
-        },
-        URL: "",
-    },
-    },
-    LengthScale: []string{""},
-    Correlation: []cells.TagGroup{
-        {
-        Group: []cells.TagName{
-            {
-                Tag:  "default",
-                Name: "",
-            },
-        },
-        URL: "",
-    },
-    },
-    Mixture: false,
-    MixtureModels: []cells.TagGroup{
-        {
-        Group: []cells.TagName{
-            {
-                Tag:  "default",
-                Name: "",
-            },
-        },
-        URL: "",
-    },
-    },
+			Name: "docs",
+			URL:  "https://www.pymc.io/projects/docs/en/stable/learn.html",
+		},
+		{
+			Name: "examples",
+			URL:  "https://www.pymc.io/projects/examples/en/latest/blog/tag/gaussian-process.html",
+		},
+		{
+			Name: "API",
+			URL:  "https://www.pymc.io/projects/docs/en/stable/api/gp.html",
+		},
+	},
+	Support: []cells.NameURL{
+		{
+			Name: "forum",
+			URL:  "https://discourse.pymc.io",
+		},
+		{
+			Name: "GitHub discussions",
+			URL:  "https://github.com/pymc-devs/pymc/discussions",
+		},
+	},
+	Frameworks: []string{""},
+	GPU:        false,
+	Trends: []cells.TagGroup{
+		{
+			Group: []cells.TagName{
+				{
+					Tag:  "",
+					Name: "",
+				},
+			},
+			URL: "",
+		},
+	},
+	LengthScale: []string{""},
+	Correlation: []cells.TagGroup{
+		{
+			Group: []cells.TagName{
+				{
+					Tag:  "",
+					Name: "",
+				},
+			},
+			URL: "",
+		},
+	},
+	Mixture: false,
+	MixtureModels: []cells.TagGroup{
+		{
+			Group: []cells.TagName{
+				{
+					Tag:  "",
+					Name: "",
+				},
+			},
+			URL: "",
+		},
+	},
 }
