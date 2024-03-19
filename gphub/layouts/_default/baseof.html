@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" style="width: 2600px !important">
+    <!-- HEAD -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>{{.Title}}</title>
+        <link rel="stylesheet" href="/style.css" />
+        <style>
+            {{range .Site.Data.libraries}}
+            #{{.PackageID}}:hover,
+            #{{.PackageID}}:hover td:first-child{
+                background-color: #f7fff1;
+            }
+            {{end}}
+        </style>
+        <link rel="shortcut icon" href="{{ "/favicon.ico" | relURL }}">
+    </head>
+    <body>
+        <main class="pb7" role="main">{{ block "main" . }}{{ end }}</main>
+        <!-- SCRIPTS -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var table = document.getElementById("GPTable");
+                var input = document.getElementById("searchInput");
+                var lastFilter = "";
+
+                // Function to update row colors
+                function updateRowColors() {
+                    var tableRows = table.getElementsByTagName("tr");
+                    var visibleRowIndex = 0;
+                    for (var i = 2; i < tableRows.length; i++) {
+                        if (tableRows[i].style.display !== "none") {
+                            tableRows[i].style.backgroundColor =
+                                visibleRowIndex % 2 === 0
+                                    ? "#ffffff"
+                                    : "#f6f8fa";
+                            visibleRowIndex++;
+                        }
+                    }
+                }
+
+                // Search functionality
+                input.addEventListener("keyup", function () {
+                    var searchQuery = this.value.toLowerCase();
+                    var tableRows = table.getElementsByTagName("tr");
+
+                    for (var i = 2; i < tableRows.length; i++) {
+                        var cells = tableRows[i].getElementsByTagName("td");
+                        var rowText = Array.from(cells)
+                            .map((cell) => cell.textContent.toLowerCase())
+                            .join(" ");
+                        tableRows[i].style.display =
+                            rowText.indexOf(searchQuery) > -1 ? "" : "none";
+                    }
+                    lastFilter = "";
+                    updateRowColors();
+                });
+
+                // Filter functionality
+                function filterTableLanguage(filter) {
+                    var tableRows = table.getElementsByTagName("tr");
+                    var isFilterActive =
+                        lastFilter.toLowerCase() === filter.toLowerCase();
+
+                    for (var i = 2; i < tableRows.length; i++) {
+                        if (!isFilterActive && filter !== "") {
+                            var cellText =
+                                tableRows[i].cells[1].textContent.toLowerCase();
+                            var shouldDisplay =
+                                cellText.indexOf(filter.toLowerCase()) > -1;
+                            tableRows[i].style.display = shouldDisplay
+                                ? ""
+                                : "none";
+                        } else {
+                            tableRows[i].style.display = "";
+                        }
+                    }
+
+                    lastFilter = isFilterActive ? "" : filter;
+                    updateRowColors();
+                }
+
+                // Filter buttons
+                document
+                    .getElementById("filterC")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("C ");
+                    });
+
+                document
+                    .getElementById("filterCpp")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("C++");
+                    });
+
+                document
+                    .getElementById("filterGo")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Go");
+                    });
+
+                document
+                    .getElementById("filterJulia")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Julia");
+                    });
+
+                document
+                    .getElementById("filterMatlab")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Matlab");
+                    });
+
+                document
+                    .getElementById("filterOctave")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Octave");
+                    });
+
+                document
+                    .getElementById("filterPython")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Python");
+                    });
+
+                document
+                    .getElementById("filterR")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("R ");
+                    });
+
+                document
+                    .getElementById("filterRust")
+                    .addEventListener("click", function () {
+                        filterTableLanguage("Rust");
+                    });
+
+                // Keyboard shortcut functionality
+                document.addEventListener("keydown", function (e) {
+                    if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+                        e.preventDefault();
+                        input.focus();
+                    }
+                });
+
+                // Placeholder text based on OS
+                if (
+                    navigator.platform.startsWith("Win") ||
+                    navigator.platform.startsWith("Linux")
+                ) {
+                    input.placeholder = "Press ⌃ CTRL + K to search";
+                } else if (navigator.platform.startsWith("Mac")) {
+                    input.placeholder = "Press ⌘ + K to search";
+                } else {
+                    input.placeholder = "Press ⌘ / ⌃ + K to search";
+                }
+            });
+        </script>
+    </body>
+</html>

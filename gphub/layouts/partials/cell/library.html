@@ -1,0 +1,20 @@
+<!-- LIBRARY -->
+<td class="cell-library">
+    <!-- NAME -->
+    <a
+        href="{{.PackageURL}}"
+        title="{{.PackageURL}}"
+        style="text-decoration: none"
+    >
+        <b> {{.PackageName}} </b>
+    </a>
+    <br style="margin-bottom: 8px" />
+    <!-- REFERENCE -->
+    <a
+        href='{{if eq .ReferenceURL ""}}{{"javascript:void(0)"}}{{else}}{{.ReferenceURL}}{{end}}'
+        title="{{ .ReferenceURL }}"
+        style="text-decoration: none; font-style: italic; color: #5d5c5e"
+    >
+        {{if eq .Reference ""}}{{"n/a"}}{{else}}{{.Reference}}{{end}}
+    </a>
+</td>

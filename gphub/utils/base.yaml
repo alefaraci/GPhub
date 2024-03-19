@@ -1,0 +1,43 @@
+PackageID: TemplateID
+PackageName: TemplateName
+PackageURL:
+Reference:
+ReferenceURL:
+Language:
+  -
+License:
+  - Name:
+    URL:
+Version:
+VersionURL:
+Developer:
+  - Tag:
+    Name:
+    URL:
+Docs:
+  - Name:
+    URL:
+Support:
+  - Name:
+    URL:
+Framework:
+  -
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale:
+  -
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

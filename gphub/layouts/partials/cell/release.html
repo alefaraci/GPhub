@@ -1,0 +1,7 @@
+<!-- Version -->
+<td class="cell-release">
+    <a href='{{if eq .VersionURL ""}}{{"javascript:void(0)"}}{{else}}{{.VersionURL}}{{end}}'
+        title="{{.VersionURL}}" class="version" style="text-decoration: none">
+        {{if eq .Version ""}}{{"n/a"}}{{else}}{{.Version}}{{end}}
+    </a>
+</td>

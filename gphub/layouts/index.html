@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article id="Article" class="page sans">
+    <header style="width: 400px !important; height: 100px !important">
+        <!-- TABLE TITLE -->
+        <h1 class="page-title" style="width: 1200px !important">{{.Title}}</h1>
+    </header>
+    <div class="page-body" style="width: 1000px !important">
+        <!-- SEARCHER -->
+        {{ partial "bar/searcher.html" . }}
+        <!-- BUTTON -->
+        {{ partial "bar/button-C.html" . }}
+        <!---->
+        {{ partial "bar/button-Cpp.html" . }}
+        <!---->
+        {{ partial "bar/button-GO.html" . }}
+        <!---->
+        {{ partial "bar/button-Julia.html" . }}
+        <!---->
+        {{ partial "bar/button-Matlab.html" . }}
+        <!---->
+        {{ partial "bar/button-Octave.html" . }}
+        <!---->
+        {{ partial "bar/button-Python.html" . }}
+        <!---->
+        {{ partial "bar/button-R.html" . }}
+        <!---->
+        {{ partial "bar/button-Rust.html" . }}
+        <!-- TABLE -->
+        <table id="GPTable" class="collection-content">
+            <!-- TABLE HEADER -->
+            {{ partial "header/header.html" . }}
+            <!-- TABLE BODY ALPHABETICAL ORDER -->
+            <tbody>
+                {{range sort $.Site.Data.libraries}}
+                <!-- Table row  -->
+                <tr id="{{.PackageID}}">
+                    <!-- Library  -->
+                    {{partial "cell/library.html" .}}
+                    <!-- Language -->
+                    {{partial "cell/language.html" .}}
+                    <!--  License -->
+                    {{partial "cell/license.html" .}}
+                    <!--  Release -->
+                    {{partial "cell/release.html" .}}
+                    <!--  Developer -->
+                    {{partial "cell/developer.html" .}}
+                    <!--  Docs -->
+                    {{partial "cell/docs.html" .}}
+                    <!--  Support -->
+                    {{partial "cell/support.html" .}}
+                    <!--  Framework -->
+                    {{partial "cell/framework.html" .}}
+                    <!--  Framework -->
+                    {{partial "cell/gpu.html" .}}
+                    <!--  Trend -->
+                    {{partial "cell/trend.html" .}}
+                    <!--  Length scale -->
+                    {{partial "cell/lengthscale.html" .}}
+                    <!--  Correlation -->
+                    {{partial "cell/correlation.html" .}}
+                    <!--  Mixture -->
+                    {{partial "cell/mixture.html" .}}
+                    <!--  Mixture Models -->
+                    {{partial "cell/mixturemodels.html" .}}
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+        <!-- FOOTER -->
+        {{partial "footer/footer.html" .}}
+    </div>
+</article>
+{{ end }}

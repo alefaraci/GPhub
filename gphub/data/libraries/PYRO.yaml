@@ -1,0 +1,55 @@
+PackageID: PYRO
+PackageName: PYRO
+PackageURL: https://pyro.ai
+Reference: Bingham et al. (2019)
+ReferenceURL: http://jmlr.org/papers/v20/18-403.html
+Language:
+  - Python
+License:
+  - Name: Apache2
+    URL: https://github.com/pyro-ppl/pyro/blob/dev/LICENSE.md
+Version: v1.9.0
+VersionURL: https://github.com/pyro-ppl/pyro/releases/tag/1.9.0
+Developer:
+  - Tag: default
+    Name: Uber AI
+    URL: https://eng.uber.com/uber-ai/
+  - Tag: red
+    Name: Stanford University
+    URL: https://www.stanford.edu
+  - Tag: blue
+    Name: Broad Institute
+    URL: https://www.broadinstitute.org
+  - Tag: default
+    Name: Linux Foundation
+    URL: https://www.linuxfoundation.org
+  - Tag: default
+    Name: PYRO contributors
+    URL: https://github.com/pyro-ppl/pyro/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://pyro.ai/examples/gp.html
+  - Name: examples
+    URL: https://pyro.ai/examples/
+Support:
+  - Name: forum
+    URL: http://forum.pyro.ai/
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

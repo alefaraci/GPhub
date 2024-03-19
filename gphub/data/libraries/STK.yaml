@@ -1,0 +1,47 @@
+PackageID: STK
+PackageName: STK
+PackageURL: https://github.com/stk-kriging/stk
+Reference: Bect et al. (2023)
+ReferenceURL: https://github.com/stk-kriging/stk/
+Language:
+  - Matlab
+  - Octave
+License:
+  - Name: GPL3
+    URL: https://github.com/stk-kriging/stk/blob/master/COPYING
+Version: v2.8.1
+VersionURL: https://github.com/stk-kriging/stk/releases/tag/2.8.1
+Developer:
+  - Tag: red
+    Name: CentraleSupélec
+    URL: https://www.centralesupelec.fr
+  - Tag: default
+    Name: STK contributors
+    URL: https://github.com/stk-kriging/stk/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://stk-kriging.github.io/release/latest/doc/html/index.html
+  - Name: examples
+    URL: https://github.com/stk-kriging/stk/tree/master/examples
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

@@ -1,0 +1,43 @@
+PackageID: AbstractGPsjl
+PackageName: AbstractGPs.jl
+PackageURL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/
+Reference: ""
+ReferenceURL: ""
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/blob/master/LICENSE
+Version: v0.5.19
+VersionURL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/releases/tag/v0.5.19
+Developer:
+  - Tag: default
+    Name: AbstractGPs.jl contributors
+    URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/api/
+  - Name: examples
+    URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/concrete_features/
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

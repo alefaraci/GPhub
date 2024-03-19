@@ -1,0 +1,41 @@
+PackageID: fbm
+PackageName: fbm
+PackageURL: https://glizen.com/radfordneal/fbm.software.html
+Reference: Neal (1996)
+ReferenceURL: https://link.springer.com/book/10.1007/978-1-4612-0745-0
+Language:
+  - C
+License:
+  - Name: BSL1
+    URL: https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads
+Version: v2022-04-21
+VersionURL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/Release.2022-04-21.html
+Developer:
+  - Tag: blue
+    Name: University of Toronto
+    URL: https://www.statistics.utoronto.ca
+Docs:
+  - Name: docs
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/index.html
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: default
+        Name: Zero
+    URL: "https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html "
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

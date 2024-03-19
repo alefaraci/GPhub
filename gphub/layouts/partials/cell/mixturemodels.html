@@ -1,0 +1,13 @@
+<!-- MIXTURE MODELS -->
+<td class="cell-mixture-models">
+    {{ range .MixtureModels}}
+    {{if ne .URL ""}}
+    <a href='{{if eq .URL ""}}{{"javascript:void(0)"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
+        style="text-decoration: none">
+        {{range .Types}}
+        <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
+        {{end}}
+    </a>
+    {{end}}
+    {{end}}
+</td>

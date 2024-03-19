@@ -1,0 +1,30 @@
+<!-- LICENSE -->
+<td class="cell-license">
+    {{range .License}}
+    <a href='{{if eq .Name ""}}{{" javascript:void(0)"}}{{else}}{{.URL}}{{end}}'
+        title='{{if eq .Name ""}}{{"n/a"}}{{else}}{{.URL}}{{end}}'
+        style="text-decoration: none">
+        {{if eq .Name "Apache2"}}
+        {{partial "license/Apache2.html" .}}
+        {{else if eq .Name "BSD"}}
+        {{partial "license/BSD.html" .}}
+        {{else if eq .Name "BSD3"}}
+        {{partial "license/BSD3.html" .}}
+        {{else if eq .Name "BSL1"}}
+        {{partial "license/BSL1.html" .}}
+        {{else if eq .Name "FreeBSD"}}
+        {{partial "license/FreeBSD.html" .}}
+        {{else if eq .Name "GPL2"}}
+        {{partial "license/GPL2.html" .}}
+        {{else if eq .Name "GPL3"}}
+        {{partial "license/GPL3.html" .}}
+        {{else if eq .Name "LGPL"}}
+        {{partial "license/LGPL.html" .}}
+        {{else if eq .Name "MIT"}}
+        {{partial "license/MIT.html" .}}
+        {{else if eq .Name ""}}
+        {{partial "license/NA.html" .}}
+        {{end}}
+    </a>
+    {{end}}
+</td>

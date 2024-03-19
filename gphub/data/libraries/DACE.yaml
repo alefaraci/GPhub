@@ -1,0 +1,43 @@
+PackageID: DACE
+PackageName: DACE
+PackageURL: https://www.omicron.dk/dace.html
+Reference: Nielsen et al. (2002)
+ReferenceURL: https://www.semanticscholar.org/paper/DACE-A-Matlab-Kriging-Toolbox-Nielsen-Lophaven/d11a9e296ccd522809cb7550740e89f2c7ee65af#paper-topics
+Language:
+  - Matlab
+License:
+  - Name: ""
+    URL: ""
+Version: v2.5
+VersionURL: https://www.omicron.dk/dace/changelog.txt
+Developer:
+  - Tag: red
+    Name: Techincal University of Denmark (DTU)
+    URL: https://www.dtu.dk
+Docs:
+  - Name: docs
+    URL: https://www.omicron.dk/dace/dace.pdf
+  - Name: user manuals
+    URL: https://www.omicron.dk/dace/dace-aspects.pdf
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

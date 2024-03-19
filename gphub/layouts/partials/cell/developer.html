@@ -1,0 +1,10 @@
+<!-- DEVELOPER -->
+<td class="cell-dev">
+    {{range .Developer}}
+    <span class="selected-value select-value-color-{{.Tag}}">
+        <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+            {{.Name}}
+        </a>
+    </span>
+    {{end}}
+</td>

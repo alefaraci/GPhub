@@ -13,171 +13,11 @@
 
 ![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
 
-`GPhub` offers an interactive guide to Gaussian Process (GP) libraries. This project is built using `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
+`GPhub` offers an interactive guide to Gaussian Process (GP) libraries. This project is built using [`Hugo Framework`](https://gohugo.io/), `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
 
-# Usage: displaying the table
+The table is available by opening the `Table.html` file on a web browser of your choice.
 
-### 🛜 Running a local server
-
-You can start your local server by executing:
-
-```shell
-make
-```
-
-The table is served at [`http://localhost:8080`](http://localhost:8080)
-
-### 🛠️ Building a static HTML file
-
-You can generate a static file `Table.html` by running:
-
-```shell
-sh TableHTMLgen.sh
-```
-
-The table is available by opening the `Table.html` file on the web browser of your choice.
-
-# Contributing
-
-The table is built using `GO Template`, `HTML`, `CSS`, and `JavaScript`.
-
-### 👨‍💻 Adding a new library to the Table
-
-To add a new library to the table create a new `PackageName.go` entry to the `./database` directory using this template:
-
-```go
-package database
-
-import (
-    "github.com/alefaraci/krightml/table/cells"
-    "github.com/alefaraci/krightml/table/rows"
-)
-
-var TemplateVar = rows.Library{
-    PackageID:    "TemplateID",
-    PackageName:  "Template",
-    PackageURL:   "",
-    Reference:    "",
-    ReferenceURL: "",
-    Language:     []string{""},
-    Licenses: []cells.NameURL{
-        {
-            Name: "",
-            URL:  "",
-        },
-    },
-    Version:    "",
-    VersionURL: "",
-    Developers: []cells.TagNameURL{
-        {
-            Tag:  "",
-            Name: "",
-            URL:  "",
-        },
-    },
-    Docs: []cells.NameURL{
-        {
-            Name: "",
-            URL:  "",
-        },
-    },
-    Support: []cells.NameURL{
-        {
-            Name: "",
-            URL:  "",
-        },
-    },
-    Frameworks: []string{""},
-    GPU:        false,
-    Trends: []cells.TagGroup{
-        {
-            Group: []cells.TagName{
-                {
-                    Tag:  "",
-                    Name: "",
-                },
-            },
-            URL: "",
-        },
-    },
-    LengthScale: []string{""},
-    Correlation: []cells.TagGroup{
-        {
-            Group: []cells.TagName{
-                {
-                    Tag:  "",
-                    Name: "",
-                },
-            },
-            URL: "",
-        },
-    },
-    Mixture: false,
-    MixtureModels: []cells.TagGroup{
-        {
-            Group: []cells.TagName{
-                {
-                    Tag:  "",
-                    Name: "",
-                },
-            },
-            URL: "",
-        },
-    },
-}
-```
-
-Then include the `TemplateVar` into the `TableRows` in the `main.go` file:
-
-```go
-package main
-
-...
-
-// serveTemplate handles the root path and renders the HTML page using Go templates
-func serveTemplate(w http.ResponseWriter, r *http.Request) {
-
-    ...
-	// Insert data into the Table template
-	TableRows := []rows.Library{
-		database.AbstractGPsjl,
-		database.Albatross,
-		...
-		database.TemplateVar,
-	}
-
-...
-```
-
-Finally rebuild the project by running:
-
-```shell
-make
-```
-
-or:
-
-```shell
-sh TableHTMLgen.sh
-```
-
-### ⚠️ Fixing or adding data to an existing library
-
-Modify the `./database/PackageName.go` file.
-
-Then rebuild the project by running:
-
-```shell
-make
-```
-
-or:
-
-```shell
-sh TableHTMLgen.sh
-```
-
-# Citing GPhub
+## Citing GPhub
 
 If you use GPhub in your research, please cite our [Journal paper]().
 
@@ -195,6 +35,130 @@ If you use GPhub in your research, please cite our [Journal paper]().
   journal = {Structural and Multidisciplinary Optimization}
 }
 ```
+
+---
+
+# Contributing
+
+Contributions to GPhub are warmly welcomed. There are several ways you can contribute:
+
+- **Improving the Guide**: Help us enhance the content and accuracy of our guide. This includes updating library information, adding new GP tools, and refining our descriptions to make them more helpful.
+- **Technical Enhancements**: Contribute to the development of the site by improving its design, enhancing the functionality of the dynamic table, or fixing bugs.
+- **Feedback and Suggestions**: Share your insights on how we can improve GPhub. We're always looking for feedback on the usability of the guide, new features that could be added, or any other suggestions you might have.
+
+## How to Contribute
+
+- **Fork the Repository**: Start by forking the GPhub repository on GitHub. This allows you to make changes without affecting the main project.
+- **Create a Pull Request**: Once you've made your changes, submit a pull request. Be sure to provide a detailed description of your contributions and why they are beneficial to the project.
+- **Code Review**: After submission, your pull request will be reviewed by the project maintainers. This process ensures that contributions align with the project's standards and goals.
+- **Integration**: Once approved, your contributions will be merged into the project, becoming a part of the GPhub guide.
+
+## Editing
+
+### 👨‍💻 Adding a new library to the Table
+
+To add a new library to the table create a new `PackageName.yaml` entry in the `./gphub/data` directory using this YAML template:
+
+```YAML
+PackageID: TemplateID
+PackageName: TemplateName
+PackageURL:
+Reference:
+ReferenceURL:
+Language:
+  -
+License:
+  - Name:
+    URL:
+Version:
+VersionURL:
+Developer:
+  - Tag:
+    Name:
+    URL:
+Docs:
+  - Name:
+    URL:
+Support:
+  - Name:
+    URL:
+Framework:
+  -
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale:
+  -
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+```
+
+### ⚠️ Fixing or adding data to an existing library
+
+Modify the `./gphub/data/PackageName.yaml` file.
+
+---
+
+# Installation
+
+## Install Hugo
+
+Refer to [Hugo website](https://gohugo.io/installation/) for details on how to install Hugo.
+
+#### Homebrew (macOS - Linux)
+
+```sh
+brew install hugo
+```
+
+#### MacPorts (macOS)
+
+```MacPorts
+sudo port install hugo
+```
+
+## Install Python dependencies
+
+#### BeautifulSoup
+
+```sh
+pip install beautifulsoup4 lxml
+```
+
+## Deploy
+
+### 🛜 Running on a local server
+
+You can start your local server via hugo by executing:
+
+```shell
+cd gphub
+hugo serve -D
+```
+
+The table is served at [`http://localhost:1313`](http://localhost:1313)
+
+### 🛠️ Building a static HTML file
+
+You can generate a static file `Table.html` by running:
+
+```shell
+python TableGen.py
+```
+
+---
 
 # Acknowledgments
 

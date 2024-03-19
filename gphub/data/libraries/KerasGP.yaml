@@ -1,0 +1,49 @@
+PackageID: KerasGP
+PackageName: Keras-GP
+PackageURL: https://github.com/alshedivat/keras-gp
+Reference: Al-Shedivat et al. (2017)
+ReferenceURL: https://jmlr.org/papers/v18/16-498.html
+Language:
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/alshedivat/keras-gp/blob/master/LICENSE
+Version: v0.3.2
+VersionURL: https://github.com/alshedivat/keras-gp/releases/tag/0.3.2
+Developer:
+  - Tag: red
+    Name: Carnegie Mellon University
+    URL: https://www.cmu.edu/
+  - Tag: red
+    Name: Cornell University
+    URL: https://www.cornell.edu/
+  - Tag: default
+    Name: Keras-GP contributors
+    URL: https://github.com/alshedivat/keras-gp/graphs/contributors
+Docs:
+  - Name: examples
+    URL: https://github.com/alshedivat/keras-gp/tree/master/examples
+  - Name: tutorials
+    URL: https://github.com/alshedivat/keras-gp/tree/master/tutorials
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

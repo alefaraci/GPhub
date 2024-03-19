@@ -1,0 +1,10 @@
+<!-- LENGTH SCALE -->
+<td class="cell-length-scale">
+    {{range .LengthScale}}
+    {{if eq . "Isotropic"}}
+    {{partial "lengthscale/Isotropic.html" .}}
+    {{else if eq . "Anisotropic"}}
+    {{partial "lengthscale/Anisotropic.html" .}}
+    {{end}}
+    {{end}}
+</td>

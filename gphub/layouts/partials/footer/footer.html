@@ -1,0 +1,21 @@
+<!-- FOOTER -->
+{{ range $.Site.Data.footer }}
+<br />
+<p
+    style=" font-size: 9pt !important; color: #9ca2a8; margin-top: -15px !important; width: 2000px!important;">
+    <a href='{{if eq .SourceURL ""}}{{" javascript:void(0)"}}{{else}}{{.SourceURL}}{{end}}'
+        title="{{.SourceURL}}" class="link-style"
+        style="text-decoration: none; font-style: italic">{{.Source}}</a>
+</p>
+<p style="
+    font-size: 9pt !important;
+    color: #9ca2a8;
+    margin-top: -1px !important;
+    width: 2000px !important;">
+    <a href="{{.AknowledgementsURL}}" title="{{.AknowledgementsURL}}" class="link-style"
+        style="text-decoration: none; font-style: italic">
+        {{.Aknowledgements}}
+    </a>
+</p>
+<br /><br />
+{{end}}

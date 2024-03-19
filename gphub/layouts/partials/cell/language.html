@@ -1,0 +1,24 @@
+<!-- LANGUAGE -->
+<td class="cell-language">
+    {{range .Language}}
+    {{if eq . "C"}}
+    {{partial "language/C.html" .}}
+    {{else if eq . "Cpp"}}
+    {{partial "language/Cpp.html" .}}
+    {{else if eq . "GO"}}
+    {{partial "language/GO.html" .}}
+    {{else if eq . "Julia"}}
+    {{partial "language/Julia.html" .}}
+    {{else if eq . "Matlab"}}
+    {{partial "language/Matlab.html" .}}
+    {{else if eq . "Octave"}}
+    {{partial "language/Octave.html" .}}
+    {{else if eq . "Python"}}
+    {{partial "language/Python.html" .}}
+    {{else if eq . "R"}}
+    {{partial "language/R.html" .}}
+    {{else if eq . "Rust"}}
+    {{partial "language/Rust.html" .}}
+    {{end}}
+    {{end}}
+</td>

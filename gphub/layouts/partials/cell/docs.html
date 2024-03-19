@@ -1,0 +1,42 @@
+<!-- DOCS -->
+<td class="cell-documentation">
+    {{range .Docs}}
+    {{if eq .Name "docs"}}
+    {{partial "docs/docs.html" .}}
+    {{else if eq .Name "py docs"}}
+    {{partial "docs/docs.html" .}}
+    {{else if eq .Name "jl docs"}}
+    {{partial "docs/docs.html" .}}
+    {{else if eq .Name "r docs"}}
+    {{partial "docs/docs.html" .}}
+    {{else if eq .Name "mat docs"}}
+    {{partial "docs/docs.html" .}}
+    {{else if eq .Name "user manuals"}}
+    {{partial "docs/manuals.html" .}}
+    {{else if eq .Name "examples"}}
+    {{partial "docs/examples.html" .}}
+    {{else if eq .Name "py examples"}}
+    {{partial "docs/examples.html" .}}
+    {{else if eq .Name "jl examples"}}
+    {{partial "docs/examples.html" .}}
+    {{else if eq .Name "r examples"}}
+    {{partial "docs/examples.html" .}}
+    {{else if eq .Name "API"}}
+    {{partial "docs/API.html" .}}
+    {{else if eq .Name "py API"}}
+    {{partial "docs/API.html" .}}
+    {{else if eq .Name "jl API"}}
+    {{partial "docs/API.html" .}}
+    {{else if eq .Name "r API"}}
+    {{partial "docs/API.html" .}}
+    {{else if eq .Name "tutorials"}}
+    {{partial "docs/tutorials.html" .}}
+    {{else if eq .Name "jupyter notebooks"}}
+    {{partial "docs/notebooks.html" .}}
+    {{else if eq .Name "colab cookbook"}}
+    {{partial "docs/notebooks.html" .}}
+    {{else if eq .Name "talk"}}
+    {{partial "docs/talk.html" .}}
+    {{end}}
+    {{end}}
+</td>

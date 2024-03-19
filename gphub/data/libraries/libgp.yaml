@@ -1,0 +1,41 @@
+PackageID: libgp
+PackageName: libgp
+PackageURL: https://github.com/mblum/libgp
+Reference: ""
+ReferenceURL: ""
+Language:
+  - Cpp
+License:
+  - Name: BSD3
+    URL: https://github.com/mblum/libgp/blob/master/COPYING
+Version: v0.1.4
+VersionURL: https://github.com/mblum/libgp/blob/master/README.md#release-notes
+Developer:
+  - Tag: ""
+    Name: ""
+    URL: ""
+Docs:
+  - Name: docs
+    URL: https://github.com/mblum/libgp/tree/master/doxygen
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

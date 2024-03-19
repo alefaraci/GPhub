@@ -1,0 +1,22 @@
+<!-- SUPPORT -->
+<td class="cell-support">
+    {{range .Support}}
+    {{if eq .Name "blog"}}
+    {{partial "support/blog.html" .}}
+    {{else if eq .Name "chat"}}
+    {{partial "support/chat.html" .}}
+    {{else if eq .Name "contact form"}}
+    {{partial "support/form.html" .}}
+    {{else if eq .Name "forum"}}
+    {{partial "support/forum.html" .}}
+    {{else if eq .Name "GitHub discussions"}}
+    {{partial "support/GitHub.html" .}}
+    {{else if eq .Name "mailing-list"}}
+    {{partial "support/mail.html" .}}
+    {{else if eq .Name "stackoverflow"}}
+    {{partial "support/stackoverflow.html" .}}
+    {{else if eq .Name "slack"}}
+    {{partial "support/slack.html" .}}
+    {{end}}
+    {{end}}
+</td>

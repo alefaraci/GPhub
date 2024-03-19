@@ -1,0 +1,14 @@
+<!-- FRAMEWORK -->
+<td class="cell-framework">
+    {{range .Framework}}
+    {{if eq . "PyTorch"}}
+    {{partial "framework/PyTorch.html" .}}
+    {{else if eq . "TensorFlow"}}
+    {{partial "framework/TensorFlow.html" .}}
+    {{else if eq . "Numpy"}}
+    {{partial "framework/Numpy.html" .}}
+    {{else if eq . "JAX"}}
+    {{partial "framework/JAX.html" .}}
+    {{end}}
+    {{end}}
+</td>

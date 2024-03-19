@@ -1,0 +1,51 @@
+PackageID: GaussianProcessesjl
+PackageName: GaussianProcesses.jl
+PackageURL: https://stor-i.github.io/GaussianProcesses.jl/latest/
+Reference: Fairbrother et al. (2022)
+ReferenceURL: https://www.jstatsoft.org/article/view/v102i01
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/blob/master/LICENSE.md
+Version: v0.12.5
+VersionURL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.5
+Developer:
+  - Tag: red
+    Name: Lancaster University
+    URL: https://www.lancaster.ac.uk/stor-i/
+  - Tag: red
+    Name: EPFL
+    URL: https://www.epfl.ch/en/
+  - Tag: default
+    Name: GaussianProcesses.jl contributors
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://stor-i.github.io/GaussianProcesses.jl/latest/
+  - Name: tutorials
+    URL: https://stor-i.github.io/GaussianProcesses.jl/latest/classification_example/
+  - Name: jupyter notebooks
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/tree/master/notebooks
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""

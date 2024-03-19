@@ -1,0 +1,50 @@
+PackageID: celerite2
+PackageName: celerite2
+PackageURL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
+Reference: Gordon et al. (2020)
+ReferenceURL: https://iopscience.iop.org/article/10.3847/1538-3881/abbc16
+Language:
+  - Cpp
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/exoplanet-dev/celerite2/blob/main/LICENSE
+Version: v0.3.0
+VersionURL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.0
+Developer:
+  - Tag: purple
+    Name: University of Washington
+    URL: https://www.washington.edu
+  - Tag: uiBlue
+    Name: Flatiron Institute
+    URL: https://www.simonsfoundation.org/flatiron/
+  - Tag: default
+    Name: celertie2 contributors
+    URL: https://github.com/exoplanet-dev/celerite2/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://celerite2.readthedocs.io/en/latest/
+  - Name: tutorials
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
+Support:
+  - Name: ""
+    URL: ""
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: ""
+        Name: ""
+    URL: ""
