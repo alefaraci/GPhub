@@ -1,15 +1,21 @@
 PackageID: GPJax
-PackageName: GPJax
-PackageURL: https://docs.jaxgaussianprocesses.com
-Reference: Pinder et al. (2022)
-ReferenceURL: https://joss.theoj.org/papers/10.21105/joss.04455#
+Library:
+  - Name: GPJax
+    URL: https://docs.jaxgaussianprocesses.com
+    Reference:
+      - Author: Pinder et al. (2022)
+        URL: https://joss.theoj.org/papers/10.21105/joss.04455#
 Language:
   - Python
 License:
-  - Name: Apache2
+  - Name: Apache-2.0
     URL: https://github.com/JaxGaussianProcesses/GPJax/blob/main/LICENSE
-Version: v0.8.0
-VersionURL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.8.0
+Repository:
+  - Name: JaxGaussianProcesses/GPJax
+    URL: https://github.com/JaxGaussianProcesses/GPJax/
+Version:
+  - Name:
+    URL:
 Developer:
   - Tag: red
     Name: Lancaster University

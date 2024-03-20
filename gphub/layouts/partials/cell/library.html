@@ -1,20 +1,20 @@
 <!-- LIBRARY -->
 <td class="cell-library">
+	{{range .Library}}
     <!-- NAME -->
-    <a
-        href="{{.PackageURL}}"
-        title="{{.PackageURL}}"
-        style="text-decoration: none"
-    >
-        <b> {{.PackageName}} </b>
+    <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+        <b> {{.Name}} </b>
     </a>
     <br style="margin-bottom: 8px" />
     <!-- REFERENCE -->
+    {{range .Reference}}
     <a
-        href='{{if eq .ReferenceURL ""}}{{"javascript:void(0)"}}{{else}}{{.ReferenceURL}}{{end}}'
-        title="{{ .ReferenceURL }}"
+        href='{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}'
+        title="{{ .URL }}"
         style="text-decoration: none; font-style: italic; color: #5d5c5e"
     >
-        {{if eq .Reference ""}}{{"n/a"}}{{else}}{{.Reference}}{{end}}
+        {{if .Author}}{{.Author}}{{else}}n/a{{end}}
     </a>
+    {{end}}
+    {{end}}
 </td>

@@ -1,15 +1,21 @@
 PackageID: AutoGPjl
-PackageName: AutoGP.jl
-PackageURL: https://probsys.github.io/AutoGP.jl/stable/
-Reference: Saad et al. (2023)
-ReferenceURL: https://arxiv.org/abs/2307.09607
+Library:
+  - Name: AutoGP.jl
+    URL: https://probsys.github.io/AutoGP.jl/stable/
+    Reference:
+      - Author: Saad et al. (2023)
+        URL: https://arxiv.org/abs/2307.09607
 Language:
   - Julia
 License:
-  - Name: Apache2
+  - Name: Apache-2.0
     URL: https://github.com/probsys/AutoGP.jl/blob/main/LICENSE.txt
-Version: ""
-VersionURL: ""
+Repository:
+  - Name: probsys/AutoGP.jl
+    URL: https://github.com/probsys/AutoGP.jl
+Version:
+  - Name:
+    URL:
 Developer:
   - Tag: red
     Name: Carnegie Mellon University

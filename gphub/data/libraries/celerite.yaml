@@ -1,17 +1,23 @@
 PackageID: celerite
-PackageName: celerite
-PackageURL: https://celerite.readthedocs.io/en/stable/
-Reference: Foreman-Mackey et al. (2017)
-ReferenceURL: https://iopscience.iop.org/article/10.3847/1538-3881/aa9332
+Library:
+  - Name: celerite
+    URL: https://celerite.readthedocs.io/en/stable/
+    Reference:
+      - Author: Foreman-Mackey et al. (2017)
+        URL: https://iopscience.iop.org/article/10.3847/1538-3881/aa9332
 Language:
-  - Cpp
+  - C++
   - Julia
   - Python
 License:
   - Name: MIT
     URL: https://github.com/dfm/celerite/blob/main/LICENSE
-Version: v0.4.2
-VersionURL: https://github.com/dfm/celerite/releases/tag/v0.4.2
+Repository:
+  - Name: dfm/celerite
+    URL: https://github.com/dfm/celerite
+Version:
+  - Name: #v0.4.2
+    URL: #https://github.com/dfm/celerite/releases/tag/v0.4.2
 Developer:
   - Tag: purple
     Name: University of Washington

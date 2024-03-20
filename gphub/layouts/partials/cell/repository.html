@@ -1,0 +1,13 @@
+<!-- Repository -->
+<td class="cell-repository">
+    {{range .Repository}}
+    <a
+        href="{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}"
+        title="{{.URL}}"
+        class="version"
+        style="text-decoration: none"
+    >
+        {{if .Name}}{{.Name}}{{else}}n/a{{end}}
+    </a>
+    {{end}}
+</td>

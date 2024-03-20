@@ -1,15 +1,22 @@
-PackageID: TemplateID
-PackageName: TemplateName
-PackageURL:
-Reference:
-ReferenceURL:
+PackageID:
+Library:
+  - Name:
+    URL:
+    Reference:
+      - Author:
+        URL:
 Language:
   -
 License:
   - Name:
     URL:
+Repository:
+  - Name:
+    URL:
 Version:
-VersionURL:
+  - Name:
+    URL:
+
 Developer:
   - Tag:
     Name:

@@ -1,16 +1,22 @@
 PackageID: celerite2
-PackageName: celerite2
-PackageURL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
-Reference: Gordon et al. (2020)
-ReferenceURL: https://iopscience.iop.org/article/10.3847/1538-3881/abbc16
+Library:
+  - Name: celerite2
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
+    Reference:
+      - Author: Gordon et al. (2020)
+        URL: https://iopscience.iop.org/article/10.3847/1538-3881/abbc16
 Language:
-  - Cpp
+  - C++
   - Python
 License:
   - Name: MIT
     URL: https://github.com/exoplanet-dev/celerite2/blob/main/LICENSE
-Version: v0.3.0
-VersionURL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.0
+Repository:
+  - Name: exoplanet-dev/celerite2
+    URL: https://github.com/exoplanet-dev/celerite2
+Version:
+  - Name:
+    URL:
 Developer:
   - Tag: purple
     Name: University of Washington

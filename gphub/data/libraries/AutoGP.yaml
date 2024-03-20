@@ -1,15 +1,21 @@
 PackageID: AutoGP
-PackageName: AutoGP
-PackageURL: https://arxiv.org/abs/1610.05392
-Reference: Krauth et al. (2017)
-ReferenceURL: https://arxiv.org/abs/1610.05392
+Library:
+  - Name: AutoGP
+    URL: https://arxiv.org/abs/1610.05392
+    Reference:
+      - Author: Krauth et al. (2017)
+        URL: https://arxiv.org/abs/1610.05392
 Language:
   - Python
 License:
-  - Name: Apache2
+  - Name: Apache-2.0
     URL: https://github.com/ebonilla/AutoGP/blob/master/LICENSE
-Version: ""
-VersionURL: ""
+Repository:
+  - Name: ebonilla/AutoGP
+    URL: https://github.com/ebonilla/AutoGP/
+Version:
+  - Name:
+    URL:
 Developer:
   - Tag: yellow
     Name: The University of New South Wales

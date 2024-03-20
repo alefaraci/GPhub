@@ -1,15 +1,21 @@
 PackageID: AbstractGPsjl
-PackageName: AbstractGPs.jl
-PackageURL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/
-Reference: ""
-ReferenceURL: ""
+Library:
+  - Name: AbstractGPs.jl
+    URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/
+    Reference:
+      - Author:
+        URL:
 Language:
   - Julia
 License:
   - Name: MIT
     URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/blob/master/LICENSE
-Version: v0.5.19
-VersionURL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/releases/tag/v0.5.19
+Repository:
+  - Name: JuliaGaussianProcesses/AbstractGPs.jl
+    URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl
+Version:
+  - Name: #v0.5.19
+    URL: #https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/releases/tag/v0.5.19
 Developer:
   - Tag: default
     Name: AbstractGPs.jl contributors

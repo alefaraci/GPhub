@@ -1,15 +1,21 @@
 PackageID: albatross
-PackageName: albatross
-PackageURL: https://swiftnav-albatross.readthedocs.io/en/latest/
-Reference: ""
-ReferenceURL: ""
+Library:
+  - Name: albatross
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/
+    Reference:
+      - Author:
+        URL:
 Language:
-  - Cpp
+  - C++
 License:
   - Name: MIT
     URL: https://github.com/swift-nav/albatross/blob/master/LICENSE
-Version: ""
-VersionURL: ""
+Repository:
+  - Name: swift-nav/albatross
+    URL: https://github.com/swift-nav/albatross
+Version:
+  - Name:
+    URL:
 Developer:
   - Tag: orange
     Name: Swift Navigation

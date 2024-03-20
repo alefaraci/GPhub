@@ -1,13 +1,16 @@
 <!-- TREND -->
 <td class="cell-trend">
-    {{ range .Trend}}
-    {{if ne .URL ""}}
-    <a href='{{if eq .URL ""}}{{"javascript:void(0)"}}{{else}}{{.URL}}{{end}}' title='{{.URL}}'
-        style="text-decoration: none">
+    {{ range .Trend}} {{if ne .URL ""}}
+    <a
+        href="{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}"
+        title="{{.URL}}"
+        style="text-decoration: none"
+    >
         {{range .Types}}
-        <span class="selected-value select-value-color-{{.Tag}}">{{.Name}}</span>
+        <span class="selected-value select-value-color-{{.Tag}}">
+            {{.Name}}
+        </span>
         {{end}}
     </a>
-    {{end}}
-    {{end}}
+    {{end}} {{end}}
 </td>

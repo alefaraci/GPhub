@@ -1,15 +1,21 @@
 PackageID: GPyTorch
-PackageName: GPyTorch
-PackageURL: https://gpytorch.ai
-Reference: Gardner et al. (2018)
-ReferenceURL: https://arxiv.org/abs/1809.11165
+Library:
+  - Name: GPyTorch
+    URL: https://gpytorch.ai
+    Reference:
+      - Author: Gardner et al. (2018)
+        URL: https://arxiv.org/abs/1809.11165
 Language:
   - Python
 License:
   - Name: MIT
     URL: https://github.com/cornellius-gp/gpytorch/blob/master/LICENSE
-Version: v1.11
-VersionURL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11
+Repository:
+  - Name: cornellius-gp/gpytorch
+    URL: https://github.com/cornellius-gp/gpytorch
+Version:
+  - Name: # v.1.11
+    URL: # https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11
 Developer:
   - Tag: red
     Name: Cornell University

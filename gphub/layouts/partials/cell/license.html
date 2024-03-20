@@ -1,28 +1,26 @@
 <!-- LICENSE -->
 <td class="cell-license">
     {{range .License}}
-    <a href='{{if eq .Name ""}}{{" javascript:void(0)"}}{{else}}{{.URL}}{{end}}'
-        title='{{if eq .Name ""}}{{"n/a"}}{{else}}{{.URL}}{{end}}'
+    <a href='{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}'
+        title='{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}'
         style="text-decoration: none">
-        {{if eq .Name "Apache2"}}
+        {{if eq .Name "Apache-2.0"}}
         {{partial "license/Apache2.html" .}}
-        {{else if eq .Name "BSD"}}
-        {{partial "license/BSD.html" .}}
-        {{else if eq .Name "BSD3"}}
+        {{else if eq .Name "BSD-3-Clause"}}
         {{partial "license/BSD3.html" .}}
-        {{else if eq .Name "BSL1"}}
+        {{else if eq .Name "BSL-1.0"}}
         {{partial "license/BSL1.html" .}}
         {{else if eq .Name "FreeBSD"}}
         {{partial "license/FreeBSD.html" .}}
-        {{else if eq .Name "GPL2"}}
+        {{else if eq .Name "GPL-2.0"}}
         {{partial "license/GPL2.html" .}}
-        {{else if eq .Name "GPL3"}}
+        {{else if eq .Name "GPL-3.0"}}
         {{partial "license/GPL3.html" .}}
         {{else if eq .Name "LGPL"}}
         {{partial "license/LGPL.html" .}}
         {{else if eq .Name "MIT"}}
         {{partial "license/MIT.html" .}}
-        {{else if eq .Name ""}}
+        {{else}}
         {{partial "license/NA.html" .}}
         {{end}}
     </a>

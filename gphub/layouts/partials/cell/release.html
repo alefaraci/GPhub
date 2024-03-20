@@ -1,7 +1,22 @@
 <!-- Version -->
 <td class="cell-release">
-    <a href='{{if eq .VersionURL ""}}{{"javascript:void(0)"}}{{else}}{{.VersionURL}}{{end}}'
-        title="{{.VersionURL}}" class="version" style="text-decoration: none">
-        {{if eq .Version ""}}{{"n/a"}}{{else}}{{.Version}}{{end}}
+    {{range .Version}}
+    {{if .Name}}
+    <a
+        id="release-name"
+        href="{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}"
+        title="{{.URL}}"
+        class="version"
+        style="text-decoration: none"
+    >
+        {{.Name}}
     </a>
+    {{else}}
+    <a
+        id="release-name-{{$.PackageID}}"
+        class="version"
+        style="text-decoration: none"
+    ></a>
+    {{end}}
+    {{end}}
 </td>
