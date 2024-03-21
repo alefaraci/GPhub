@@ -14,8 +14,8 @@ Repository:
   - Name: JuliaGaussianProcesses/TemporalGPs.jl
     URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl
 Version:
-  - Name:
-    URL:
+  - Name: v0.6.8
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/releases/tag/v0.6.8
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -32,24 +32,24 @@ Docs:
   - Name: talk
     URL: https://www.youtube.com/watch?v=dysmEpX1QoE
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

@@ -15,8 +15,8 @@ Repository:
   - Name: openturns/openturns
     URL: https://github.com/openturns/openturns
 Version:
-  - Name:
-    URL:
+  - Name: v1.22
+    URL: https://github.com/openturns/openturns/releases/tag/v1.22
 Developer:
   - Tag: blue
     Name: Airbus Group
@@ -50,18 +50,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

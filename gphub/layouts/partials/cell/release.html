@@ -1,6 +1,6 @@
 <!-- Version -->
 <td class="cell-release">
-    {{range .Version}} {{if .Name}}
+    {{range .Version}}
     <a
         id="release-name"
         href="{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}"
@@ -8,13 +8,7 @@
         class="version"
         style="text-decoration: none"
     >
-        {{.Name}}
+        {{if .Name}} {{.Name}} {{else}} n/a {{end}}
     </a>
-    {{else}}
-    <a
-        id="release-name-{{$.PackageID}}"
-        class="version"
-        style="text-decoration: none"
-    ></a>
-    {{end}} {{end}}
+    {{end}}
 </td>

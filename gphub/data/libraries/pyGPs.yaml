@@ -14,8 +14,8 @@ Repository:
   - Name: marionmari/pyGPs
     URL: https://github.com/marionmari/pyGPs
 Version:
-  - Name:
-    URL:
+  - Name: v1.3.5
+    URL: https://github.com/marionmari/pyGPs/releases/tag/v1.3.5
 Developer:
   - Tag: red
     Name: Washington University
@@ -38,24 +38,24 @@ Docs:
   - Name: examples
     URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Examples.html
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

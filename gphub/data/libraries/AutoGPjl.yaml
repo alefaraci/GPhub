@@ -14,8 +14,8 @@ Repository:
   - Name: probsys/AutoGP.jl
     URL: https://github.com/probsys/AutoGP.jl
 Version:
-  - Name:
-    URL:
+  - Name: v0.1.5
+    URL: https://github.com/probsys/AutoGP.jl/releases/tag/v0.1.5
 Developer:
   - Tag: red
     Name: Carnegie Mellon University
@@ -34,24 +34,24 @@ Docs:
   - Name: API
     URL: https://probsys.github.io/AutoGP.jl/stable/api.html
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

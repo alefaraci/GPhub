@@ -3,8 +3,8 @@ Library:
   - Name: Surrogates.jl
     URL: https://docs.sciml.ai/Surrogates/stable/
     Reference:
-      - Author:
-        URL:
+      - Author: null
+        URL: null
 Language:
   - Julia
 License:
@@ -14,8 +14,8 @@ Repository:
   - Name: SciML/Surrogates.jl
     URL: https://github.com/SciML/Surrogates.jl
 Version:
-  - Name:
-    URL:
+  - Name: v6.9.0
+    URL: https://github.com/SciML/Surrogates.jl/releases/tag/v6.9.0
 Developer:
   - Tag: red
     Name: Chan Zuckerberg Initiative
@@ -39,18 +39,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

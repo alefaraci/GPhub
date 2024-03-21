@@ -14,8 +14,8 @@ Repository:
   - Name: radfordneal/fbm
     URL: https://gitlab.com/radfordneal/fbm
 Version:
-  - Name: v2022-04-21
-    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/Release.2022-04-21.html
+  - Name: fbm.2022-04-21
+    URL: https://github.com/radfordneal/fbm/releases/tag/fbm.2022-04-21
 Developer:
   - Tag: blue
     Name: University of Toronto
@@ -24,8 +24,8 @@ Docs:
   - Name: docs
     URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/index.html
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
@@ -36,12 +36,12 @@ Trend:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

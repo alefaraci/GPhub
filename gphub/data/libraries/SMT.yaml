@@ -14,8 +14,8 @@ Repository:
   - Name: SMTorg/smt
     URL: https://github.com/SMTorg/smt
 Version:
-  - Name:
-    URL:
+  - Name: v2.5.0
+    URL: https://github.com/SMTorg/smt/releases/tag/v2.5.0
 Developer:
   - Tag: uiBlue
     Name: ISAE SUPEAERO
@@ -33,7 +33,7 @@ Developer:
     Name: University of San Diego
     URL: https://www.sandiego.edu
   - Tag: red
-    Name: Polytechnique Montréal
+    Name: "Polytechnique Montr\xE9al"
     URL: https://www.polymtl.ca
   - Tag: default
     Name: SMT contributors
@@ -44,8 +44,8 @@ Docs:
   - Name: tutorials
     URL: https://github.com/SMTorg/smt/tree/master/tutorial
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
@@ -76,6 +76,6 @@ Correlation:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

@@ -18,8 +18,8 @@ Repository:
   - Name: brian-lau/MatlabStan
     URL: https://github.com/brian-lau/MatlabStan
 Version:
-  - Name:
-    URL:
+  - Name: v2.15.1.0
+    URL: https://github.com/brian-lau/MatlabStan/releases/tag/v2.15.1.0
 VersionURL: https://zenodo.org/records/1101116
 Developer:
   - Tag: default
@@ -63,18 +63,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

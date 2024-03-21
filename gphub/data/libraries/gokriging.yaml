@@ -3,8 +3,8 @@ Library:
   - Name: go-kriging
     URL: https://github.com/lvisei/go-kriging
     Reference:
-      - Author:
-        URL:
+      - Author: null
+        URL: null
 Language:
   - GO
 License:
@@ -14,34 +14,34 @@ Repository:
   - Name: lvisei/go-kriging
     URL: https://github.com/lvisei/go-kriging
 Version:
-  - Name:
-    URL:
+  - Name: v0.0.1-alpha.15
+    URL: https://github.com/lvisei/go-kriging/releases/tag/v0.0.1-alpha.15
 Developer:
-  - Tag:
-    Name:
-    URL:
+  - Tag: null
+    Name: null
+    URL: null
 Docs:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

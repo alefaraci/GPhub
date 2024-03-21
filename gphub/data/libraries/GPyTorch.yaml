@@ -14,8 +14,8 @@ Repository:
   - Name: cornellius-gp/gpytorch
     URL: https://github.com/cornellius-gp/gpytorch
 Version:
-  - Name:
-    URL:
+  - Name: v1.11
+    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11
 Developer:
   - Tag: red
     Name: Cornell University

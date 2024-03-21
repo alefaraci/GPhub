@@ -14,8 +14,8 @@ Repository:
   - Name: SheffieldML/GPy
     URL: https://github.com/SheffieldML/GPy
 Version:
-  - Name:
-    URL:
+  - Name: v1.13.1
+    URL: https://github.com/SheffieldML/GPy/releases/tag/v1.13.1
 Developer:
   - Tag: purple
     Name: University of Sheffield
@@ -37,18 +37,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

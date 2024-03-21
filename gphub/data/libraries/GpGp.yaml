@@ -14,8 +14,8 @@ Repository:
   - Name: cran/GpGp
     URL: https://github.com/cran/GpGp
 Version:
-  - Name:
-    URL:
+  - Name: 0.5.0
+    URL: https://github.com/cran/GpGp/releases/tag/0.5.0
 Developer:
   - Tag: red
     Name: Cornell University
@@ -29,24 +29,24 @@ Docs:
   - Name: tutorials
     URL: https://www.youtube.com/watch?v=phyB4n0CDWg&t=4s
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

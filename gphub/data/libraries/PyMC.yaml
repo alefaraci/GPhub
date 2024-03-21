@@ -14,8 +14,8 @@ Repository:
   - Name: pymc-devs/pymc
     URL: https://github.com/pymc-devs/pymc
 Version:
-  - Name:
-    URL:
+  - Name: v5.11.0
+    URL: https://github.com/pymc-devs/pymc/releases/tag/v5.11.0
 Developer:
   - Tag: teal
     Name: ArviZ-Devs
@@ -45,7 +45,7 @@ Developer:
     Name: Universidad Nacional de San Luis
     URL: https://www.unsl.edu.ar
   - Tag: blue
-    Name: Forschungszentrum Jülich
+    Name: "Forschungszentrum J\xFClich"
     URL: https://www.fz-juelich.de
   - Tag: blue
     Name: University of Oxford
@@ -81,18 +81,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

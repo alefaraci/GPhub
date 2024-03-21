@@ -14,8 +14,8 @@ Repository:
   - Name: GAMES-UChile/mogptk
     URL: https://github.com/GAMES-UChile/mogptk
 Version:
-  - Name:
-    URL:
+  - Name: v0.5.1
+    URL: https://github.com/GAMES-UChile/mogptk/releases/tag/v0.5.1
 Developer:
   - Tag: purple
     Name: GAMES Universidad de Chile
@@ -31,24 +31,24 @@ Docs:
   - Name: examples
     URL: https://games-uchile.github.io/mogptk/examples.html?q=example_airline_passengers
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

@@ -16,8 +16,8 @@ Repository:
   - Name: dfm/celerite
     URL: https://github.com/dfm/celerite
 Version:
-  - Name:
-    URL:
+  - Name: v0.4.2
+    URL: https://github.com/dfm/celerite/releases/tag/v0.4.2
 Developer:
   - Tag: purple
     Name: University of Washington
@@ -40,24 +40,24 @@ Docs:
   - Name: API
     URL: https://celerite.readthedocs.io/en/stable/cpp/api/
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

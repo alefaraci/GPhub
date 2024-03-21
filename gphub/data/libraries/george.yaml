@@ -14,8 +14,8 @@ Repository:
   - Name: dfm/george
     URL: https://github.com/dfm/george
 Version:
-  - Name:
-    URL:
+  - Name: v0.4.1
+    URL: https://github.com/dfm/george/releases/tag/v0.4.1
 Developer:
   - Tag: purple
     Name: New York University
@@ -32,24 +32,24 @@ Docs:
   - Name: tutorials
     URL: https://george.readthedocs.io/en/latest/tutorials/
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

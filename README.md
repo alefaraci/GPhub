@@ -60,49 +60,55 @@ Contributions to GPhub are warmly welcomed. There are several ways you can contr
 To add a new library to the table create a new `PackageName.yaml` entry in the `./gphub/data` directory using this YAML template:
 
 ```YAML
-PackageID: TemplateID
-PackageName: TemplateName
-PackageURL:
-Reference:
-ReferenceURL:
+PackageID: null
+Library:
+  - Name: null
+    URL: null
+    Reference:
+      - Author: null
+        URL: null
 Language:
-  -
+  - null
 License:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
+Repository:
+  - Name: null
+    URL: null
 Version:
-VersionURL:
+  - Name: null
+    URL: null
 Developer:
-  - Tag:
-    Name:
-    URL:
+  - Tag: null
+    Name: null
+    URL: null
 Docs:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
-  -
+  - null
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+    - Tag: null
+      Name: null
+    URL: null
 LengthScale:
-  -
+  - null
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+    - Tag: null
+      Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+    - Tag: null
+      Name: null
+    URL: null
 ```
 
 ### ⚠️ Fixing or adding data to an existing library
@@ -149,6 +155,14 @@ hugo serve -D
 ```
 
 The table is served at [`http://localhost:1313`](http://localhost:1313)
+
+### ⤵️ Fetching version data from the GitHub repositories
+
+You can fetch the version data of the libraries by running:
+
+```shell
+python FetchVersion.py
+```
 
 ### 🛠️ Building a static HTML file
 

@@ -3,7 +3,7 @@ Library:
   - Name: PyKrige
     URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/
     Reference:
-      - Author: Müller et al. (2022)
+      - Author: "M\xFCller et al. (2022)"
         URL: https://gmd.copernicus.org/articles/15/3161/2022/
 Language:
   - Python
@@ -14,8 +14,8 @@ Repository:
   - Name: GeoStat-Framework/PyKrige
     URL: https://github.com/GeoStat-Framework/PyKrige
 Version:
-  - Name:
-    URL:
+  - Name: v1.7.1
+    URL: https://github.com/GeoStat-Framework/PyKrige/releases/tag/v1.7.1
 Developer:
   - Tag: blue
     Name: UFZ
@@ -46,18 +46,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

@@ -14,8 +14,8 @@ Repository:
   - Name: scikit-learn/scikit-learn
     URL: https://github.com/scikit-learn/scikit-learn
 Version:
-  - Name:
-    URL:
+  - Name: 1.4.1.post1
+    URL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.4.1.post1
 VersionURL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.4.1.post1
 Developer:
   - Tag: teal
@@ -65,12 +65,12 @@ Trend:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

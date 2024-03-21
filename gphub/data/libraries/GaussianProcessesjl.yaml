@@ -14,8 +14,8 @@ Repository:
   - Name: STOR-i/GaussianProcesses.jl
     URL: https://github.com/STOR-i/GaussianProcesses.jl
 Version:
-  - Name:
-    URL:
+  - Name: v0.12.5
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.5
 VersionURL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.5
 Developer:
   - Tag: red
@@ -35,24 +35,24 @@ Docs:
   - Name: jupyter notebooks
     URL: https://github.com/STOR-i/GaussianProcesses.jl/tree/master/notebooks
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

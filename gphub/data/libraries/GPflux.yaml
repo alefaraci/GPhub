@@ -14,8 +14,8 @@ Repository:
   - Name: secondmind-labs/GPflux
     URL: https://github.com/secondmind-labs/GPflux
 Version:
-  - Name:
-    URL:
+  - Name: v0.4.3
+    URL: https://github.com/secondmind-labs/GPflux/releases/tag/v0.4.3
 VersionURL: https://github.com/secondmind-labs/GPflux/releases/tag/v0.4.3
 Developer:
   - Tag: yellow
@@ -47,18 +47,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

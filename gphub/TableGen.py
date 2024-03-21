@@ -1,7 +1,7 @@
 """
-=========================================================================
- This script generates a Table.html file from the localhost:1313 webpage
-=========================================================================
+====================================================================
+ This script generates a Table.html file from the localhost webpage
+====================================================================
 """
 
 import subprocess
@@ -10,11 +10,6 @@ import time
 from pathlib import Path
 import shutil
 from bs4 import BeautifulSoup
-
-URL = "http://localhost:1313"
-
-# Define the base path
-base_path = Path.cwd() / "localhost:1313"
 
 
 def download_webpage(url) -> None:
@@ -44,8 +39,9 @@ def embed_css_into_html(html_path, css_path) -> None:
         html_path.write_text(soup.prettify(), encoding="utf-8")
 
 
-def main() -> None:
-    download_webpage(URL)
+def main(localhost) -> None:
+    base_path = Path.cwd() / localhost
+    download_webpage("http://" + localhost)
 
     css_file_path = base_path / "style.css"
     html_file_path = base_path / "index.html"
@@ -65,4 +61,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    localhost = "localhost:1313"
+    main(localhost)

@@ -14,8 +14,8 @@ Repository:
   - Name: alshedivat/keras-gp
     URL: https://github.com/alshedivat/keras-gp
 Version:
-  - Name:
-    URL:
+  - Name: 0.3.2
+    URL: https://github.com/alshedivat/keras-gp/releases/tag/0.3.2
 Developer:
   - Tag: red
     Name: Carnegie Mellon University
@@ -32,24 +32,24 @@ Docs:
   - Name: tutorials
     URL: https://github.com/alshedivat/keras-gp/tree/master/tutorials
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

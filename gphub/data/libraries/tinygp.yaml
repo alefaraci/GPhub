@@ -14,8 +14,8 @@ Repository:
   - Name: dfm/tinygp
     URL: https://github.com/dfm/tinygp
 Version:
-  - Name:
-    URL:
+  - Name: v0.3.0
+    URL: https://github.com/dfm/tinygp/releases/tag/v0.3.0
 Developer:
   - Tag: blue
     Name: Simons Foundation

@@ -15,8 +15,8 @@ Repository:
   - Name: JuliaGaussianProcesses/Stheno.jl
     URL: https://github.com/JuliaGaussianProcesses/Stheno.jl
 Version:
-  - Name:
-    URL:
+  - Name: v0.8.2
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/releases/tag/v0.8.2
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -49,18 +49,18 @@ Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null

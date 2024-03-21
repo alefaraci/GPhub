@@ -3,8 +3,8 @@ Library:
   - Name: AbstractGPs.jl
     URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/
     Reference:
-      - Author:
-        URL:
+      - Author: null
+        URL: null
 Language:
   - Julia
 License:
@@ -14,8 +14,8 @@ Repository:
   - Name: JuliaGaussianProcesses/AbstractGPs.jl
     URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl
 Version:
-  - Name: #v0.5.19
-    URL: #https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/releases/tag/v0.5.19
+  - Name: v0.5.21
+    URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/releases/tag/v0.5.21
 Developer:
   - Tag: default
     Name: AbstractGPs.jl contributors
@@ -26,24 +26,24 @@ Docs:
   - Name: examples
     URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/concrete_features/
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 LengthScale: []
 Correlation:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
