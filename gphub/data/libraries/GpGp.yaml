@@ -1,0 +1,52 @@
+PackageID: GpGp
+Library:
+  - Name: GpGp
+    URL: https://cran.r-project.org/package=GpGp
+    Reference:
+      - Author: Guinness et al. (2018)
+        URL: https://www.tandfonline.com/doi/full/10.1080/00401706.2018.1437476
+Language:
+  - R
+License:
+  - Name: MIT
+    URL: https://cran.r-project.org/web/licenses/MIT
+Repository:
+  - Name: cran/GpGp
+    URL: https://github.com/cran/GpGp
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: red
+    Name: Cornell University
+    URL: https://www.cornell.edu
+  - Tag: default
+    Name: GpGp contributors
+    URL: https://github.com/joeguinness/GpGp/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/GpGp/GpGp.pdf
+  - Name: tutorials
+    URL: https://www.youtube.com/watch?v=phyB4n0CDWg&t=4s
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

@@ -1,0 +1,57 @@
+PackageID: GPvecchia
+Library:
+  - Name: GPvecchia
+    URL: https://cran.r-project.org/package=GPvecchia
+    Reference:
+      - Author: Katzfuss et al. (2017)
+        URL: https://arxiv.org/abs/1708.06302
+Language:
+  - R
+License:
+  - Name: GPL-2.0
+    URL: https://cran.r-project.org/web/licenses/GPL-2
+  - Name: GPL-3.0
+    URL: https://cran.r-project.org/web/licenses/GPL-3
+Repository:
+  - Name: katzfuss-group/GPvecchia
+    URL: https://github.com/katzfuss-group/GPvecchia
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: brown
+    Name: Texas A&M University
+    URL: https://www.tamu.edu
+  - Tag: red
+    Name: Cornell University
+    URL: https://www.cornell.edu
+  - Tag: default
+    Name: GPvecchia contributors
+    URL: https://github.com/katzfuss-group/GPvecchia/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/GPvecchia/GPvecchia.pdf
+  - Name: tutorials
+    URL: https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

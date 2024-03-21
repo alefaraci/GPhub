@@ -34,24 +34,24 @@ Docs:
   - Name: API
     URL: https://probsys.github.io/AutoGP.jl/stable/api.html
 Support:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

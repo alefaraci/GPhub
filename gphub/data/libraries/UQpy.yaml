@@ -1,0 +1,50 @@
+PackageID: UQpy
+Library:
+  - Name: UQpy
+    URL: https://sites.google.com/site/jhusurg/UQpy
+    Reference:
+      - Author: Olivier et al. (2020)
+        URL: https://www.sciencedirect.com/science/article/abs/pii/S1877750320305056
+Language:
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/SURGroup/UQpy/blob/master/LICENSE
+Repository:
+  - Name: SURGroup/UQpy
+    URL: https://github.com/SURGroup/UQpy
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: blue
+    Name: Johns Hopkins University
+    URL: https://sites.google.com/site/jhusurg/home?authuser=0
+  - Tag: default
+    Name: UQpy contributors
+    URL: https://github.com/SURGroup/UQpy/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://uqpyproject.readthedocs.io/en/latest/
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/SURGroup/UQpy/discussions
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

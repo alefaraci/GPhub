@@ -1,0 +1,55 @@
+PackageID: GPstuff
+Library:
+  - Name: GPstuff
+    URL: https://research.cs.aalto.fi//pml/software/gpstuff/
+    Reference:
+      - Author: Vanhatalo et al. (2017)
+        URL: https://jmlr.csail.mit.edu/papers/v14/vanhatalo13a.html
+Language:
+  - R
+  - Matlab
+  - Octave
+License:
+  - Name: GPL-3.0
+    URL: https://github.com/gpstuff-dev/gpstuff/blob/develop/License.txt
+Repository:
+  - Name: gpstuff-dev/gpstuff
+    URL: https://github.com/gpstuff-dev/gpstuff
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: teal
+    Name: University of Helsinki
+    URL: https://www.helsinki.fi/en
+  - Tag: default
+    Name: Aalto University of Science
+    URL: https://www.aalto.fi/en/department-of-computer-science
+  - Tag: default
+    Name: GPstuff contributors
+    URL: https://github.com/gpstuff-dev/gpstuff/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://arxiv.org/pdf/1206.5754.pdf
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

@@ -12,7 +12,7 @@ License:
     URL: https://github.com/ebonilla/AutoGP/blob/master/LICENSE
 Repository:
   - Name: ebonilla/AutoGP
-    URL: https://github.com/ebonilla/AutoGP/
+    URL: https://github.com/ebonilla/AutoGP
 Version:
   - Name:
     URL:
@@ -27,27 +27,27 @@ Developer:
     Name: AutoGP contributors
     URL: https://github.com/ebonilla/AutoGP/graphs/contributors
 Docs:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Support:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

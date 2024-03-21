@@ -1,0 +1,47 @@
+PackageID: libgp
+Library:
+  - Name: libgp
+    URL: https://github.com/mblum/libgp
+    Reference:
+      - Author:
+        URL:
+Language:
+  - C++
+License:
+  - Name: BSD-3-Clause
+    URL: https://github.com/mblum/libgp/blob/master/COPYING
+Repository:
+  - Name: mblum/libgp
+    URL: https://github.com/mblum/libgp
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag:
+    Name:
+    URL:
+Docs:
+  - Name: docs
+    URL: https://github.com/mblum/libgp/tree/master/doxygen
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

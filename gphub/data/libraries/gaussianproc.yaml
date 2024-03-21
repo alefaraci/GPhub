@@ -1,0 +1,47 @@
+PackageID: gaussianproc
+Library:
+  - Name: gaussianproc
+    URL:
+    Reference:
+      - Author:
+        URL:
+Language:
+  - GO
+License:
+  - Name:
+    URL:
+Repository:
+  - Name:
+    URL:
+Version:
+  - Name: v0
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process?tab=versions
+Developer:
+  - Tag:
+    Name:
+    URL:
+Docs:
+  - Name:
+    URL:
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

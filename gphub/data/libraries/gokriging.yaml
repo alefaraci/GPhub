@@ -1,0 +1,47 @@
+PackageID: gokriging
+Library:
+  - Name: go-kriging
+    URL: https://github.com/lvisei/go-kriging
+    Reference:
+      - Author:
+        URL:
+Language:
+  - GO
+License:
+  - Name: MIT
+    URL: https://github.com/lvisei/go-kriging/blob/main/LICENSE
+Repository:
+  - Name: lvisei/go-kriging
+    URL: https://github.com/lvisei/go-kriging
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag:
+    Name:
+    URL:
+Docs:
+  - Name:
+    URL:
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

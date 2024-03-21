@@ -1,0 +1,55 @@
+PackageID: george
+Library:
+  - Name: george
+    URL: https://george.readthedocs.io/en/latest/
+    Reference:
+      - Author: Ambikasaran et al. (2015)
+        URL: https://ieeexplore.ieee.org/document/7130620
+Language:
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/dfm/george/blob/main/LICENSE
+Repository:
+  - Name: dfm/george
+    URL: https://github.com/dfm/george
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: purple
+    Name: New York University
+    URL: https://www.nyu.edu
+  - Tag: blue
+    Name: Simons Foundation
+    URL: https://www.simonsfoundation.org/
+  - Tag: default
+    Name: george contributors
+    URL: https://github.com/dfm/george/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://george.readthedocs.io/en/latest/user/
+  - Name: tutorials
+    URL: https://george.readthedocs.io/en/latest/tutorials/
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

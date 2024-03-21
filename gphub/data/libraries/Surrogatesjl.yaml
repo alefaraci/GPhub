@@ -1,0 +1,56 @@
+PackageID: Surrogatesjl
+Library:
+  - Name: Surrogates.jl
+    URL: https://docs.sciml.ai/Surrogates/stable/
+    Reference:
+      - Author:
+        URL:
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/SciML/Surrogates.jl/blob/master/LICENSE.md
+Repository:
+  - Name: SciML/Surrogates.jl
+    URL: https://github.com/SciML/Surrogates.jl
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: red
+    Name: Chan Zuckerberg Initiative
+    URL: https://chanzuckerberg.com
+  - Tag: default
+    Name: Wellcome Trust
+    URL: https://wellcome.org
+  - Tag: orange
+    Name: Microsoft
+    URL: https://www.microsoft.com/en-us/research/collaboration/studies-in-pandemic-preparedness/overview/
+  - Tag: default
+    Name: Surrogates.jl contributors
+    URL: https://github.com/SciML/Surrogates.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://docs.sciml.ai/Surrogates/stable/kriging/
+Support:
+  - Name: chat
+    URL: https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

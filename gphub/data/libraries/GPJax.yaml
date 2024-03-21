@@ -12,7 +12,7 @@ License:
     URL: https://github.com/JaxGaussianProcesses/GPJax/blob/main/LICENSE
 Repository:
   - Name: JaxGaussianProcesses/GPJax
-    URL: https://github.com/JaxGaussianProcesses/GPJax/
+    URL: https://github.com/JaxGaussianProcesses/GPJax
 Version:
   - Name:
     URL:
@@ -36,18 +36,18 @@ Framework:
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

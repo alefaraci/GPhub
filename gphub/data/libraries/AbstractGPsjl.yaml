@@ -26,24 +26,24 @@ Docs:
   - Name: examples
     URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/concrete_features/
 Support:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

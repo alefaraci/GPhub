@@ -27,24 +27,24 @@ Docs:
   - Name: docs
     URL: https://swiftnav-albatross.readthedocs.io/en/latest/
 Support:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

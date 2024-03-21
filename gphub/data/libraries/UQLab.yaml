@@ -1,0 +1,76 @@
+PackageID: UQLab
+Library:
+  - Name: UQLab
+    URL: https://www.uqlab.com
+    Reference:
+      - Author: Marelli et al. (2014)
+        URL: https://ascelibrary.org/doi/10.1061/9780784413609.257
+Language:
+  - Matlab
+License:
+  - Name: BSD-3-Clause
+    URL: https://www.uqlab.com/copy-of-release-notes
+Repository:
+  - Name:
+    URL:
+Version:
+  - Name: v2.0.0
+    URL: https://www.uqlab.com/release-notes
+Developer:
+  - Tag: default
+    Name: RSUQ ETH Zürich
+    URL: https://sudret.ibk.ethz.ch/software/uqlab.html
+  - Tag: default
+    Name: UQLab contributors
+    URL: https://www.uqlab.com/contributors
+Docs:
+  - Name: docs
+    URL: https://www.uqlab.com/documentation
+  - Name: user manuals
+    URL: https://www.uqlab.com/user-manuals
+  - Name: examples
+    URL: https://www.uqlab.com/examples
+Support:
+  - Name: contact form
+    URL: https://www.uqlab.com/contact
+  - Name: forum
+    URL: https://uqworld.org/c/uq-with-uqlab/7
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag: default
+        Name: Zero
+      - Tag: default
+        Name: Constant
+      - Tag: default
+        Name: Linear
+      - Tag: default
+        Name: Quadratic
+      - Tag: default
+        Name: Polynomial
+      - Tag: default
+        Name: Custom
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf39
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: default
+        Name: Linear
+      - Tag: default
+        Name: Exponential
+      - Tag: default
+        Name: Gaussian
+      - Tag: default
+        Name: Matern32
+      - Tag: default
+        Name: Materm52
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf25
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

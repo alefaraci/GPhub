@@ -1,0 +1,67 @@
+PackageID: OpenTURNS
+Library:
+  - Name: OpenTURNS
+    URL: https://openturns.github.io/www/
+    Reference:
+      - Author: Baudin et al. (2016)
+        URL: https://link.springer.com/referenceworkentry/10.1007/978-3-319-11259-6_64-1
+Language:
+  - C++
+  - Python
+License:
+  - Name: LGPL
+    URL: https://github.com/openturns/openturns/blob/master/LICENSE
+Repository:
+  - Name: openturns/openturns
+    URL: https://github.com/openturns/openturns
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: blue
+    Name: Airbus Group
+    URL: https://www.airbus.com/en
+  - Tag: orange
+    Name: EDF R&D
+    URL: https://www.edf.fr/en/the-edf-group/inventing-the-future-of-energy/r-d-global-expertise
+  - Tag: blue
+    Name: Phimeca Engineering
+    URL: https://www.phimeca.com
+  - Tag: red
+    Name: IMACS
+    URL: https://imacs.polytechnique.fr
+  - Tag: uiBlue
+    Name: ONERA
+    URL: https://www.onera.fr/en
+  - Tag: default
+    Name: OpenTURNS contributors
+    URL: https://github.com/openturns/openturns/graphs/contributors
+Docs:
+  - Name: docs
+    URL: http://openturns.github.io/openturns/latest/contents.html
+Support:
+  - Name: chat
+    URL: https://app.gitter.im/#/room/#openturns_community:gitter.im
+  - Name: forum
+    URL: https://openturns.discourse.group
+  - Name: stackoverflow
+    URL: https://stackoverflow.com/questions/tagged/openturns
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:

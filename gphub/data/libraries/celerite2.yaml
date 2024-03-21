@@ -33,24 +33,24 @@ Docs:
   - Name: tutorials
     URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
 Support:
-  - Name: ""
-    URL: ""
+  - Name:
+    URL:
 Framework: []
 GPU: false
 Trend:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 LengthScale: []
 Correlation:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag: ""
-        Name: ""
-    URL: ""
+      - Tag:
+        Name:
+    URL:

@@ -1,0 +1,61 @@
+PackageID: pyGPs
+Library:
+  - Name: pyGPs
+    URL: https://github.com/marionmari/pyGPs
+    Reference:
+      - Author: Neumann et al. (2015)
+        URL: https://jmlr.org/papers/v16/neumann15a.html
+Language:
+  - Python
+License:
+  - Name: FreeBSD
+    URL: https://github.com/marionmari/pyGPs/blob/master/COPYRIGHT.txt
+Repository:
+  - Name: marionmari/pyGPs
+    URL: https://github.com/marionmari/pyGPs
+Version:
+  - Name:
+    URL:
+Developer:
+  - Tag: red
+    Name: Washington University
+    URL: https://wustl.edu
+  - Tag: teal
+    Name: Fraunhofer IAIS
+    URL: https://www.iais.fraunhofer.de/en.html
+  - Tag: green
+    Name: TU Dortmund
+    URL: https://www.tu-dortmund.de/en/
+  - Tag: yellow
+    Name: Sproutling
+    URL: https://www.crunchbase.com/organization/sproutling
+  - Tag: default
+    Name: pyGPs contributors
+    URL: https://github.com/marionmari/pyGPs/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/
+  - Name: examples
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Examples.html
+Support:
+  - Name:
+    URL:
+Framework: []
+GPU: false
+Trend:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+LengthScale: []
+Correlation:
+  - Types:
+      - Tag:
+        Name:
+    URL:
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag:
+        Name:
+    URL:
