@@ -1,0 +1,98 @@
+PackageID: celerite
+Library:
+  - Name: celerite
+    URL: https://celerite.readthedocs.io/en/stable/
+    Reference:
+      - Author: Foreman-Mackey et al. (2017)
+        URL: https://iopscience.iop.org/article/10.3847/1538-3881/aa9332
+Language:
+  - C++
+  - Julia
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/dfm/celerite/blob/main/LICENSE
+Repository:
+  - Name: dfm/celerite
+    URL: https://github.com/dfm/celerite
+Version:
+  - Name: v0.4.3
+    URL: https://github.com/dfm/celerite/releases/tag/v0.4.3
+Installation:
+  - null
+Developer:
+  - Tag: purple
+    Name: University of Washington
+    URL: https://www.washington.edu
+  - Tag: uiBlue
+    Name: Flatiron Institute
+    URL: https://www.simonsfoundation.org/flatiron/
+  - Tag: teal
+    Name: Indian Institute of Science
+    URL: https://www.iisc.ac.in
+  - Tag: blue
+    Name: Columbia University
+    URL: https://www.columbia.edu
+  - Tag: default
+    Name: celertie contributors
+    URL: https://github.com/dfm/celerite/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://celerite.readthedocs.io/en/stable/
+  - Name: API
+    URL: https://celerite.readthedocs.io/en/stable/cpp/api/
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

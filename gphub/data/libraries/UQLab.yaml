@@ -11,11 +11,13 @@ License:
   - Name: BSD-3-Clause
     URL: https://www.uqlab.com/copy-of-release-notes
 Repository:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Version:
-  - Name: v2.0.0
+  - Name: v2.1.0
     URL: https://www.uqlab.com/release-notes
+Installation:
+  - uqlab_install
 Developer:
   - Tag: default
     Name: RSUQ ETH Zürich
@@ -35,19 +37,29 @@ Support:
     URL: https://www.uqlab.com/contact
   - Name: forum
     URL: https://uqworld.org/c/uq-with-uqlab/7
-Framework: []
+Framework:
+  - null
 GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pfb
+Complexity:
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Zero
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: red
         Name: Quadratic
-      - Tag: default
+      - Tag: teal
         Name: Polynomial
       - Tag: default
         Name: Custom
@@ -57,20 +69,59 @@ LengthScale:
   - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: teal
         Name: Exponential
-      - Tag: default
+      - Tag: blue
         Name: Gaussian
-      - Tag: default
+      - Tag: yellow
         Name: Matern32
+      - Tag: yellow
+        Name: Matern52
       - Tag: default
-        Name: Materm52
-    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf25
+        Name: Custom
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf3a
 Mixture: false
 MixtureModels:
   - Types:
-      - Tag:
-        Name:
-    URL:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf3e
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-10"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Cross-validation estimation (CV)
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf37
+OptimizationMethods:
+  - Types:
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: blue
+        Name: GA
+      - Tag: blue
+        Name: HGA
+      - Tag: green
+        Name: CMA-ES
+      - Tag: green
+        Name: HCMA-ES
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf3b
+Resampling: true
+Metrics:
+  - LOOCV
+  - Validation Error

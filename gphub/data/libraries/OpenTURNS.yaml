@@ -15,8 +15,11 @@ Repository:
   - Name: openturns/openturns
     URL: https://github.com/openturns/openturns
 Version:
-  - Name: v1.22
-    URL: https://github.com/openturns/openturns/releases/tag/v1.22
+  - Name: v1.23
+    URL: https://github.com/openturns/openturns/releases/tag/v1.23
+Installation:
+  - PyPI
+  - conda
 Developer:
   - Tag: blue
     Name: Airbus Group
@@ -46,22 +49,85 @@ Support:
     URL: https://openturns.discourse.group
   - Name: stackoverflow
     URL: https://stackoverflow.com/questions/tagged/openturns
-Framework: []
+Framework:
+  - null
 GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: null
+Complexity:
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Quadratic
+      - Tag: default
+        Name: Custom
     URL: null
-LengthScale: []
+LengthScale:
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Kroenecker
+      - Tag: default
+        Name: Rank-M
+      - Tag: default
+        Name: Spherical
+      - Tag: default
+        Name: Tensorized
+      - Tag: default
+        Name: Custom
     URL: null
-Mixture: false
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
+      - Tag: green
+        Name: Product
     URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: null
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: NLopt
+      - Tag: green
+        Name: Cobyla
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: teal
+        Name: TNC
+    URL: null
+Resampling: true
+Metrics:
+  - R2
+  - MSE

@@ -14,8 +14,10 @@ Repository:
   - Name: GPflow/GPflow
     URL: https://github.com/GPflow/GPflow
 Version:
-  - Name: v2.9.1
-    URL: https://github.com/GPflow/GPflow/releases/tag/v2.9.1
+  - Name: v2.9.2
+    URL: https://github.com/GPflow/GPflow/releases/tag/v2.9.2
+Installation:
+  - PyPI
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -51,75 +53,105 @@ Support:
 Framework:
   - TensorFlow
 GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: uiBlue
+        Name: Gaussian Process Regression with FITC (GPRFITC)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: orange
+        Name: Gaussian Process Latent Variable Model (GPLVM)
+      - Tag: default
+        Name: Conjugate Gradient Lower Bound (CGLB)
+      - Tag: blue
+        Name: Gaussian Process Markov Chain Monte Carlo (GPMC)
+      - Tag: green
+        Name: Sparse Gaussian Process Markov Chain Monte Carlo (SGPMC)
+      - Tag: yellow
+        Name: Convolutional Gaussian Process
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://gpflow.github.io/GPflow/develop/index.html#implemented-models
+Complexity:
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Zero
       - Tag: default
-        Name: Polynomial
-      - Tag: default
         Name: Additive
-      - Tag: default
+      - Tag: teal
+        Name: Polynomial
+      - Tag: orange
         Name: Constant
       - Tag: default
-        Name: Function
-      - Tag: default
         Name: Identity
-      - Tag: default
+      - Tag: green
         Name: Linear
       - Tag: default
         Name: Product
       - Tag: default
         Name: Switched Function
+      - Tag: default
+        Name: Custom
     URL: https://gpflow.github.io/GPflow/develop/api/gpflow/functions/index.html#gpflow.functions.MeanFunction
 LengthScale:
   - Isotropic
   - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: green
         Name: ArcCosine
       - Tag: default
         Name: Bias
       - Tag: default
         Name: Change Points
-      - Tag: default
+      - Tag: orange
         Name: Constant
       - Tag: default
         Name: Convolutional
       - Tag: default
         Name: Coregion
-      - Tag: default
+      - Tag: green
         Name: Cosine
-      - Tag: default
+      - Tag: teal
         Name: Exponential
       - Tag: default
         Name: Independent Latent
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: green
         Name: Linear Coregionaliztion
-      - Tag: default
+      - Tag: yellow
         Name: Matern12
-      - Tag: default
+      - Tag: yellow
         Name: Matern32
-      - Tag: default
+      - Tag: yellow
         Name: Matern52
       - Tag: default
         Name: Multioutput
-      - Tag: default
+      - Tag: red
         Name: Periodic
-      - Tag: default
+      - Tag: teal
         Name: Polynomial
-      - Tag: default
+      - Tag: blue
         Name: RBF
-      - Tag: default
+      - Tag: red
         Name: Rational Quadratic
       - Tag: default
         Name: Separate Independent
       - Tag: default
         Name: Shared Independent
-      - Tag: default
+      - Tag: blue
         Name: Squared Exponential
       - Tag: default
         Name: Static
@@ -127,14 +159,88 @@ Correlation:
         Name: Stationary
       - Tag: default
         Name: White
+      - Tag: default
+        Name: Custom
     URL: https://gpflow.github.io/GPflow/develop/api/gpflow/kernels/index.html
 Mixture: true
 MixtureModels:
   - Types:
-      - Tag: default
-        Name: Combination
-      - Tag: default
-        Name: Product
-      - Tag: default
+      - Tag: red
         Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: yellow
+        Name: Combination
     URL: https://gpflow.github.io/GPflow/develop/api/gpflow/kernels/index.html
+Likelihood:
+  - Types:
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: yellow
+        Name: Beta
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Gamma
+      - Tag: blue
+        Name: Gaussian
+      - Tag: blue
+        Name: Gaussian MC
+      - Tag: default
+        Name: Heteroskedastic TFP Conditional
+      - Tag: default
+        Name: Monte Carlo Likelihood
+      - Tag: default
+        Name: Multi Latent Likelihood
+      - Tag: teal
+        Name: Student-T
+      - Tag: green
+        Name: Poisson
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Switched Likelihood
+      - Tag: default
+        Name: Scalar
+      - Tag: default
+        Name: Custom
+    URL: https://gpflow.github.io/GPflow/develop/api/gpflow/likelihoods/index.html#
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: red
+        Name: Fixed Non-Trainable
+      - Tag: blue
+        Name: "default value: 1e-6"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Expectation Propagation (EP)
+      - Tag: purple
+        Name: Laplace approximation (LA)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: NaturalGradient
+      - Tag: orange
+        Name: Adam
+      - Tag: blue
+        Name: SciPy optimizer
+      - Tag: orange
+        Name: Keras optimizer
+    URL: https://gpflow.github.io/GPflow/develop/api/gpflow/optimizers/index.html
+Resampling: true
+Metrics:
+  - null

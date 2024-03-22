@@ -14,8 +14,10 @@ Repository:
   - Name: SMTorg/smt
     URL: https://github.com/SMTorg/smt
 Version:
-  - Name: v2.5.0
-    URL: https://github.com/SMTorg/smt/releases/tag/v2.5.0
+  - Name: v2.7.0
+    URL: https://github.com/SMTorg/smt/releases/tag/v2.7.0
+Installation:
+  - PyPI
 Developer:
   - Tag: uiBlue
     Name: ISAE SUPEAERO
@@ -46,15 +48,35 @@ Docs:
 Support:
   - Name: null
     URL: null
-Framework: []
+Framework:
+  - NumPy
+  - Numba
+  - SciPy
 GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: yellow
+        Name: Marginal GP Inference
+      - Tag: teal
+        Name: Kriging with Partial Least Squares (KPLS / KPLSK)
+      - Tag: uiBlue
+        Name: Gradient-enhaced Kriging (GEK)
+
+    URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models.html
+Complexity:
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: red
         Name: Quadratic
     URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html
 LengthScale:
@@ -62,16 +84,20 @@ LengthScale:
   - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: teal
         Name: Power Exponential
-      - Tag: default
-        Name: Absolute Exponetial
-      - Tag: default
-        Name: Squared Exponetial
-      - Tag: default
+      - Tag: teal
+        Name: Absolute Exponential
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
         Name: Matern32
-      - Tag: default
+      - Tag: yellow
         Name: Matern52
+      - Tag: default
+        Name: Categorical
+      - Tag: default
+        Name: Hierarchical
     URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html
 Mixture: false
 MixtureModels:
@@ -79,3 +105,37 @@ MixtureModels:
       - Tag: null
         Name: null
     URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: null
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: blue
+        Name: "default value: 2.22e-14"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: green
+        Name: Cobyla
+      - Tag: teal
+        Name: TNC
+    URL: null
+Resampling: true
+Metrics:
+  - null

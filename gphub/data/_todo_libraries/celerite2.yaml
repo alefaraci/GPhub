@@ -1,0 +1,91 @@
+PackageID: celerite2
+Library:
+  - Name: celerite2
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
+    Reference:
+      - Author: Gordon et al. (2020)
+        URL: https://iopscience.iop.org/article/10.3847/1538-3881/abbc16
+Language:
+  - C++
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/exoplanet-dev/celerite2/blob/main/LICENSE
+Repository:
+  - Name: exoplanet-dev/celerite2
+    URL: https://github.com/exoplanet-dev/celerite2
+Version:
+  - Name: v0.3.2
+    URL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.2
+Installation:
+  - null
+Developer:
+  - Tag: purple
+    Name: University of Washington
+    URL: https://www.washington.edu
+  - Tag: uiBlue
+    Name: Flatiron Institute
+    URL: https://www.simonsfoundation.org/flatiron/
+  - Tag: default
+    Name: celertie2 contributors
+    URL: https://github.com/exoplanet-dev/celerite2/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://celerite2.readthedocs.io/en/latest/
+  - Name: tutorials
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

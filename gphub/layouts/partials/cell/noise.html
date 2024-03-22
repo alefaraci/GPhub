@@ -1,0 +1,6 @@
+<!-- NOISE -->
+<td class="cell-noise">
+    {{ range .Likelihood}} {{ range .Noise}}
+    <span class="selected-value select-value-color-{{.Tag}}"> {{.Name}} </span>
+    {{end}} {{end}}
+</td>

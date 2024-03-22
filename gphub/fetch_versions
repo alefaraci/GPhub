@@ -1,0 +1,3 @@
+run:
+	@cd ./utils/releases && python3 fetch_versions.py
+

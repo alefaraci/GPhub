@@ -1,0 +1,87 @@
+PackageID: SuperGauss
+Library:
+  - Name: SuperGauss
+    URL: https://cran.r-project.org/package=SuperGauss
+    Reference:
+      - Author: Ling et al. (2020)
+        URL: https://github.com/mlysy/SuperGauss/blob/master/doc/SuperGauss_preprint.pdf
+Language:
+  - R
+License:
+  - Name: GPL-3.0
+    URL: https://cran.r-project.org/web/licenses/GPL-3
+Repository:
+  - Name: mlysy/SuperGauss
+    URL: https://github.com/mlysy/SuperGauss
+Version:
+  - Name:
+    URL:
+Installation:
+  - null
+Developer:
+  - Tag: yellow
+    Name: University of Waterloo
+    URL: https://uwaterloo.ca
+  - Tag: default
+    Name: SuperGauss contributors
+    URL: https://github.com/mlysy/SuperGauss/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/SuperGauss/SuperGauss.pdf
+  - Name: tutorials
+    URL: https://cran.r-project.org/web/packages/SuperGauss/vignettes/SuperGauss-quicktut.html
+Support:
+  - Name:
+    URL:
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

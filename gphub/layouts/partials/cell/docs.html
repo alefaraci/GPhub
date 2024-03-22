@@ -33,10 +33,16 @@
     {{partial "docs/tutorials.html" .}}
     {{else if eq .Name "jupyter notebooks"}}
     {{partial "docs/notebooks.html" .}}
-    {{else if eq .Name "colab cookbook"}}
+    {{else if eq .Name "colab notebooks"}}
     {{partial "docs/notebooks.html" .}}
     {{else if eq .Name "talk"}}
     {{partial "docs/talk.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+            {{.Name}}
+        </a>
+    </span>
     {{end}}
     {{end}}
 </td>

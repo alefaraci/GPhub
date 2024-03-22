@@ -20,6 +20,8 @@
         {{partial "license/LGPL.html" .}}
         {{else if eq .Name "MIT"}}
         {{partial "license/MIT.html" .}}
+        {{else if eq .Name "Custom"}}
+        {{partial "license/Custom.html" .}}
         {{else}}
         {{partial "license/NA.html" .}}
         {{end}}

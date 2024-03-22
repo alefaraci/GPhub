@@ -1,0 +1,92 @@
+PackageID: AutoGPjl
+Library:
+  - Name: AutoGP.jl
+    URL: https://probsys.github.io/AutoGP.jl/stable/
+    Reference:
+      - Author: Saad et al. (2023)
+        URL: https://arxiv.org/abs/2307.09607
+Language:
+  - Julia
+License:
+  - Name: Apache-2.0
+    URL: https://github.com/probsys/AutoGP.jl/blob/main/LICENSE.txt
+Repository:
+  - Name: probsys/AutoGP.jl
+    URL: https://github.com/probsys/AutoGP.jl
+Version:
+  - Name: v0.1.5
+    URL: https://github.com/probsys/AutoGP.jl/releases/tag/v0.1.5
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Carnegie Mellon University
+    URL: https://www.cmu.edu/
+  - Tag: green
+    Name: Google Research
+    URL: https://research.google/
+  - Tag: purple
+    Name: Massachusetts Institute of Technology
+    URL: https://www.mit.edu/
+Docs:
+  - Name: docs
+    URL: https://probsys.github.io/AutoGP.jl/stable/gp.html
+  - Name: tutorials
+    URL: https://probsys.github.io/AutoGP.jl/stable/tutorials/overview.html
+  - Name: API
+    URL: https://probsys.github.io/AutoGP.jl/stable/api.html
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

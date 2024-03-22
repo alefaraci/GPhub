@@ -1,0 +1,2 @@
+run:
+	@python3 ./utils/libraries/add_new_library.py $(name)

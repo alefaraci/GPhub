@@ -5,6 +5,10 @@
     {{partial "lengthscale/Isotropic.html" .}}
     {{else if eq . "Anisotropic"}}
     {{partial "lengthscale/Anisotropic.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        {{.}}
+    </span>
     {{end}}
     {{end}}
 </td>

@@ -1,0 +1,91 @@
+PackageID: Surrogatesjl
+Library:
+  - Name: Surrogates.jl
+    URL: https://docs.sciml.ai/Surrogates/stable/
+    Reference:
+      - Author: null
+        URL: null
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/SciML/Surrogates.jl/blob/master/LICENSE.md
+Repository:
+  - Name: SciML/Surrogates.jl
+    URL: https://github.com/SciML/Surrogates.jl
+Version:
+  - Name: v6.10.0
+    URL: https://github.com/SciML/Surrogates.jl/releases/tag/v6.10.0
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Chan Zuckerberg Initiative
+    URL: https://chanzuckerberg.com
+  - Tag: default
+    Name: Wellcome Trust
+    URL: https://wellcome.org
+  - Tag: orange
+    Name: Microsoft
+    URL: https://www.microsoft.com/en-us/research/collaboration/studies-in-pandemic-preparedness/overview/
+  - Tag: default
+    Name: Surrogates.jl contributors
+    URL: https://github.com/SciML/Surrogates.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://docs.sciml.ai/Surrogates/stable/kriging/
+Support:
+  - Name: chat
+    URL: https://julialang.zulipchat.com/#narrow/stream/279055-sciml-bridged
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

@@ -1,12 +1,13 @@
 PackageID: egobox
 Library:
-  - Name: egobox
-    URL: https://github.com/relf/egobox
+  - Name: egobox-gp
+    URL: https://github.com/relf/egobox/tree/master/gp
     Reference:
       - Author: Lafage (2022)
         URL: https://joss.theoj.org/papers/10.21105/joss.04737
 Language:
   - Rust
+  - Python
 License:
   - Name: Apache-2.0
     URL: https://github.com/relf/egobox/blob/master/LICENSE
@@ -14,9 +15,11 @@ Repository:
   - Name: relf/egobox
     URL: https://github.com/relf/egobox
 Version:
-  - Name: 0.16.0
-    URL: https://github.com/relf/egobox/releases/tag/0.16.0
-VersionURL: https://github.com/relf/egobox/releases/tag/0.15.3
+  - Name: 0.23.0
+    URL: https://github.com/relf/egobox/releases/tag/0.23.0
+Installation:
+  - cargo
+  - PyPI
 Developer:
   - Tag: uiBlue
     Name: ONERA
@@ -33,27 +36,40 @@ Docs:
 Support:
   - Name: null
     URL: null
-Framework: []
+Framework:
+  - null
 GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Processes Regression (GPR)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+    URL: null
+Complexity:
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: red
         Name: Quadratic
     URL: https://github.com/relf/egobox/tree/master/gp#current-state
-LengthScale: []
+LengthScale:
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Squared Exponential
-      - Tag: default
+      - Tag: teal
         Name: Absolute Exponetial
-      - Tag: default
+      - Tag: yellow
         Name: Matern32
-      - Tag: default
+      - Tag: yellow
         Name: Matern52
     URL: null
 Mixture: false
@@ -61,4 +77,33 @@ MixtureModels:
   - Types:
       - Tag: null
         Name: null
-    URL: https://github.com/relf/egobox/tree/master/gp#current-state
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: green
+        Name: Cobyla
+      - Tag: default
+        Name: SLSQP
+    URL: null
+Resampling: true
+Metrics:
+  - LOOCV
+  - Cross-Validation score

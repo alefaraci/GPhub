@@ -5,10 +5,20 @@
     {{partial "framework/PyTorch.html" .}}
     {{else if eq . "TensorFlow"}}
     {{partial "framework/TensorFlow.html" .}}
-    {{else if eq . "Numpy"}}
-    {{partial "framework/Numpy.html" .}}
+    {{else if eq . "NumPy"}}
+    {{partial "framework/NumPy.html" .}}
+    {{else if eq . "SciPy"}}
+    {{partial "framework/SciPy.html" .}}
     {{else if eq . "JAX"}}
     {{partial "framework/JAX.html" .}}
+    {{else if eq . "Numba"}}
+    {{partial "framework/Numba.html" .}}
+    {{else if eq . "NumPyro"}}
+    {{partial "framework/NumPyro.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        {{.}}
+    </span>
     {{end}}
     {{end}}
 </td>

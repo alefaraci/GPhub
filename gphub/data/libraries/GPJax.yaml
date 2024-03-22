@@ -14,8 +14,10 @@ Repository:
   - Name: JaxGaussianProcesses/GPJax
     URL: https://github.com/JaxGaussianProcesses/GPJax
 Version:
-  - Name: v0.8.1
-    URL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.8.1
+  - Name: v0.9.1
+    URL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.9.1
+Installation:
+  - PyPI
 Developer:
   - Tag: red
     Name: Lancaster University
@@ -27,27 +29,132 @@ Docs:
   - Name: docs
     URL: https://docs.jaxgaussianprocesses.com
   - Name: tutorials
-    URL: https://docs.jaxgaussianprocesses.com/examples/regression/
+    URL: https://docs.jaxgaussianprocesses.com/_examples/regression/
+  - Name: API
+    URL: https://docs.jaxgaussianprocesses.com/api/gps/#gpjax.gps.construct_posterior--returnshttps://docs.jaxgaussianprocesses.com/examples/regression/
 Support:
   - Name: GitHub discussions
     URL: https://github.com/orgs/JaxGaussianProcesses/discussions
+  - Name: contact form
+    URL: https://jaxgaussianprocesses.com/contact/
 Framework:
   - JAX
-GPU: false
+GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Processes Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Processes Classification (GPC)
+      - Tag: yellow
+        Name: Deep Gaussian Processes (DGP)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: null
+Complexity:
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-LengthScale: []
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Combination
+    URL: https://docs.jaxgaussianprocesses.com/api/mean_functions/
+LengthScale:
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: blue
+        Name: RBF
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: teal
+        Name: Powered Exponential
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: White noise
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: Graph kernels
+      - Tag: default
+      - Tag: green
+        Name: Non-stationary ArcCosine
+      - Tag: green
+        Name: Non-stationary Linear
+      - Tag: teal
+        Name: Non-stationary Polynomial
+      - Tag: default
+        Name: Custom
+    URL: https://docs.jaxgaussianprocesses.com/_examples/constructing_new_kernels/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://docs.jaxgaussianprocesses.com/_examples/constructing_new_kernels/
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: green
+        Name: Poisson
+    URL: https://docs.jaxgaussianprocesses.com/api/likelihoods/#gpjax.likelihoods.AbstractLikelihood.__call__
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: blue
+        Name: "default value: 1e-6"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Leave-One-Out Cross-Validation (LOOCV)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: teal
+        Name: Stochastic Variational Inference (SVI)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: teal
+        Name: Variational Expectation (VE)
+    URL: https://docs.jaxgaussianprocesses.com/api/objectives/?h=elbo
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Optax
+      - Tag: blue
+        Name: SciPy optimizer
     URL: null
+Resampling: true
+Metrics:
+  - LOOCV
+  - Conjugate Marginal Log-Likelihood (MLL)
+  - Log-Posterior Density

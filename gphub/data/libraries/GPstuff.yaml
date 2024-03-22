@@ -18,6 +18,10 @@ Repository:
 Version:
   - Name: v4.7
     URL: https://github.com/gpstuff-dev/gpstuff/releases/tag/v4.7
+Installation:
+  - matlab_install
+  - matlab
+  - CRAN
 Developer:
   - Tag: teal
     Name: University of Helsinki
@@ -34,22 +38,133 @@ Docs:
 Support:
   - Name: null
     URL: null
-Framework: []
+Framework:
+  - null
 GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Gaussian Process (SGP)
+      - Tag: uiBlue
+        Name: GPR with Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: GPR with Partial Independent Training Conditional (PITC)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+    URL: null
+Complexity:
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-LengthScale: []
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Squared
+    URL: https://research.cs.aalto.fi//pml/software/gpstuff/Contents45.m
+LengthScale:
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: default
+        Name: Catrgorical
+      - Tag: orange
+        Name: Constant
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: green
+        Name: Linear
+      - Tag: yellow
+        Name: Matern 3/2
+      - Tag: yellow
+        Name: Matern 5/2
+      - Tag: default
+        Name: NN
+      - Tag: green
+        Name: Periodic
+      - Tag: teal
+        Name: Piecewise Polynomial
+      - Tag: red
+        Name: Rational Quadratic
+    URL: https://research.cs.aalto.fi//pml/software/gpstuff/Contents45.m
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+    URL: https://research.cs.aalto.fi//pml/software/gpstuff/Contents45.m
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: blue
+        Name: Gaussian scale mixture
+      - Tag: teal
+        Name: Student-T
+      - Tag: default
+        Name: Logit
+      - Tag: default
+        Name: Probit
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Binomial
+      - Tag: green
+        Name: Poisson
+      - Tag: default
+        Name: Negative-binomial
+      - Tag: default
+        Name: Hurdle model
+      - Tag: teal
+        Name: Weibull
+    URL: https://research.cs.aalto.fi//pml/software/gpstuff/Contents45.m
+    Nugget:
+      - Tag: default
+        Name: Custom
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Deviance information criterion (DIC)
+      - Tag: green
+        Name: Leave-one-out Cross-Validation (LOOCV)
+      - Tag: default
+        Name: Widely Applicable Information Criterion (WAIC)
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+      - Tag: default
+        Name: Expectation Propagation (EP)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
     URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: fminscg
+      - Tag: yellow
+        Name: fminlbfgs
+      - Tag: orange
+        Name: fminunc
+    URL: null
+Resampling: true
+Metrics:
+  - Euclidean distance

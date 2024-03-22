@@ -1,0 +1,84 @@
+PackageID: deepgp
+Library:
+  - Name: deepgp
+    URL: https://cran.r-project.org/package=deepgp
+    Reference:
+      - Author: Sauer et al. (2023)
+        URL: https://vtechworks.lib.vt.edu/items/9f21c4d1-2dfc-4750-9501-7e8e622b2427
+Language:
+  - R
+License:
+  - Name: LGPL
+    URL: https://cran.r-project.org/web/licenses/LGPL-3
+Repository:
+  - Name: cran/deepgp
+    URL: https://github.com/cran/deepgp
+Version:
+  - Name: 1.1.3
+    URL: https://github.com/cran/deepgp/releases/tag/1.1.3
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Virginia Polytechnic Institute and State University
+    URL: https://www.vt.edu/
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/deepgp/deepgp.pdf
+  - Name: tutorials
+    URL: https://cran.r-project.org/web/packages/deepgp/vignettes/deepgp.html
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

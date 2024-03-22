@@ -1,0 +1,101 @@
+PackageID: Stheno
+Library:
+  - Name: Stheno
+    URL: https://wessel.ai/stheno/docs/_build/html/index.html
+    Reference:
+      - Author: Tebbutt et al. (2019)
+        URL: https://willtebbutt.github.io/resources/stheno_juliacon_2019.pdf
+Language:
+  - Julia
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/LICENSE.md
+Repository:
+  - Name: JuliaGaussianProcesses/Stheno.jl
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl
+Version:
+  - Name: v0.8.2
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/releases/tag/v0.8.2
+Installation:
+  - null
+Developer:
+  - Tag: yellow
+    Name: University of Cambridge
+    URL: https://www.cam.ac.uk
+  - Tag: default
+    Name: Stheno.jl contributors
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/graphs/contributors
+  - Tag: default
+    Name: Stheno py contributors
+    URL: https://github.com/wesselb/stheno/graphs/contributors
+Docs:
+  - Name: py docs
+    URL: https://wessel.ai/stheno/docs/_build/html/index.html
+  - Name: jl docs
+    URL: https://juliagaussianprocesses.github.io/Stheno.jl/stable/
+  - Name: py examples
+    URL: https://wessel.ai/stheno/docs/_build/html/readme.html#examples
+  - Name: jl examples
+    URL: https://juliagaussianprocesses.github.io/Stheno.jl/stable/examples_note/
+  - Name: py API
+    URL: https://wessel.ai/stheno/docs/_build/html/api.html
+  - Name: jl API
+    URL: https://juliagaussianprocesses.github.io/Stheno.jl/stable/api/
+  - Name: talk
+    URL: https://www.youtube.com/watch?v=OO3BBkGEMV8
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/wesselb/stheno/discussions
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

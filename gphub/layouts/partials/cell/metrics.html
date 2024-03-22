@@ -1,0 +1,32 @@
+<!-- METRICS -->
+<td class="cell-metrics">
+    {{range .Metrics}}
+    {{if eq . "RMSE"}}
+    {{partial "metrics/RMSE.html" .}}
+    {{else if eq . "MSE"}}
+    {{partial "metrics/MSE.html" .}}
+    {{else if eq . "MAE"}}
+    {{partial "metrics/MAE.html" .}}
+    {{else if eq . "R2"}}
+    {{partial "metrics/R2.html" .}}
+    {{else if eq . "LOOCV"}}
+    {{partial "metrics/LOOCV.html" .}}
+    {{else if eq . "NLPD"}}
+    {{partial "metrics/NLPD.html" .}}
+    {{else if eq . "MAPE"}}
+    {{partial "metrics/MAPE.html" .}}
+    {{else if eq . "MedAE"}}
+    {{partial "metrics/MedAE.html" .}}
+    {{else if eq . "MSLL"}}
+    {{partial "metrics/MSLL.html" .}}
+    {{else if eq . "MSLE"}}
+    {{partial "metrics/MSLE.html" .}}
+    {{else if eq . "Validation Error"}}
+    {{partial "metrics/Validation.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        {{.}}
+    </span>
+    {{end}}
+    {{end}}
+</td>

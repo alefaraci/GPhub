@@ -16,6 +16,8 @@ Repository:
 Version:
   - Name: v0.3.0
     URL: https://github.com/dfm/tinygp/releases/tag/v0.3.0
+Installation:
+  - PyPI
 Developer:
   - Tag: blue
     Name: Simons Foundation
@@ -35,45 +37,80 @@ Support:
     URL: https://github.com/dfm/tinygp/discussions
 Framework:
   - JAX
+  - NumPyro
 GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Scalable Gaussian Processes (SGP)
+Complexity:
+  - O(N^3)
 Trend:
   - Types:
       - Tag: default
         Name: Custom
     URL: https://tinygp.readthedocs.io/en/stable/api/summary/tinygp.means.Mean.html
-LengthScale: []
+LengthScale:
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
-        Name: Conditioned
-      - Tag: default
-        Name: Custom
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: teal
         Name: Polynomial
       - Tag: default
-        Name: Exponetial
-      - Tag: default
+        Name: Dot Product
+      - Tag: teal
+        Name: Exponential
+      - Tag: blue
         Name: RBF
-      - Tag: default
+      - Tag: yellow
         Name: Matern32
-      - Tag: default
+      - Tag: yellow
         Name: Matern52
-      - Tag: default
+      - Tag: green
         Name: Cosine
-      - Tag: default
+      - Tag: teal
         Name: Exponential Sine Squared
-      - Tag: default
+      - Tag: red
         Name: Rational Quadratic
+      - Tag: default
+        Name: Custom
     URL: https://tinygp.readthedocs.io/en/stable/api/kernels.html
 Mixture: true
 MixtureModels:
   - Types:
-      - Tag: default
+      - Tag: red
         Name: Sum
-      - Tag: default
+      - Tag: green
         Name: Product
-      - Tag: default
-        Name: DotProduct
     URL: https://tinygp.readthedocs.io/en/stable/api/kernels.html
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: red
+        Name: Non-Gaussian
+    URL: null
+    Nugget:
+      - Tag: default
+        Name: Custom
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: teal
+        Name: jaxopt
+    URL: null
+Resampling: true
+Metrics:
+  - null

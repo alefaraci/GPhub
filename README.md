@@ -57,12 +57,19 @@ Contributions to GPhub are warmly welcomed. There are several ways you can contr
 
 ### 👨‍💻 Adding a new library to the Table
 
-To add a new library to the table create a new `PackageName.yaml` entry in the `./gphub/data` directory using this YAML template:
+To add a new library to the table, you need to create a new `PackageName.yaml` entry in the `gphub/data/libraries` directory by running:
+
+```shell
+cd gphub
+make -f new_library name=PackageName
+```
+
+This will gerate a new file using this base YAML template:
 
 ```YAML
-PackageID: null
+PackageID: PackageName
 Library:
-  - Name: null
+  - Name: PackageName
     URL: null
     Reference:
       - Author: null
@@ -91,29 +98,58 @@ Support:
 Framework:
   - null
 GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
 Trend:
   - Types:
-    - Tag: null
-      Name: null
+      - Tag: null
+        Name: null
     URL: null
 LengthScale:
   - null
 Correlation:
   - Types:
-    - Tag: null
-      Name: null
+      - Tag: null
+        Name: null
     URL: null
 Mixture: false
 MixtureModels:
   - Types:
-    - Tag: null
-      Name: null
+      - Tag: null
+        Name: null
     URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+
 ```
 
 ### ⚠️ Fixing or adding data to an existing library
 
-Modify the `./gphub/data/PackageName.yaml` file.
+Modify the `./gphub/data/libraries/PackageName.yaml` file.
 
 ---
 
@@ -127,12 +163,6 @@ Refer to [Hugo website](https://gohugo.io/installation/) for details on how to i
 
 ```sh
 brew install hugo
-```
-
-#### MacPorts (macOS)
-
-```MacPorts
-sudo port install hugo
 ```
 
 ## Install Python dependencies
@@ -161,7 +191,8 @@ The table is served at [`http://localhost:1313`](http://localhost:1313)
 You can fetch the version data of the libraries by running:
 
 ```shell
-python FetchVersion.py
+cd gphub
+make -f fetch_versions
 ```
 
 ### 🛠️ Building a static HTML file
@@ -169,7 +200,7 @@ python FetchVersion.py
 You can generate a static file `Table.html` by running:
 
 ```shell
-python TableGen.py
+make -f table_html
 ```
 
 ---

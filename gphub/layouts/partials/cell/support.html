@@ -17,6 +17,12 @@
     {{partial "support/stackoverflow.html" .}}
     {{else if eq .Name "slack"}}
     {{partial "support/slack.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        <a href="{{.URL}}" title="{{.URL}}" style="text-decoration: none">
+            {{.Name}}
+        </a>
+    </span>
     {{end}}
     {{end}}
 </td>

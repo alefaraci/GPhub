@@ -1,0 +1,16 @@
+<!-- MODELS -->
+<td class="cell-models">
+    {{ range .Models}} {{if ne .URL ""}}
+    <a
+        href="{{if .URL}}{{.URL}}{{else}}javascript:void(0){{end}}"
+        title="{{.URL}}"
+        style="text-decoration: none"
+    >
+        {{range .Types}}
+        <span class="selected-value select-value-color-{{.Tag}}"
+            >{{.Name}}</span
+        >
+        {{end}}
+    </a>
+    {{end}} {{end}}
+</td>

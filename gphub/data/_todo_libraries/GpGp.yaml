@@ -1,0 +1,87 @@
+PackageID: GpGp
+Library:
+  - Name: GpGp
+    URL: https://cran.r-project.org/package=GpGp
+    Reference:
+      - Author: Guinness et al. (2018)
+        URL: https://www.tandfonline.com/doi/full/10.1080/00401706.2018.1437476
+Language:
+  - R
+License:
+  - Name: MIT
+    URL: https://cran.r-project.org/web/licenses/MIT
+Repository:
+  - Name: cran/GpGp
+    URL: https://github.com/cran/GpGp
+Version:
+  - Name: 0.5.1
+    URL: https://github.com/cran/GpGp/releases/tag/0.5.1
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Cornell University
+    URL: https://www.cornell.edu
+  - Tag: default
+    Name: GpGp contributors
+    URL: https://github.com/joeguinness/GpGp/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/GpGp/GpGp.pdf
+  - Name: tutorials
+    URL: https://www.youtube.com/watch?v=phyB4n0CDWg&t=4s
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

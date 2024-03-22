@@ -1,0 +1,98 @@
+PackageID: GSTools
+Library:
+  - Name: GSTools
+    URL: https://geostat-framework.org
+    Reference:
+      - Author: "M\xFCller et al. (2022)"
+        URL: https://gmd.copernicus.org/articles/15/3161/2022/
+Language:
+  - Python
+License:
+  - Name: LGPL
+    URL: https://github.com/GeoStat-Framework/GSTools/blob/main/LICENSE
+Repository:
+  - Name: GeoStat-Framework/GSTools
+    URL: https://github.com/GeoStat-Framework/GSTools
+Version:
+  - Name: v1.6.0
+    URL: https://github.com/GeoStat-Framework/GSTools/releases/tag/v1.6.0
+Installation:
+  - null
+Developer:
+  - Tag: blue
+    Name: UFZ
+    URL: https://www.ufz.de
+  - Tag: teal
+    Name: University of Potsdam
+    URL: https://www.uni-potsdam.de/en/
+  - Tag: blue
+    Name: CASUS
+    URL: https://www.casus.science
+  - Tag: yellow
+    Name: " Utrecht University"
+    URL: https://www.uu.nl/en
+  - Tag: default
+    Name: GSTools contributors
+    URL: https://github.com/GeoStat-Framework/GSTools/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/
+  - Name: tutorials
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/tutorials.html
+  - Name: API
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api.html
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/GeoStat-Framework/GSTools/discussions
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

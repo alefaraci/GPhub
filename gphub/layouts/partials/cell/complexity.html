@@ -1,0 +1,20 @@
+<!-- COMPLEXITY -->
+<td class="cell-complexity">
+    {{range .Complexity}}
+    {{if eq . "O(N^3)"}}
+    {{partial "complexity/ON3.html" .}}
+    {{else if eq . "O(N^2)"}}
+    {{partial "complexity/ON2.html" .}}
+    {{else if eq . "O(N)"}}
+    {{partial "complexity/ON.html" .}}
+    {{else if eq . "O(NM^2)"}}
+    {{partial "complexity/ONM2.html" .}}
+    {{else if eq . "O(M^3)"}}
+    {{partial "complexity/OM3.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        {{.}}
+    </span>
+    {{end}}
+    {{end}}
+</td>

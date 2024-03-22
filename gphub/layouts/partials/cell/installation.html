@@ -1,0 +1,22 @@
+<!-- INSTALLATION -->
+<td class="cell-installation">
+    {{range .Installation}}
+    {{if eq . "PyPI"}}
+    {{partial "installation/pip.html" .}}
+    {{else if eq . "conda"}}
+    {{partial "installation/conda.html" .}}
+    {{else if eq . "matlab"}}
+    {{partial "installation/matlab.html" .}}
+    {{else if eq . "Pkg.jl"}}
+    {{partial "installation/Pkg.html" .}}
+    {{else if eq . "CRAN"}}
+    {{partial "installation/CRAN.html" .}}
+    {{else if eq . "cargo"}}
+    {{partial "installation/cargo.html" .}}
+    {{else}}
+    <span class="selected-value select-value-color-default">
+        {{.}}
+    </span>
+    {{end}}
+    {{end}}
+</td>

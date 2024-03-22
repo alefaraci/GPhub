@@ -14,8 +14,11 @@ Repository:
   - Name: cornellius-gp/gpytorch
     URL: https://github.com/cornellius-gp/gpytorch
 Version:
-  - Name: v1.11
-    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.11
+  - Name: v1.13
+    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.13
+Installation:
+  - PyPI
+  - conda
 Developer:
   - Tag: red
     Name: Cornell University
@@ -48,13 +51,47 @@ Support:
 Framework:
   - PyTorch
 GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: default
+        Name: GPR with BlackBox Matrix-Matrix Inference (BBMM)
+      - Tag: default
+        Name: GPR with LancZos Variance Estimates (LOVE)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: default
+        Name: Structured Kernel Interpolation (SKI/KISS-GP)
+      - Tag: default
+        Name: Structured Kernel Interpolation for Products (SKIP)
+      - Tag: default
+        Name: Structure-Exploiting Kernels
+      - Tag: red
+        Name: Approximate GP Inference
+      - Tag: yellow
+        Name: Deep GPs
+      - Tag: orange
+        Name: Gaussian Process Latent Variable Model (GPLVM)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://docs.gpytorch.ai/en/stable/models.html#
+Complexity:
+  - O(N^3)
+  - O(N^2)
+  - O(NM^2)
+  - O(N)
+  - '\( \mathcal{O}(N log(N)) \)'
+  - '\( \mathcal{O}(L \times nm^2) \)'
 Trend:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Zero
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: green
         Name: Linear
     URL: https://docs.gpytorch.ai/en/stable/kernels.html
 LengthScale:
@@ -62,26 +99,30 @@ LengthScale:
   - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: green
         Name: Cosine
+      - Tag: orange
+        Name: Constant
       - Tag: default
         Name: Cylindrical
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: yellow
         Name: Matern
-      - Tag: default
+      - Tag: green
         Name: Periodic
-      - Tag: default
+      - Tag: teal
         Name: Picewise Polynomial
-      - Tag: default
+      - Tag: teal
         Name: Polynomial
-      - Tag: default
+      - Tag: blue
         Name: RBF
-      - Tag: default
-        Name: RQK
+      - Tag: red
+        Name: Rational Quadratic
       - Tag: default
         Name: Spectral Delta
+      - Tag: default
+        Name: Spectral Mixture
       - Tag: default
         Name: Arc
       - Tag: default
@@ -98,16 +139,101 @@ Correlation:
         Name: Inducing Point
       - Tag: default
         Name: RFFK
+      - Tag: default
+        Name: Hamming IMQ
+      - Tag: default
+        Name: Hamming IMQ
+      - Tag: blue
+        Name: Gaussian Symmetrized KL
+      - Tag: default
+        Name: Distributional Input
     URL: https://docs.gpytorch.ai/en/stable/kernels.html
 Mixture: true
 MixtureModels:
   - Types:
+      - Tag: red
+        Name: Additive
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
       - Tag: default
         Name: Spectral Mixture
-      - Tag: default
-        Name: Additive
-      - Tag: default
-        Name: Product
-      - Tag: default
-        Name: Scale
     URL: https://docs.gpytorch.ai/en/stable/kernels.html
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: blue
+        Name: Gaussian With Missing Values
+      - Tag: default
+        Name: Fixed Noise Gaussian
+      - Tag: default
+        Name: Dirichlet Classification
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: yellow
+        Name: Beta
+      - Tag: purple
+        Name: Laplace
+      - Tag: teal
+        Name: Student-T
+      - Tag: default
+        Name: Multitask Gaussian
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Heteroskedastic Noise
+    URL: https://docs.gpytorch.ai/en/stable/likelihoods.html#
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: red
+        Name: Fixed Non-Trainable
+      - Tag: blue
+        Name: "default value: 1e-6 for float"
+      - Tag: blue
+        Name: "default value: 1e-8 for double"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Leave One Out Cross Validation (LOO-CV)
+      - Tag: red
+        Name: Variational evidence lower bound (ELBO)
+      - Tag: teal
+        Name: Variational Inference (VI)
+      - Tag: default
+        Name: Predictive Log Likelihood
+      - Tag: red
+        Name: Gamma Robust Variational ELBO
+      - Tag: yellow
+        Name: Deep Approximate MLL
+      - Tag: default
+        Name: Inducing Point Kernel Added Loss Term
+      - Tag: default
+        Name: KL Gaussian Added Loss Term
+    URL: https://docs.gpytorch.ai/en/stable/marginal_log_likelihoods.html#
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Natural Gradient Descent (NGD)
+      - Tag: purple
+        Name: PyTorch optimizer
+      - Tag: orange
+        Name: Adam
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: default
+        Name: SGD
+    URL: https://docs.gpytorch.ai/en/stable/optim.html
+Resampling: true
+Metrics:
+  - NLPD
+  - MSLL
+  - MAE
+  - MSE

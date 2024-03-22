@@ -1,0 +1,127 @@
+PackageID: UQpyLab
+Library:
+  - Name: UQ[py]Lab
+    URL: https://uqpylab.uq-cloud.io
+    Reference:
+      - Author: Lataniotis et al. (2021)
+        URL: https://www.eccomasproceedia.org/conferences/thematic-conferences/uncecomp-2021/8033
+Language:
+  - Python
+License:
+  - Name: BSD-3-Clause
+    URL: https://www.uqlab.com/copy-of-release-notes
+Repository:
+  - Name: null
+    URL: null
+Version:
+  - Name: v1.0.0
+    URL: https://uqpylab.uq-cloud.io/#beta-testing-application
+Installation:
+  - PyPI
+Developer:
+  - Tag: default
+    Name: RSUQ ETH Zürich
+    URL: https://sudret.ibk.ethz.ch/software/uqpylab.html
+  - Tag: default
+    Name: UQ[py]Lab contributors
+    URL: https://uqpylab.uq-cloud.io/contributors
+Docs:
+  - Name: docs
+    URL: https://uqpylab.uq-cloud.io/getting-started
+  - Name: user manuals
+    URL: https://uqpylab.uq-cloud.io/documentation
+  - Name: examples
+    URL: https://uqpylab.uq-cloud.io/examples
+Support:
+  - Name: contact form
+    URL: https://www.uqlab.com/contact
+  - Name: forum
+    URL: https://uqworld.org/c/uq-with-uqlab/7
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://uqftp.ethz.ch/uqlab_doc_html/2.0.0/UserManual_Kriging.html#pf39
+Complexity:
+  - O(N^3)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Quadratic
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: Custom
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html#pf39
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Exponential
+      - Tag: blue
+        Name: Gaussian
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: default
+        Name: Custom
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html#pf3a
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html#pf3e
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-10"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Cross-validation estimation (CV)
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html#pf37
+OptimizationMethods:
+  - Types:
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: blue
+        Name: GA
+      - Tag: blue
+        Name: HGA
+      - Tag: green
+        Name: CMA-ES
+      - Tag: green
+        Name: HCMA-ES
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html#pf3b
+Resampling: true
+Metrics:
+  - LOOCV
+  - Validation Error
