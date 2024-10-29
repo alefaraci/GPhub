@@ -14,8 +14,8 @@ Repository:
   - Name: SMTorg/smt
     URL: https://github.com/SMTorg/smt
 Version:
-  - Name: v2.7.0
-    URL: https://github.com/SMTorg/smt/releases/tag/v2.7.0
+  - Name: v2.9.2
+    URL: https://github.com/SMTorg/smt/releases/tag/v2.9.2
 Installation:
   - PyPI
 Developer:
@@ -65,7 +65,6 @@ Models:
         Name: Kriging with Partial Least Squares (KPLS / KPLSK)
       - Tag: uiBlue
         Name: Gradient-enhaced Kriging (GEK)
-
     URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models.html
 Complexity:
   - O(N^3)

@@ -14,8 +14,8 @@ Repository:
   - Name: pymc-devs/pymc
     URL: https://github.com/pymc-devs/pymc
 Version:
-  - Name: v5.17.0
-    URL: https://github.com/pymc-devs/pymc/releases/tag/v5.17.0
+  - Name: v5.22.0
+    URL: https://github.com/pymc-devs/pymc/releases/tag/v5.22.0
 Installation:
   - null
 Developer:

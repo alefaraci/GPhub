@@ -3,8 +3,8 @@ Library:
   - Name: libgp
     URL: https://github.com/mblum/libgp
     Reference:
-      - Author:
-        URL:
+      - Author: null
+        URL: null
 Language:
   - C++
 License:
@@ -14,20 +14,20 @@ Repository:
   - Name: mblum/libgp
     URL: https://github.com/mblum/libgp
 Version:
-  - Name:
-    URL:
+  - Name: v0.3.0
+    URL: https://github.com/mblum/libgp/releases/tag/v0.3.0
 Installation:
   - null
 Developer:
-  - Tag:
-    Name:
-    URL:
+  - Tag: null
+    Name: null
+    URL: null
 Docs:
   - Name: docs
     URL: https://github.com/mblum/libgp/tree/master/doxygen
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
   - null
 GPU: false

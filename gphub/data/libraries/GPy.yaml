@@ -31,8 +31,6 @@ Docs:
   - Name: jupyter notebooks
     URL: https://nbviewer.org/github/SheffieldML/notebook/blob/master/GPy/index.ipynb
 Support:
-  # - Name: mailing-list
-  #   URL: https://lists.shef.ac.uk/sympa/subscribe/gpy-users
   - Name: GitHub discussions
     URL: https://github.com/SheffieldML/GPy/discussions
 Framework:
@@ -84,7 +82,7 @@ LengthScale:
 Correlation:
   - Types:
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: yellow
         Name: Matern
       - Tag: default
@@ -112,7 +110,7 @@ Correlation:
       - Tag: red
         Name: Rational Quadratic
     URL: https://gpy.readthedocs.io/en/deploy/GPy.kern.html
-Mixture: yes
+Mixture: true
 MixtureModels:
   - Types:
       - Tag: red

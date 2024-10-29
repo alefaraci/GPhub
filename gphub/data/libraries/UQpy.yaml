@@ -14,8 +14,8 @@ Repository:
   - Name: SURGroup/UQpy
     URL: https://github.com/SURGroup/UQpy
 Version:
-  - Name: v4.1.6
-    URL: https://github.com/SURGroup/UQpy/releases/tag/v4.1.6
+  - Name: v4.2.0
+    URL: https://github.com/SURGroup/UQpy/releases/tag/v4.2.0
 Installation:
   - PyPI
   - conda
@@ -62,7 +62,7 @@ LengthScale:
 Correlation:
   - Types:
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: yellow
         Name: Matern
       - Tag: default

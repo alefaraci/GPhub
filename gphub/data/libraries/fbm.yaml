@@ -1,38 +1,30 @@
-PackageID: george
+PackageID: fbm
 Library:
-  - Name: george
-    URL: https://george.readthedocs.io/en/latest/
+  - Name: fbm
+    URL: https://glizen.com/radfordneal/fbm.software.html
     Reference:
-      - Author: Ambikasaran et al. (2015)
-        URL: https://ieeexplore.ieee.org/document/7130620
+      - Author: Neal (1996)
+        URL: https://link.springer.com/book/10.1007/978-1-4612-0745-0
 Language:
-  - Python
+  - C
 License:
-  - Name: MIT
-    URL: https://github.com/dfm/george/blob/main/LICENSE
+  - Name: BSL-1.0
+    URL: https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads
 Repository:
-  - Name: dfm/george
-    URL: https://github.com/dfm/george
+  - Name: radfordneal/fbm
+    URL: https://gitlab.com/radfordneal/fbm
 Version:
-  - Name: v0.4.3
-    URL: https://github.com/dfm/george/releases/tag/v0.4.3
+  - Name: fbm.2022-04-21
+    URL: https://github.com/radfordneal/fbm/releases/tag/fbm.2022-04-21
 Installation:
   - null
 Developer:
-  - Tag: purple
-    Name: New York University
-    URL: https://www.nyu.edu
   - Tag: blue
-    Name: Simons Foundation
-    URL: https://www.simonsfoundation.org/
-  - Tag: default
-    Name: george contributors
-    URL: https://github.com/dfm/george/graphs/contributors
+    Name: University of Toronto
+    URL: https://www.statistics.utoronto.ca
 Docs:
   - Name: docs
-    URL: https://george.readthedocs.io/en/latest/user/
-  - Name: tutorials
-    URL: https://george.readthedocs.io/en/latest/tutorials/
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/index.html
 Support:
   - Name: null
     URL: null
@@ -48,9 +40,9 @@ Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Zero
+    URL: "https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html "
 LengthScale:
   - null
 Correlation:

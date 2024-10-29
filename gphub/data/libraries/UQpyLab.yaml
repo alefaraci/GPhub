@@ -29,7 +29,7 @@ Docs:
   - Name: docs
     URL: https://uqpylab.uq-cloud.io/getting-started
   - Name: user manuals
-    URL: https://uqpylab.uq-cloud.io/documentation
+    URL: https://storage.googleapis.com/uqpylab-doc-html/UserManual_Kriging.html
   - Name: examples
     URL: https://uqpylab.uq-cloud.io/examples
 Support:

@@ -1,0 +1,110 @@
+PackageID: DiceKriging
+Library:
+  - Name: DiceKriging
+    URL: https://cran.r-project.org/package=DiceKriging
+    Reference:
+      - Author: Roustant et al. (2012)
+        URL: https://www.jstatsoft.org/article/view/v051i01
+Language:
+  - R
+License:
+  - Name: GPL-2.0
+    URL: https://cran.r-project.org/web/licenses/GPL-2
+Repository:
+  - Name: cran/DiceKriging
+    URL: https://github.com/cran/DiceKriging
+Version:
+  - Name: R-3.0.3
+    URL: https://github.com/cran/DiceKriging/releases/tag/R-3.0.3
+Installation:
+  - CRAN
+Developer:
+  - Tag: red
+    Name: INSA Toulouse
+    URL: https://www.insa-toulouse.fr
+  - Tag: purple
+    Name: Ecole des Mines de St-Etienne
+    URL: http://www.emse.fr
+  - Tag: red
+    Name: Universitat Bern
+    URL: https://www.unibe.ch/index_eng.html
+  - Tag: blue
+    Name: Alpestat
+    URL: http://www.alpestat.com
+Docs:
+  - Name: docs
+    URL: https://cran.r-project.org/web/packages/DiceKriging/DiceKriging.pdf
+Support:
+  - Name: blog
+    URL: https://dicekrigingclub.github.io/www/
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: null
+Complexity:
+  - O(N^3)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: Custom
+    URL: https://cran.r-project.org/web/packages/DiceKriging/DiceKriging.pdf
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: teal
+        Name: Power-exponential
+    URL: https://cran.r-project.org/web/packages/DiceKriging/DiceKriging.pdf
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: null
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: default
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: genoud
+    URL: null
+Resampling: true
+Metrics:
+  - null

@@ -14,8 +14,8 @@ Repository:
   - Name: GeoStat-Framework/GSTools
     URL: https://github.com/GeoStat-Framework/GSTools
 Version:
-  - Name: v1.6.0
-    URL: https://github.com/GeoStat-Framework/GSTools/releases/tag/v1.6.0
+  - Name: v1.7.0
+    URL: https://github.com/GeoStat-Framework/GSTools/releases/tag/v1.7.0
 Installation:
   - null
 Developer:

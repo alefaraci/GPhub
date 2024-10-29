@@ -1,32 +1,31 @@
-PackageID: DACE
+PackageID: ooDACE
 Library:
-  - Name: DACE
-    URL: https://www.omicron.dk/dace.html
+  - Name: ooDACE
+    URL: null
     Reference:
-      - Author: Nielsen et al. (2002)
-        URL: https://www.semanticscholar.org/paper/DACE-A-Matlab-Kriging-Toolbox-Nielsen-Lophaven/d11a9e296ccd522809cb7550740e89f2c7ee65af#paper-topics
+      - Author: null
+        URL: null
 Language:
   - Matlab
 License:
-  - Name: Custom
-    URL: null
+  - Name: GPL-3.0
+    URL: https://sumowiki.intec.ugent.be/OoDACE:_License_terms
 Repository:
   - Name: null
     URL: null
 Version:
-  - Name: v2.5
-    URL: https://www.omicron.dk/dace/changelog.txt
+  - Name: null
+    URL: null
 Installation:
   - matlab
+  - startup
 Developer:
-  - Tag: red
-    Name: Technical University of Denmark (DTU)
-    URL: https://www.dtu.dk
+  - Tag: uiBlue
+    Name: Ghent University
+    URL: https://www.ugent.be/ea/nl/onderzoek/cti_clusters_research_innovation/cluster2/infrastructure_cl2/ml
 Docs:
   - Name: docs
-    URL: https://www.omicron.dk/dace/dace.pdf
-  - Name: user manuals
-    URL: https://www.omicron.dk/dace/dace-aspects.pdf
+    URL: http://sumowiki.intec.ugent.be/OoDACE:ooDACE_toolbox
 Support:
   - Name: null
     URL: null
@@ -42,12 +41,14 @@ Complexity:
   - O(N^3)
 Trend:
   - Types:
+      - Tag: blue
+        Name: Zero
       - Tag: orange
         Name: Constant
       - Tag: green
         Name: Linear
-      - Tag: red
-        Name: Quadratic
+      - Tag: teal
+        Name: Polynomial
     URL: null
 LengthScale:
   - Isotropic
@@ -56,18 +57,14 @@ Correlation:
   - Types:
       - Tag: blue
         Name: Gaussian
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
       - Tag: teal
         Name: Exponential
-      - Tag: green
-        Name: Linear
-      - Tag: default
-        Name: Spherical
-      - Tag: default
-        Name: Cubic
-      - Tag: default
-        Name: Spline
     URL: null
-Mixture: false
+Mixture: true
 MixtureModels:
   - Types:
       - Tag: null
@@ -75,7 +72,7 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: blue
+      - Tag: default
         Name: Gaussian
     URL: null
     Nugget:
@@ -88,12 +85,17 @@ EstimationMethods:
   - Types:
       - Tag: blue
         Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Cross-validation estimation (CV)
     URL: null
 OptimizationMethods:
   - Types:
-      - Tag: orange
-        Name: Matlab Optimization Toolbox
+      - Tag: default
+        Name: NLOPT
+      - Tag: default
+        Name: PCTOptimizer
     URL: null
 Resampling: false
 Metrics:
-  - null
+  - MSE
+  - Cross-Validation (CV)

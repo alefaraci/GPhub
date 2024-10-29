@@ -144,7 +144,6 @@ OptimizationMethods:
       - Tag: null
         Name: null
     URL: null
-
 ```
 
 ### ⚠️ Fixing or adding data to an existing library
@@ -163,6 +162,7 @@ Refer to [Hugo website](https://gohugo.io/installation/) for details on how to i
 
 ```sh
 brew install hugo
+brew install prettier
 ```
 
 ## Install Python dependencies
@@ -170,7 +170,7 @@ brew install hugo
 #### BeautifulSoup
 
 ```sh
-pip install beautifulsoup4 lxml
+pip install requests beautifulsoup4 lxml 
 ```
 
 ## Deploy

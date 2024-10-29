@@ -14,8 +14,8 @@ Repository:
   - Name: JaxGaussianProcesses/GPJax
     URL: https://github.com/JaxGaussianProcesses/GPJax
 Version:
-  - Name: v0.9.1
-    URL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.9.1
+  - Name: v0.11.0
+    URL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.11.0
 Installation:
   - PyPI
 Developer:
@@ -79,7 +79,7 @@ Correlation:
       - Tag: yellow
         Name: Matern52
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: red
         Name: Rational Quadratic
       - Tag: teal

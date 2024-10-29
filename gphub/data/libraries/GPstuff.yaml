@@ -76,7 +76,7 @@ LengthScale:
 Correlation:
   - Types:
       - Tag: default
-        Name: Catrgorical
+        Name: Categorical
       - Tag: orange
         Name: Constant
       - Tag: blue

@@ -1,0 +1,157 @@
+PackageID: GaussianProcessesjl
+Library:
+  - Name: GaussianProcesses.jl
+    URL: https://stor-i.github.io/GaussianProcesses.jl/latest/
+    Reference:
+      - Author: Fairbrother et al. (2022)
+        URL: https://www.jstatsoft.org/article/view/v102i01
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/blob/master/LICENSE.md
+Repository:
+  - Name: STOR-i/GaussianProcesses.jl
+    URL: https://github.com/STOR-i/GaussianProcesses.jl
+Version:
+  - Name: v0.12.5
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.5
+Installation:
+  - Pkg.jl
+Developer:
+  - Tag: red
+    Name: Lancaster University
+    URL: https://www.lancaster.ac.uk/stor-i/
+  - Tag: red
+    Name: EPFL
+    URL: https://www.epfl.ch/en/
+  - Tag: default
+    Name: GaussianProcesses.jl contributors
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://stor-i.github.io/GaussianProcesses.jl/latest/
+  - Name: tutorials
+    URL: https://stor-i.github.io/GaussianProcesses.jl/latest/classification_example/
+  - Name: jupyter notebooks
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/tree/master/notebooks
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - Optim.jl
+  - Distributions.jl
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Gaussian Process (SGP)
+    URL: null
+Complexity:
+  - O(N^3)
+  - O(NM^2)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Custom
+    URL: null
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: teal
+        Name: Polynomial
+      - Tag: green
+        Name: Periodic
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Fixed
+      - Tag: default
+        Name: Masked
+      - Tag: default
+        Name: null
+    URL: null
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: green
+        Name: Poisson
+      - Tag: default
+        Name: Binomial
+      - Tag: teal
+        Name: Exponential
+      - Tag: teal
+        Name: Student-T
+    URL: null
+    Nugget:
+      - Tag: default
+        Name: Custom
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Variational Inference
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: Subset of Regressors (SoR)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+      - Tag: uiBlue
+        Name: Full scale approximation (FSA)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: purple
+        Name: Optim.jl optimizer
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: orange
+        Name: Conjugate gradients
+    URL: null
+Resampling: true
+Metrics:
+  - null

@@ -66,7 +66,7 @@ Correlation:
       - Tag: teal
         Name: Exponential
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: yellow
         Name: Matern32
       - Tag: yellow

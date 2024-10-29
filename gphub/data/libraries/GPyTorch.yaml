@@ -14,8 +14,8 @@ Repository:
   - Name: cornellius-gp/gpytorch
     URL: https://github.com/cornellius-gp/gpytorch
 Version:
-  - Name: v1.13
-    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.13
+  - Name: v1.14
+    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.14
 Installation:
   - PyPI
   - conda
@@ -83,8 +83,7 @@ Complexity:
   - O(N^2)
   - O(NM^2)
   - O(N)
-  - '\( \mathcal{O}(N log(N)) \)'
-  - '\( \mathcal{O}(L \times nm^2) \)'
+  - \( \mathcal{O}(N + M \log M) \)
 Trend:
   - Types:
       - Tag: blue
@@ -116,7 +115,7 @@ Correlation:
       - Tag: teal
         Name: Polynomial
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: red
         Name: Rational Quadratic
       - Tag: default

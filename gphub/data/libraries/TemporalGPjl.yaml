@@ -14,8 +14,8 @@ Repository:
   - Name: JuliaGaussianProcesses/TemporalGPs.jl
     URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl
 Version:
-  - Name: v0.7.1
-    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/releases/tag/v0.7.1
+  - Name: v0.7.3
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/releases/tag/v0.7.3
 Installation:
   - null
 Developer:

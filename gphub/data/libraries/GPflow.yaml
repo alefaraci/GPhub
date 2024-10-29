@@ -32,7 +32,7 @@ Developer:
     Name: University of Edinburgh
     URL: https://www.ed.ac.uk
   - Tag: purple
-    Name: The University of Manchster
+    Name: The University of Manchester
     URL: https://www.manchester.ac.uk
   - Tag: red
     Name: Lancaster University
@@ -62,7 +62,7 @@ Models:
       - Tag: green
         Name: Sparse Gaussian Process Regression (SGPR)
       - Tag: uiBlue
-        Name: Gaussian Process Regression with FITC (GPRFITC)
+        Name: GPR with Fully Independent Training Conditional (FITC)
       - Tag: teal
         Name: Variational Gaussian Process (VGP)
       - Tag: green
@@ -117,7 +117,7 @@ Correlation:
         Name: Change Points
       - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: yellow
         Name: Convolutional
       - Tag: default
         Name: Coregion
@@ -130,7 +130,7 @@ Correlation:
       - Tag: green
         Name: Linear
       - Tag: green
-        Name: Linear Coregionaliztion
+        Name: Linear Coregionalization
       - Tag: yellow
         Name: Matern12
       - Tag: yellow
@@ -139,12 +139,12 @@ Correlation:
         Name: Matern52
       - Tag: default
         Name: Multioutput
-      - Tag: red
+      - Tag: green
         Name: Periodic
       - Tag: teal
         Name: Polynomial
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: red
         Name: Rational Quadratic
       - Tag: default

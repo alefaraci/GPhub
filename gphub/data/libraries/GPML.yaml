@@ -1,0 +1,179 @@
+PackageID: GPML
+Library:
+  - Name: GPML
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/index.html
+    Reference:
+      - Author: Rasmussen et al. (2010)
+        URL: https://jmlr.csail.mit.edu/papers/volume11/rasmussen10a/rasmussen10a.pdf
+Language:
+  - Matlab
+  - Octave
+License:
+  - Name: FreeBSD
+    URL: https://gitlab.com/hnickisch/gpml-matlab/-/blob/master/Copyright?ref_type=heads
+Repository:
+  - Name: hnickisch/gpml-matlab
+    URL: https://gitlab.com/hnickisch/gpml-matlab
+Version:
+  - Name: v4.2
+    URL: https://gitlab.com/hnickisch/gpml-matlab/-/releases/v4.2+dev2
+Installation:
+  - matlab
+  - sturtup
+Developer:
+  - Tag: yellow
+    Name: University of Cambridge
+    URL: https://www.cam.ac.uk
+  - Tag: teal
+    Name: Max Planck Institute
+    URL: https://www.kyb.tuebingen.mpg.de
+Docs:
+  - Name: docs
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/
+  - Name: user manuals
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+    URL: null
+Complexity:
+  - O(N^3)
+  - O(NM^2)
+Trend:
+  - Types:
+      - Tag: default
+        Name: Zero
+      - Tag: default
+        Name: One
+      - Tag: default
+        Name: Constant
+      - Tag: default
+        Name: Linear
+      - Tag: default
+        Name: Polynomial
+      - Tag: default
+        Name: Discrete
+      - Tag: default
+        Name: Precomputed mean
+      - Tag: default
+        Name: Predictive
+      - Tag: default
+        Name: Nearest neighbor
+      - Tag: default
+        Name: Weighted sum of projected cosines
+      - Tag: default
+        Name: Scaled
+      - Tag: default
+        Name: Sum
+      - Tag: default
+        Name: Product
+      - Tag: default
+        Name: Power
+      - Tag: default
+        Name: Mask
+      - Tag: default
+        Name: Difference
+      - Tag: default
+        Name: Warped
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: default
+        Name: Constant
+      - Tag: default
+        Name: LinearWhite noise
+      - Tag: default
+        Name: Picewise Polynomial
+      - Tag: default
+        Name: Matern12
+      - Tag: default
+        Name: Matern32
+      - Tag: default
+        Name: Matern52
+      - Tag: default
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Squared Exponential
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: Erf (Probit)
+      - Tag: null
+        Name: Logistic (Logit)
+      - Tag: null
+        Name: Uniform
+      - Tag: null
+        Name: Gaussian
+      - Tag: null
+        Name: Gumbel
+      - Tag: null
+        Name: Laplace
+      - Tag: null
+        Name: Search-square
+      - Tag: null
+        Name: Student-T
+      - Tag: null
+        Name: Poisson
+      - Tag: null
+        Name: Negative Binomial
+      - Tag: null
+        Name: Gamma
+      - Tag: null
+        Name: Exponential
+      - Tag: null
+        Name: Log Gaussian
+      - Tag: null
+        Name: Beta
+      - Tag: null
+        Name: Mixture
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: Exact inference
+      - Tag: null
+        Name: Laplace Approximation (LA)
+      - Tag: null
+        Name: Expectation Propagation (EP)
+      - Tag: null
+        Name: Variational Bayes Approximation (VB)
+      - Tag: null
+        Name: Kullback-Leibler Approximation (KL)
+      - Tag: null
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: null
+        Name: Leave-One-Out Cross-Validation (LOOCV)
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

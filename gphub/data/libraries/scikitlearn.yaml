@@ -14,8 +14,8 @@ Repository:
   - Name: scikit-learn/scikit-learn
     URL: https://github.com/scikit-learn/scikit-learn
 Version:
-  - Name: 1.5.2
-    URL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.5.2
+  - Name: 1.6.1
+    URL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.6.1
 Installation:
   - PyPI
   - conda
@@ -87,7 +87,7 @@ Correlation:
       - Tag: default
         Name: Dot-Product
       - Tag: blue
-        Name: RBF
+        Name: Squared Exponential
       - Tag: red
         Name: Rational Quadratic
       - Tag: default
