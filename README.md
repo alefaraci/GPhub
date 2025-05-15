@@ -2,6 +2,7 @@
     <img title="GPhubLogo" alt="GPhub" src="https://res.cloudinary.com/dkytv4nwx/image/upload/v1710786255/GPhubLogo_nn1pyz.svg" width="300">
 </p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2d77aae-644c-46c7-842e-01e858e12506/deploy-status)](https://app.netlify.com/projects/gphub-dev/deploys)
 [![build](https://img.shields.io/badge/build-passing-brightgreen)](https://img.shields.io/badge/build-passing-brightgreen)
 [![version](https://img.shields.io/badge/version-v0.0.dev-brightgreen)](https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs)
 [![language](https://img.shields.io/badge/language-GO-blue)](https://go.dev)
@@ -13,28 +14,9 @@
 
 ![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
 
-`GPhub` offers an interactive guide to Gaussian Process (GP) libraries. This project is built using [`Hugo Framework`](https://gohugo.io/), `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
+[`GPhub`](https://gp-hub.dev/) offers an interactive guide to Gaussian Process (GP) libraries. This project is built using [`Hugo Framework`](https://gohugo.io/), `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
 
 The table is available by opening the `Table.html` file on a web browser of your choice.
-
-## Citing GPhub
-
-If you use GPhub in your research, please cite our [Journal paper]().
-
-```
-@article{Faraci2024,
-  doi = {},
-  url = {},
-  year = {2024},
-  publisher = {Springer},
-  volume = {},
-  number = {},
-  pages = {},
-  author = {Faraci, A., Beaurepaire, P., Gayton, N.},
-  title = {GPhub: a comprehensive guide to Gaussian Process libraries, bridging theory with practice through features, limitations, and performance.},
-  journal = {Structural and Multidisciplinary Optimization}
-}
-```
 
 ---
 
@@ -162,15 +144,18 @@ Refer to [Hugo website](https://gohugo.io/installation/) for details on how to i
 
 ```sh
 brew install hugo
-brew install prettier
 ```
 
 ## Install Python dependencies
 
-#### BeautifulSoup
+```sh
+pip install requests beautifulsoup4 lxml pyyaml rich
+```
+
+## Install Prettier for formatting
 
 ```sh
-pip install requests beautifulsoup4 lxml 
+brew install prettier
 ```
 
 ## Deploy
@@ -204,6 +189,25 @@ make -f table_html
 ```
 
 ---
+
+<!-- ## Citing GPhub
+
+If you use GPhub in your research, please cite our [Journal paper]().
+
+```
+@article{Faraci2025,
+  doi = {},
+  url = {},
+  year = {2024},
+  publisher = {Springer},
+  volume = {},
+  number = {},
+  pages = {},
+  author = {Faraci, A., Beaurepaire, P., Gayton, N.},
+  title = {GPhub: a comprehensive guide to Gaussian Process libraries, bridging theory with practice through features, limitations, and performance.},
+  journal = {Advances in Engineering Software}
+}
+``` -->
 
 # Acknowledgments
 
