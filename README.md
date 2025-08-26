@@ -10,7 +10,6 @@
 [![language](https://img.shields.io/badge/language-CSS-green)](https://www.w3.org/TR/CSS/)
 [![language](https://img.shields.io/badge/language-JS-yellow)](developer.mozilla.org/it/docs/Web/JavaScript)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE)
-[![issues](https://img.shields.io/badge/issues-1-red)](https://github.com/alefaraci/Kriging-Table-HTML/issues)
 
 ![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
 
