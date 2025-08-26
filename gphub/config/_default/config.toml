@@ -1,3 +1,4 @@
 baseURL = 'http://gp-hub.dev'
+
 languageCode = 'en-us'
 title = 'A comprehensive guide to Gaussian Process libraries'
