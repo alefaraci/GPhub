@@ -7,3 +7,5 @@
 __pycache__/
 
 **/.venv
+
+**/data/_optional_libraries
